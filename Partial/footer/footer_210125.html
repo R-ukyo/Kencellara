@@ -1,0 +1,79 @@
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script src="https://hatena.wackwack.net/v1.1/js/breadcrumb.min.js"></script>
+<script src="https://hatena.wackwack.net/v1.1/js/category_archive.min.js"></script>
+
+<!--関連記事インフィード広告-->
+<script>
+    $('ul.related-entries > li').eq(2).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><ins class=\"adsbygoogle\"     style=\"display:block\"     data-ad-format=\"fluid\"     data-ad-layout-key=\"-ga-2t-3w+5b+o7\"     data-ad-client=\"ca-pub-7898839193224300\"     data-ad-slot=\"1012737808\"></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});<\/script>')
+</script>
+
+<script>
+  if ($(window).width() < 767) {
+    $('.page-archive .autopagerize_page_element').eq(1).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><section class=\"archive-entry test-archive-entry ad\"><ins class=\"adsbygoogle\"style=\"display:block\"data-ad-client=\"ca-pub-7898839193224300\"data-ad-slot=\"9894433633\"data-ad-format=\"rectangle\"data-full-width-responsive=\"false\"><\/ins><\/section><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>');
+    $('.page-archive .autopagerize_page_element').eq(4).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><section class=\"archive-entry test-archive-entry ad\"><ins class=\"adsbygoogle\"style=\"display:block\"data-ad-client=\"ca-pub-7898839193224300\"data-ad-slot=\"9894433633\"data-ad-format=\"rectangle\"data-full-width-responsive=\"false\"><\/ins><\/section><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>');
+    $('.page-archive .autopagerize_page_element').eq(10).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><section class=\"archive-entry test-archive-entry ad\"><ins class=\"adsbygoogle\"style=\"display:block\"data-ad-client=\"ca-pub-7898839193224300\"data-ad-slot=\"9894433633\"data-ad-format=\"rectangle\"data-full-width-responsive=\"false\"><\/ins><\/section><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>');
+    $('.page-archive .autopagerize_page_element').eq(15).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><section class=\"archive-entry test-archive-entry ad\"><ins class=\"adsbygoogle\"style=\"display:block\"data-ad-client=\"ca-pub-7898839193224300\"data-ad-slot=\"9894433633\"data-ad-format=\"rectangle\"data-full-width-responsive=\"false\"><\/ins><\/section><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>');
+    $('.page-archive .autopagerize_page_element').eq(20).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><section class=\"archive-entry test-archive-entry ad\"><ins class=\"adsbygoogle\"style=\"display:block\"data-ad-client=\"ca-pub-7898839193224300\"data-ad-slot=\"9894433633\"data-ad-format=\"rectangle\"data-full-width-responsive=\"false\"><\/ins><\/section><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>');
+    $('.page-archive .autopagerize_page_element').eq(27).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><section class=\"archive-entry test-archive-entry ad\"><ins class=\"adsbygoogle\"style=\"display:block\"data-ad-client=\"ca-pub-7898839193224300\"data-ad-slot=\"9894433633\"data-ad-format=\"rectangle\"data-full-width-responsive=\"false\"><\/ins><\/section><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>');
+  }
+</script>
+
+<!--遅延読み込み-->
+<script>
+  $("img").lazyload();
+</script>
+
+<!--コピーライト-->
+<footer id="footer">
+  <div id="footer-menu">
+	  <div id="blog-title-content">
+      <a href="https://www.kencellara.com/">
+        <img class="hatena-fotolife" title="ケンチェラーラ." src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20200813/20200813103255.png" data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20200813/20200813103255.png" alt="ケンチェラーラ." style="height: 50px;" />
+      </a>
+    </div>
+    <nav>
+      <div class="footer-links">
+        <ul>
+          <li>
+            <a href="https://www.kencellara.com/kence_work">お仕事のご依頼</a>
+          </li>
+          <li>
+            <a href="https://www.kencellara.com/kence_work">お問い合わせ</a>
+          </li>
+          <li>
+            <a href="https://www.kencellara.com/privacy-policy">プライバシーポリシー</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p class="copyright">© 2020 kencellara.com All rights reserved.</p>
+	</div>
+</footer>
+
+<script type="text/javascript">
+  // 現在のページが記事一覧の2ページ目以降の場合処理実行
+  if (location.search.indexOf("?page=") === 0) {
+    var a = document.createElement('a');
+    a.addEventListener("click", () => {
+      history.back();
+    });
+    a.innerHTML = "前のページ";
+    a.setAttribute("href", "javascript:void(0);");
+    a.setAttribute("rel", "prev"); // seo対策
+    var span = document.createElement('span');
+    span.classList.add('pager-prev');
+    span.appendChild(a);
+    // classがpagerのdivタグに上記で作成したものを挿入する（classがpager-nextのspanタグよりも前に挿入する）
+    var element = document.getElementsByClassName("pager")[0];
+    element.insertBefore(span, element.firstChild);
+  }
+</script>
+
+<!--ページトップボタン-->
+<ul class="toTop-nav">
+  <li><a href="javascript:void(0);" onclick="smoothScroll(0);return false;"><i class="blogicon-chevron-up"></i></a></li>
+  <li><a href="https://www.kencellara.com/"><i class="blogicon-home"></i></a></li>
+</ul>
+<script>
+  function smoothScroll(o){var e=window.pageYOffset,l=o>e;setTimeout(function(){l&&o>=e?(e=e+(o-e)/20+1,window.scrollTo(0,e),setTimeout(arguments.callee,10)):!l&&e>=o?(e=e-(e-o)/20-1,window.scrollTo(0,e),setTimeout(arguments.callee,10)):window.scrollTo(0,o)},10)}
+</script>

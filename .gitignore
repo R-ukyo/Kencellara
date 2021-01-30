@@ -1,0 +1,6 @@
+*.zip
+/ScShot/
+/Scrape/.scrapy/httpcache/
+/Scrape/images/
+/Scrape/images_downsized/
+/Scrape/images_old/
