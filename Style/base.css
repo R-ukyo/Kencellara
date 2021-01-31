@@ -1817,6 +1817,7 @@ body.page-archive-category .pager {
 }
 .newArticleHeader h1 {
   margin: 15px 0;
+  font-size: 30px;
 }
 /* ロードバイクトップ */
 .roadbikeRecommendArea {
@@ -2088,6 +2089,9 @@ input.accordion {
 }
 /* スマホ */
 @media(max-width: 767px) {
+  .newArticleHeader {
+    width: 50%;
+  }
   /* 2列表示 */
   .article-container {
     width: 100%;
