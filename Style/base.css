@@ -141,29 +141,6 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 {
   display: none;/*記事ページなどには表示しない*/
 }
-
-/*=== smartphone ２列表示 ===*/
-@media(max-width: 767px) {
-  .article-container {
-    width: 100%;
-    flex-wrap: wrap;/*折り返し表示（２列）*/
-    justify-content: space-between;
-  }
-  .article-container.first,
-  .article-container-1.first {
-    padding-top: 8px;
-  }
-  .article-box {
-    width: 45.5%;
-    padding: 0px;
-    margin: 8px;
-  }
-  .article-img img {
-    width: 100%;
-    padding: 0;
-    object-fit: cover;
-  }
-}
 .page-entry .article-area { display: none; }
 /*=== end of article window ===*/
 
@@ -1753,7 +1730,7 @@ li.urllist-item::after {
 /* 右京追加CSS */
 /* 広域 */
 header.archive-header-category {
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 body.page-static_page article {
   padding: 0;
@@ -1789,7 +1766,7 @@ body.page-archive-category .pager {
 }
 .dropdownMenu {
   display: flex;
-  margin: 5px 0 15px;
+  margin: 15px 0;
 }
 .dropdownMenuInner {
   position: relative;
@@ -1829,9 +1806,51 @@ body.page-archive-category .pager {
   text-shadow: 3px 3px 3px darkgrey;
   opacity: 0.6;
 }
-.roadbikeRecommendArea {
-  display: none;
+.newArticleHeader {
+  width: 35%;
+  margin: 50px auto 0;
+  text-align: center;
+  border: 3px solid #ccc;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+  background: #f4f4f4;
+  box-shadow: 0 7px 10px -5px rgb(0 0 0 / 10%) inset;
 }
+.newArticleHeader h1 {
+  margin: 15px 0;
+}
+/* ロードバイクトップ */
+.roadbikeRecommendArea {
+  margin-bottom: 20px;
+}
+.roadbikeRecommendArea label {
+  background-color: bisque;
+  padding: 10px 0;
+  font-weight: bold;
+  border-top: 5px solid black;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 5px;
+}
+.roadbikeRecommendArea label:hover {
+  opacity: 0.6;
+}
+.roadbikeRecommendArea .pulldownList {
+  background-color: antiquewhite;
+  width: 100%;
+}
+#roadbikePulldown:checked ~ .pulldownList {
+  border-bottom: 5px solid black;
+  border-radius: 0 0 10px 10px;
+}
+#roadbikePulldown:checked ~ .pulldownList li {
+  height: 100%;
+}
+.roadbikeRecommendArea .article-container {
+  display: flex;
+}
+.roadbikeRecommendArea .article-box {
+  width: 50%;
+}
+/* ロードバイクトップ */
 /* カテゴリー */
 
 /* スライドショー */
@@ -1944,12 +1963,16 @@ body.page-archive-category .pager {
   background: -webkit-linear-gradient(top, aliceblue, #FFF);
   background: linear-gradient(to bottom, aliceblue, #FFF);
 } */
-.pulldownArea.howto {
+.howtoPulldown {
+  display: none;
   border: 3px ridge black;
   border-top: none;
   border-radius: 0 0 15px 15px;
 }
-.pulldownArea.howto .pulldownLabel {
+.page-index .howtoPulldown {
+  display: block;
+}
+.howtoPulldown .pulldownLabel {
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -1964,7 +1987,7 @@ body.page-archive-category .pager {
 .pulldownLabel:hover {
   text-shadow: 3px 3px 3px silver;
 }
-.howto .pulldownLabel::after {
+.howtoPulldown .pulldownLabel::after {
   display: none;
 }
 input.accordion {
@@ -1997,6 +2020,13 @@ input.accordion {
   height: 100%;
   opacity: 1;
   background-color: beige;
+}
+#kencemeshiPulldown:checked ~ .pulldownContainer .pulldownInner {
+  height: 100%;
+  opacity: 1;
+  background-color: cornsilk;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
 }
 /* #pulldown01:checked ~ #pulldownList01 li.first,
 #pulldown02:checked ~ #pulldownList02 li.first {
@@ -2057,13 +2087,37 @@ input.accordion {
   } */
 }
 /* スマホ */
-@media screen and (max-width: 767px) {
+@media(max-width: 767px) {
+  /* 2列表示 */
+  .article-container {
+    width: 100%;
+    flex-wrap: wrap;/*折り返し表示（２列）*/
+    justify-content: space-between;
+  }
+  .article-container.first,
+  .article-container-1.first {
+    padding-top: 8px;
+  }
+  .article-box {
+    width: 45.5% !important;
+    padding: 0px;
+    margin: 8px;
+  }
+  .roadbikeRecommendArea .article-box {
+    width: 45% !important;
+  }
+  .article-img img {
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+  }
   .page-index #main-inner {
     margin: 5px 10px 10px 10px !important;
     padding: 10px !important;
     background-color: antiquewhite;
     border: 3px outset antiquewhite;
   }
+  /* 2列表示 */
   .headernew {
     border: 7px ridge antiquewhite;
   }
@@ -2072,6 +2126,9 @@ input.accordion {
     margin: 10px;
     text-align: left;
     font-size: 13px;
+  }
+  label:hover {
+    opacity: 1 !important;
   }
   .slick-next {
     right: 50px !important;
