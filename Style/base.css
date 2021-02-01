@@ -618,7 +618,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 
 
 /* 記事の概要 */
-.page-index .entry-description{
+.page-index .entry-description {
   display : none;
 }
 
@@ -1549,11 +1549,12 @@ li.urllist-item::after {
 .recommend-heading {
   margin: 0;
   padding-top: 15px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
   position: relative;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 1px silver;
 }
 .recommend-heading:after {
   content: '';
@@ -1973,7 +1974,10 @@ img.TwitterIcon {
   margin: 0;
   padding: 0;
   font-size: 30px;
+  font-weight: bold;
   border-radius: 15px;
+  text-align: center;
+  position: relative;
 }
 .pulldownLabel {
   width: 100%;
@@ -1982,9 +1986,6 @@ img.TwitterIcon {
 }
 .pulldownLabel:hover {
   text-shadow: 3px 3px 3px silver;
-}
-.howtoPulldown .pulldownLabel::after {
-  display: none;
 }
 .howtoPulldown img {
   margin-top: 20px;
