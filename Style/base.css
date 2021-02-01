@@ -1928,6 +1928,31 @@ body.page-archive-category .pager {
 .page-index .monthlyBlogInfo {
   display: block;
 }
+.snsArea {
+  height: 30px;
+  padding: 10px 0;
+}
+.snsContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 220px;
+  height: 100%;
+}
+.snsContainer span {
+  margin: auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+.snsContainer a {
+  margin: 0 auto;
+}
+.snsContainer img {
+  height: 30px;
+  border-radius: 10px;
+}
+img.TwitterIcon {
+  border-radius: 0px;
+}
 /* ヘッダープルダウンエリア */
 /* .pulldownArea {
   border-top: 3px double black;
@@ -1939,8 +1964,7 @@ body.page-archive-category .pager {
 .howtoPulldown {
   display: none;
   border: 3px ridge black;
-  border-top: none;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
 }
 .page-index .howtoPulldown {
   display: block;
@@ -1949,8 +1973,7 @@ body.page-archive-category .pager {
   margin: 0;
   padding: 0;
   font-size: 30px;
-  background-color: cornsilk;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
 }
 .pulldownLabel {
   width: 100%;
@@ -1962,6 +1985,11 @@ body.page-archive-category .pager {
 }
 .howtoPulldown .pulldownLabel::after {
   display: none;
+}
+.howtoPulldown img {
+  margin-top: 20px;
+  width: 78%;
+  max-width: 500px;
 }
 input.accordion {
   display: none;
@@ -1997,7 +2025,7 @@ input.accordion {
 #kencemeshiPulldown:checked ~ .pulldownContainer .pulldownInner {
   height: 100%;
   opacity: 1;
-  background-color: cornsilk;
+  background-color: lightgrey;
   text-align: center;
   border-radius: 0 0 15px 15px;
 }
