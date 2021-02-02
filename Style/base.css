@@ -1,6 +1,4 @@
-/* <system section="theme" selected="8599973812333959601"> */
 @import url("https://blog.hatena.ne.jp/-/theme/8599973812333959601.css");
-/* </system> */
 
 article em {
   font-weight: bold;
@@ -111,10 +109,10 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 }
 .article-box {
   box-sizing: border-box;
-  border: 3px outset silver;/*画像の枠色*/
+  border: 3px outset silver;
   width: 25%;
   padding: 0px;
-  margin: 30px 15px;/*画像周りの空白*/
+  margin: 30px 15px;
   overflow: hidden;
 }
 .article-img {
@@ -125,11 +123,11 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   height: 100%;
   display: block;
   object-fit: cover;
-  transition-duration: 0.5s;/*ゆっくり戻る*/
+  transition-duration: 0.5s;
 }
-.article-img:hover img {/*マウスオーバーで拡大表示*/
-  transform: scale(1.1);/*1.1倍に表示*/
-  transition-duration: 0.5s;/*ゆっくり拡大*/
+.article-img:hover img {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }
 
 .page-entry .article-area,
@@ -141,7 +139,6 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 {
   display: none;/*記事ページなどには表示しない*/
 }
-.page-entry .article-area { display: none; }
 /*=== end of article window ===*/
 
 /*=== トップページ 地域別グルメ カテゴリー別 ===*/
@@ -268,10 +265,8 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 /* 記事内「この記事で分かること」CSS*/
 .entry-content .emphasize-link-1 {
   position: relative;
-  margin: 36px 0 16px;
-  padding: 16px 10px;
-  margin-bottom: 0em;
-  padding-bottom: 0em;
+  margin-top: 36px;
+  padding: 16px 10px 0;
   border: 3px solid #4682b4;
   background-color: #fffbf5;
 }
@@ -448,7 +443,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   color: #ffc107;
 }
 .memobox-title:before {
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   content: "\f303";
   font-size: 17px;
 }
@@ -460,10 +455,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 
 /* 目次カスタム */
 .entry-content .table-of-contents {
-  border-top: 3px solid #4682b4; /* 目次枠線太さと色*/
-  border-left: 3px solid #4682b4;
-  border-right: 3px solid #4682b4;
-  border-bottom: 3px solid #4682b4;
+  border: 3px solid #4682b4; /* 目次枠線太さと色*/
   background: #f6f6f6; /* 目次内背景色 */
   border-radius: 15px; /* 角を丸くする */
 }
@@ -518,7 +510,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 	bottom: 20px;
 	left: 50%;
 	width: 16rem;
-	font-family: FontAwesome;
+	font-family: "FontAwesome";
 	content: '\f13a'' 続きをよむ';
 	transform: translate(-50%, 0);
 	letter-spacing: 0.05em;
@@ -538,7 +530,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 	/* display: none ; 閉じるボタンを消す場合解放 */
 }
 .cp_box input:checked + label:after {
-	font-family: FontAwesome;
+	font-family: "FontAwesome";
 	content: '\f139'' 閉じる';
 }
 .cp_box input:checked ~ .cp_container {
@@ -642,9 +634,6 @@ ul.table-of-contents a {
   text-decoration: none; /* リンク下線なし */
 }
 
-/*太字にする*/
-/* strong { font-weight: bold; } */
-
 
 /*スマホページトップボタン設置*/
 /* To Top */
@@ -696,11 +685,6 @@ ul.table-of-contents a {
 /*フッターデザインCSS*/
 /* コピーライト */
 #bottom-editarea {
-  width: 100%;
-  margin: 0 auto;
-  background: #444444;
-  padding: 0;
-  color: #fff;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -711,16 +695,14 @@ ul.table-of-contents a {
   color: #fff;
   background: #444444;
   width: 100%;
-  margin: 0;
   padding: 2em 40px 1em 40px;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   font-size: 80%;
 }
-#blog-title-content a {
+/* #blog-title-content a {
   font-size: 00px;
   font-weight: 100;
   color: #fff;
-}
+} */
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -729,17 +711,12 @@ ul.table-of-contents a {
   display: inline-block;
   padding: 0 6px;
   font-size: 14.5px;
-  box-sizing: border-box;
 }
 .footer-links ul li a{
   color: #ffffff;
 }
 .copyright {
   font-size: 10px;
-}
-/*自分で設定したフッターとページ下の余白を消す*/
-#container {
-  margin-bottom: 0;
 }
 
 
@@ -750,7 +727,7 @@ ul.table-of-contents a {
   margin-bottom: 10px;
   padding: 5px 2px;
   border: none;
-  background-color: #ededed; /*タグの背景色(お好きな色に)*/
+  background-color: #ededed;
 }
 .hatena-module-category .hatena-urllist li a {
   display: inline;
@@ -767,8 +744,6 @@ ul.table-of-contents a {
 .entry-content .r-fuki {
   position: relative;
   width: calc(100% - 82px);
-  /* box-sizing: border-box;
-  -webkit-box-sizing: border-box; */
   padding: 20px;
   border-radius: 6px;
   border: 2px solid #ddd;
