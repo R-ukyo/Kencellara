@@ -1686,6 +1686,9 @@ body.page-static_page article {
 #container-inner {
   background-color: white;
 }
+.codoc-entry {
+  border: 3px outset crimson;
+}
 /* 広域 */
 
 /* パーツ */
@@ -1854,6 +1857,19 @@ body.page-archive-category .pager {
 .summaryTable td {
   border: 3px ridge silver !important;
 }
+.profileLinkArea {
+  background: #faf0e6;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.profileLinkArea a {
+  color: black;
+  font-weight: bold;
+}
 /* 記事内 */
 
 /* サイドバー */
@@ -1865,7 +1881,6 @@ body.page-archive-category .pager {
 }
 .supportCodoc {
   margin-top: 20px;
-  border: solid 3px crimson;
   border-radius: 5px;
 }
 .supportLink {
