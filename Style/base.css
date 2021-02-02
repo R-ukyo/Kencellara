@@ -1631,7 +1631,6 @@ li.urllist-item::after {
 }
 
 /* ヘッダーから移植 */
-/* .header-image-wrapper { display: none; } */
 #blog-title { display: none; }
 .headernew {
   margin: 0px!important;
@@ -1690,6 +1689,13 @@ body.page-static_page article {
   border: 3px outset crimson;
 }
 /* 広域 */
+
+/* main */
+#content {
+  content-visibility: auto;
+  contain-intrinsic-size: 8200px;
+}
+/* main */
 
 /* パーツ */
 .p_f12em {
@@ -1783,7 +1789,6 @@ body.page-archive-category .pager {
   margin-bottom: 5px;
 }
 .roadbikeRecommendArea label:hover {
-  /* opacity: 0.6; */
   text-shadow: none;
   cursor: default;
 }
@@ -1797,9 +1802,6 @@ body.page-archive-category .pager {
 }
 #roadbikePulldown ~ .pulldownList li {
   height: 100%;
-}
-#roadbikePulldown:checked ~ .pulldownList li {
-  /* height: 0; */
 }
 .roadbikeRecommendArea .article-container {
   display: flex;
@@ -1878,6 +1880,15 @@ body.page-archive-category .pager {
 /* 記事内 */
 
 /* サイドバー */
+.hatena-module-links,
+.hatena-module-archive {
+  content-visibility: auto;
+  contain-intrinsic-size: 210px;
+}
+.hatena-module-category {
+  content-visibility: auto;
+  contain-intrinsic-size: 170px;
+}
 .supportNavTitle {
   margin-bottom: 10px;
 }
@@ -1922,6 +1933,19 @@ body.page-archive-category .pager {
 }
 
 /* ヘッダー */
+.article-area,
+.article-area-1 {
+  content-visibility: auto;
+  contain-intrinsic-size: 250px;
+}
+.pulldownInner {
+  content-visibility: auto;
+  contain-intrinsic-size: 600px;
+}
+.monthlyBlogInfo {
+  content-visibility: auto;
+  contain-intrinsic-size: 70px;
+}
 .header-info:hover {
   opacity: 0.8;
 }
@@ -1953,18 +1977,12 @@ body.page-archive-category .pager {
   height: 30px;
   margin: 10px 0;
 }
-/* .page-index .miniInfoArea {
-  height: 70px;
-} */
 .snsContainer {
   display: flex;
   margin: 0 auto;
   width: 220px;
   height: 100%;
 }
-/* .page-index .snsContainer {
-  height: 50%;
-} */
 .snsContainer span {
   margin: auto;
   font-size: 17px;
@@ -2005,13 +2023,6 @@ img.TwitterIcon {
   color: crimson;
 }
 /* ヘッダープルダウンエリア */
-/* .pulldownArea {
-  border-top: 3px double black;
-  border-bottom: 3px dotted silver;
-  background: -moz-linear-gradient(top, aliceblue, #FFF);
-  background: -webkit-linear-gradient(top, aliceblue, #FFF);
-  background: linear-gradient(to bottom, aliceblue, #FFF);
-} */
 .howtoPulldown {
   display: none;
 }
@@ -2056,18 +2067,6 @@ input.accordion {
   height: 0;
   overflow: hidden;
 }
-/* .pulldownArea.round li {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-} */
-/* #pulldown01:checked ~ #pulldownList01 li,
-#pulldown02:checked ~ #pulldownList02 li {
-  height: 170px;
-  opacity: 1;
-} */
 #pulldown03:checked ~ .pulldownList03 li {
   height: 100%;
   opacity: 1;
@@ -2080,14 +2079,6 @@ input.accordion {
   text-align: center;
   border-radius: 0 0 15px 15px;
 }
-/* #pulldown01:checked ~ #pulldownList01 li.first,
-#pulldown02:checked ~ #pulldownList02 li.first {
-  padding-top: 20px;
-}
-#pulldown01:checked ~ #pulldownList01 li.last,
-#pulldown02:checked ~ #pulldownList02 li.last {
-  padding-bottom: 20px;
-} */
 .recommendMore {
   color: white;
   text-shadow: 2px 2px 2px black;
@@ -2133,12 +2124,16 @@ input.accordion {
 /* ヘッダープルダウンエリア */
 /* ヘッダー */
 
+/* フッター */
+footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 170px;
+}
+/* フッター */
+
+/* メディアクエリ */
 /* スマホ */
 @media screen and (max-width: 480px) {
-  /* #pulldown01:checked ~ #pulldownList01 li,
-  #pulldown02:checked ~ #pulldownList02 li {
-    height: 115px;
-  } */
   .roadbikeRecommendArea .pulldownList {
     height: 250px;
   }
@@ -2251,9 +2246,5 @@ input.accordion {
     max-width: 200px;
     max-height: 200px;
   }
-  /* #pulldown01:checked ~ #pulldownList01 li,
-  #pulldown02:checked ~ #pulldownList02 li {
-    height: 220px;
-  } */
 }
 /* 右京ここまで */
