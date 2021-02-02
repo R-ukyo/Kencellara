@@ -1783,18 +1783,23 @@ body.page-archive-category .pager {
   margin-bottom: 5px;
 }
 .roadbikeRecommendArea label:hover {
-  opacity: 0.6;
+  /* opacity: 0.6; */
+  text-shadow: none;
+  cursor: default;
 }
 .roadbikeRecommendArea .pulldownList {
   background-color: antiquewhite;
+  height: 500px;
+  overflow-y: scroll;
   width: 100%;
-}
-#roadbikePulldown:checked ~ .pulldownList {
   border-bottom: 5px solid black;
   border-radius: 0 0 10px 10px;
 }
-#roadbikePulldown:checked ~ .pulldownList li {
+#roadbikePulldown ~ .pulldownList li {
   height: 100%;
+}
+#roadbikePulldown:checked ~ .pulldownList li {
+  /* height: 0; */
 }
 .roadbikeRecommendArea .article-container {
   display: flex;
@@ -2098,13 +2103,17 @@ input.accordion {
 /* ヘッダープルダウンエリア */
 /* ヘッダー */
 
+/* スマホ */
 @media screen and (max-width: 480px) {
   /* #pulldown01:checked ~ #pulldownList01 li,
   #pulldown02:checked ~ #pulldownList02 li {
     height: 115px;
   } */
+  .roadbikeRecommendArea .pulldownList {
+    height: 250px;
+  }
 }
-/* スマホ */
+/* スマホ・タブレット */
 @media(max-width: 767px) {
   .newArticleHeader {
     width: 50%;
