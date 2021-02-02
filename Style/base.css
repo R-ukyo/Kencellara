@@ -1949,19 +1949,25 @@ body.page-archive-category .pager {
 .page-index .monthlyBlogInfo {
   display: block;
 }
-.snsArea {
+.miniInfoArea {
   height: 30px;
-  padding: 10px 0;
+  margin: 10px 0;
 }
+/* .page-index .miniInfoArea {
+  height: 70px;
+} */
 .snsContainer {
   display: flex;
   margin: 0 auto;
   width: 220px;
   height: 100%;
 }
+/* .page-index .snsContainer {
+  height: 50%;
+} */
 .snsContainer span {
   margin: auto;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
 }
 .snsContainer a {
@@ -1974,6 +1980,30 @@ body.page-archive-category .pager {
 img.TwitterIcon {
   border-radius: 0px;
 }
+.storeCountArea {
+  display: none;
+}
+.page-index .storeCountArea {
+  display: block;
+  padding: 15px 0 10px;
+  height: 50px;
+  background-color: currentColor;
+}
+.storeCountContainer {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px silver;
+  font-size: 24px;
+}
+.storeCounter {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 8px;
+  color: crimson;
+}
 /* ヘッダープルダウンエリア */
 /* .pulldownArea {
   border-top: 3px double black;
@@ -1984,11 +2014,11 @@ img.TwitterIcon {
 } */
 .howtoPulldown {
   display: none;
-  border: 3px ridge black;
-  border-radius: 15px;
 }
 .page-index .howtoPulldown {
   display: block;
+  border: 3px ridge black;
+  border-radius: 15px;
 }
 .howtoPulldown .pulldownLabel {
   margin: 0;

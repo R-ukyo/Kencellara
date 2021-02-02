@@ -72,6 +72,11 @@
   });
 </script>
 
+<script>
+  const storeCount = $(".hatena-urllist .category-三重県のグルメ制覇").last().text().trim().substr(-4,3);
+  $("#storeCounter").text(storeCount);
+</script>
+
 <!--コピーライト-->
 <footer id="footer">
   <div id="footer-menu">
