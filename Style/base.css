@@ -1558,17 +1558,6 @@ li.urllist-item::after {
 .archive-entry-header h1 a:hover {
   color: #375A7F !important;
 }
-
-/*カード*/
-.archive-entry {
-  border: solid 2px #e9e9e9;
-  background: #fff;
-  border-radius: 0px;
-}
-/*アイキャッチ*/
-.entry-thumb {
-  border-radius: 0px;
-}
 /*背景色を白へ*/
 #content {
   padding-top: 10px;
@@ -1620,7 +1609,6 @@ li.urllist-item::after {
 .headernew a {
   display: block;
 }
-/* ヘッダーテキストリンク */
 .header-info {
   position: relative;
   max-width: 100%;
@@ -1662,6 +1650,18 @@ body.page-static_page article {
 }
 .codoc-entry {
   border: 3px outset crimson;
+}
+/*カード*/
+.archive-entry {
+  content-visibility: auto;
+  contain-intrinsic-size: 410px;
+  border: solid 2px #e9e9e9;
+  background: #fff;
+  border-radius: 0px;
+}
+/*アイキャッチ*/
+.entry-thumb {
+  border-radius: 0px;
 }
 /* 広域 */
 
@@ -1855,6 +1855,16 @@ body.page-archive-category .pager {
 /* 記事内 */
 
 /* サイドバー */
+#box2-inner .hatena-module:nth-child(3),
+#box2-inner .hatena-module:nth-child(5) {
+  content-visibility: auto;
+  contain-intrinsic-size: 650px;
+}
+#box2-inner .hatena-module:nth-child(8),
+#box2-inner .hatena-module:nth-child(10) {
+  content-visibility: auto;
+  contain-intrinsic-size: 1100px;
+}
 .hatena-module-links,
 .hatena-module-archive {
   content-visibility: auto;
@@ -2106,6 +2116,7 @@ footer {
 }
 /* フッター */
 
+
 /* メディアクエリ */
 /* スマホ */
 @media screen and (max-width: 480px) {
@@ -2115,6 +2126,12 @@ footer {
 }
 /* スマホ・タブレット */
 @media(max-width: 767px) {
+  /* サイドバーの埋め込みSNSを非表示に */
+  /* #box2-inner .hatena-module:nth-child(8),
+  #box2-inner .hatena-module:nth-child(10),
+  #box2-inner .hatena-module:nth-child(13) {
+    display: none;
+  } */
   .newArticleHeader {
     width: 50%;
   }
