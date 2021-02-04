@@ -1,3 +1,30 @@
+<!--シェアボタン-->
+<div id="snsShareBelow" class="snsShare below">
+  <div class="snsShareInner">
+    <span>シェア<i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    <!--はてブ-->
+    <a class="hatena-bookmark-button" href="http://b.hatena.ne.jp/entry/{URLEncodedPermalink}" target="_blank" data-hatena-bookmark-title="{Title}" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加">
+      <i class="blogicon-bookmark lg"></i>
+    </a>
+    <!--Facebook-->
+    <a class="facebook-button" href="http://www.facebook.com/sharer.php?u={URLEncodedPermalink}" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+      <i class="blogicon-facebook lg"></i>
+    </a>
+    <!--Twitter-->
+    <a class="twitter-button" href="http://twitter.com/intent/tweet?text={Title} {URLEncodedPermalink}" target="_blank">
+      <i class="blogicon-twitter lg"></i>
+    </a>
+    <!--LINE-->
+    <a class="line-button" href="http://line.me/R/msg/text/?{Title} {URLEncodedPermalink}">
+      <img src="http://cdn-ak.f.st-hatena.com/images/fotolife/f/ftmaccho/20150905/20150905143148.png" width="18px" height="18px" alt="LINEで送る" />
+    </a>
+  </div>
+</div>
+
+<script>
+  $('.entry-content').first().append($('#snsShareBelow'));
+</script>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"

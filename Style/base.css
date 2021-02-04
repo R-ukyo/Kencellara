@@ -1881,6 +1881,9 @@ body.page-archive-category .pager {
   height: 43px;
   top: 5px;
 }
+.snsShare.below .line-button img {
+  top: -12px;
+}
 /* シェアボタン */
 .emphasize-link ul {
   margin: 0 0 0 1.5em;
