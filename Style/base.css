@@ -1818,6 +1818,70 @@ body.page-archive-category .pager {
 /* スライドショー */
 
 /* 記事内 */
+/*シェアボタン*/
+.snsShareInner {
+  margin: 10px auto 5px;
+  width: 90%;
+  text-align: center;
+}
+.snsShareInner span {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px silver;
+  position: relative;
+  top: -8px;
+  left: -8px;
+}
+.snsShareInner a {
+  text-decoration: none;
+}
+.snsShareInner [class*=blogicon-].lg {
+  font-size: 1.5em;
+  font-style: normal !important;
+}
+.snsShare .hatena-bookmark-button {
+  color: #00a4de;
+  font-size: 40px;
+}
+.snsShare .hatena-bookmark-button:hover {
+  color: #00a4de;
+}
+.snsShare .facebook-button {
+  position: relative;
+  font-size: 36px;
+  margin: auto;
+  color: #3b5998;
+  left: -5px;
+}
+.snsShare .facebook-button:hover {
+  color: #3b5998;
+}
+.snsShare .twitter-button {
+  position: relative;
+  font-size: 30px;
+  vertical-align: bottom;
+  color: #fff;
+  background-color: #00aced;
+  top: -10px;
+  right: 9px;
+  border-radius: 5px;
+}
+.snsShare .twitter-button:hover {
+  color: #fff;
+}
+.snsShare .twitter-button [class*=blogicon-].lg {
+  position: relative;
+  vertical-align: -20%;
+  right: -1%;
+  font-size: 1.19em;
+}
+.snsShare .line-button img {
+  position: relative;
+  width: 42px;
+  height: 43px;
+  top: 5px;
+}
+/* シェアボタン */
 .emphasize-link ul {
   margin: 0 0 0 1.5em;
 }
@@ -2123,15 +2187,15 @@ footer {
   .roadbikeRecommendArea .pulldownList {
     height: 250px;
   }
+  .snsShareInner span {
+    font-size: 16px;
+  }
+  .snsShare .twitter-button [class*=blogicon-].lg {
+    right: -2%;
+  }
 }
 /* スマホ・タブレット */
 @media(max-width: 767px) {
-  /* サイドバーの埋め込みSNSを非表示に */
-  /* #box2-inner .hatena-module:nth-child(8),
-  #box2-inner .hatena-module:nth-child(10),
-  #box2-inner .hatena-module:nth-child(13) {
-    display: none;
-  } */
   .newArticleHeader {
     width: 50%;
   }
