@@ -1919,7 +1919,7 @@ body.page-archive-category .pager {
 /* 記事内 */
 
 /* サイドバー */
-#box2-inner .hatena-module:nth-child(3),
+/* #box2-inner .hatena-module:nth-child(3),
 #box2-inner .hatena-module:nth-child(5) {
   content-visibility: auto;
   contain-intrinsic-size: 650px;
@@ -1937,7 +1937,7 @@ body.page-archive-category .pager {
 .hatena-module-category {
   content-visibility: auto;
   contain-intrinsic-size: 170px;
-}
+} */
 .supportNavTitle {
   margin-bottom: 10px;
 }
