@@ -81,6 +81,28 @@
   $('.pager-next > a').attr('href', url+'#main');
 </script>
 
+<!-- 前のページボタン追加 -->
+<script>
+  if ($('.page-index').length) {
+    if (location.href.indexOf('?page=') !== -1) {
+      const pager = $('.pager').first();
+      const span = $('<span></span>', {class: 'pager-prev'});
+      let a;
+      if (document.referrer.indexOf(document.domain) !== -1) {
+        a = $("<a>前のページ</a>").attr({href: '#main', rel: 'prev'});
+      } else {
+        a = $('<a>トップページ</a>').attr({href: '/#main'});
+      }
+      a.on('click', () => {
+        history.back();
+        return false;
+      });
+      span.append(a);
+      pager.prepend(span);
+    }
+  }
+</script>
+
 <!--コピーライト-->
 <footer id="footer">
   <div id="footer-menu">
@@ -107,25 +129,6 @@
     <p class="copyright">© 2020 kencellara.com All rights reserved.</p>
 	</div>
 </footer>
-
-<script type="text/javascript">
-  // 現在のページが記事一覧の2ページ目以降の場合処理実行
-  if (location.search.indexOf("?page=") === 0 && !document.URL.match('/category/')) {
-    var a = document.createElement('a');
-    a.addEventListener("click", () => {
-      history.back();
-    });
-    a.innerHTML = "前のページ";
-    a.setAttribute("href", "javascript:void(0);");
-    a.setAttribute("rel", "prev"); // seo対策
-    var span = document.createElement('span');
-    span.classList.add('pager-prev');
-    span.appendChild(a);
-    // classがpagerのdivタグに上記で作成したものを挿入する（classがpager-nextのspanタグよりも前に挿入する）
-    var element = document.getElementsByClassName("pager")[0];
-    element.insertBefore(span, element.firstChild);
-  }
-</script>
 
 <!--ページトップボタン-->
 <ul class="toTop-nav">
