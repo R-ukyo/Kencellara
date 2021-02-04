@@ -75,6 +75,12 @@
   });
 </script>
 
+<!-- 次のページのリンクに#main付与 -->
+<script>
+  url = $('.pager-next > a').attr('href');
+  $('.pager-next > a').attr('href', url+'#main');
+</script>
+
 <!--コピーライト-->
 <footer id="footer">
   <div id="footer-menu">
