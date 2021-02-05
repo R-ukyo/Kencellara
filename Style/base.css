@@ -1919,6 +1919,9 @@ body.page-archive-category .pager {
   color: black;
   font-weight: bold;
 }
+.page-entry .pager {
+  display: none;
+}
 /* 記事内 */
 
 /* サイドバー */
