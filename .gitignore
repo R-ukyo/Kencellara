@@ -1,5 +1,6 @@
 *.zip
 *.log
+/Qiita/
 /ScShot/
 /Scrape/.scrapy/httpcache/
 /Scrape/images/
