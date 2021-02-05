@@ -2043,7 +2043,7 @@ body.page-archive-category .pager {
   margin: 0 auto;
 }
 .snsContainer img {
-  height: 30px;
+  height: 30px !important;
   border-radius: 10px;
 }
 img.TwitterIcon {
