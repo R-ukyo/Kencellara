@@ -2176,33 +2176,40 @@ input.accordion {
 
 /* ヘッダー番付 */
 .headerBanzuke {
-  padding: 10px 0;
+  padding: 10px 0 10px 15px;
   background-color: cornsilk;
 }
 .headerBanzuke caption {
-  color: darkslateblue;
+  width: 200px;
+  margin: 5px auto;
+  background-color: white;
+  border: 3px ridge silver;
+  color: black;
   font-size: 25px;
   font-weight: bold;
-  text-shadow: 2px 2px 2px gold;
+  text-shadow: 2px 2px 2px silver;
 }
 .headerBanzuke table {
   margin: auto;
 }
 .headerBanzuke .lanking {
+  width: 6%;
+  padding-left: 5px;
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
-.headerBanzuke .first .lanking {
+.headerBanzuke .lanking.first {
   text-shadow: 3px 3px 3px gold;
 }
-.headerBanzuke .second .lanking {
+.headerBanzuke .lanking.second {
   text-shadow: 3px 3px 3px silver;
 }
-.headerBanzuke .third .lanking {
+.headerBanzuke .lanking.third {
   text-shadow: 3px 3px 3px #b87333;
 }
 .headerBanzuke .articleZone {
+  width: 30%;
   padding: 0 10px;
 }
 .headerBanzuke h3 {
@@ -2210,6 +2217,9 @@ input.accordion {
 }
 .headerBanzuke p {
   margin: 2px 0;
+}
+.headerBanzuke .starZone {
+  padding-right: 5px;
 }
 /* ヘッダー番付 */
 
