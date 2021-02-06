@@ -2179,12 +2179,16 @@ input.accordion {
 
 /* ヘッダー番付 */
 .headerBanzuke {
+  display: none;
   padding: 10px 0 10px 15px;
   background-color: cornsilk;
 }
+.page-index .headerBanzuke {
+  display: block;
+}
 .headerBanzuke caption {
   width: 200px;
-  margin: 5px auto;
+  margin: 8px auto;
   background-color: white;
   border: 3px ridge silver;
   color: black;
@@ -2224,6 +2228,23 @@ input.accordion {
 .headerBanzuke .starZone {
   padding-right: 5px;
 }
+.star-rating {
+  position: relative;
+  display:inline-block;
+  font-size: 25px;
+}
+.star-rating .star-rating-item{
+  position:absolute;
+  overflow: hidden;
+}
+.star-rating .star-rating-item:before{
+  content:"★★★★★";
+  color: #ffcc33;
+}
+.star-rating:after {
+  content:"★★★★★";
+  color: #ccc;
+}
 /* ヘッダー番付 */
 
 /* フッター */
@@ -2245,6 +2266,9 @@ footer {
   }
   .snsShare .twitter-button [class*=blogicon-].lg {
     right: -2%;
+  }
+  .page-index .headerBanzuke {
+    display: none;
   }
 }
 /* スマホ・タブレット */
