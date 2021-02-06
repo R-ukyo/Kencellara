@@ -7,6 +7,23 @@
   $("#storeCounter").text(storeCount);
 </script>
 
+<script>
+  const button = $('#openBanzuke');
+  button.on('click', () => {
+    if (button.hasClass('open')) {
+      const offset = $('.headerBanzuke.sp').offset().top
+      button.removeClass('open');
+      $('.headerBanzuke.sp').removeClass('open');
+      $(window).scrollTop(offset);
+      button.html('<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>');
+    } else {
+      button.addClass('open');
+      $('.headerBanzuke.sp').addClass('open');
+      button.html('<i class="fa fa-chevron-circle-up" aria-hidden="true"></i>');
+    }
+  });
+</script>
+
 <!--関連記事インフィード広告-->
 <script>
     $('ul.related-entries > li').eq(2).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><ins class=\"adsbygoogle\"     style=\"display:block\"     data-ad-format=\"fluid\"     data-ad-layout-key=\"-ga-2t-3w+5b+o7\"     data-ad-client=\"ca-pub-7898839193224300\"     data-ad-slot=\"1012737808\"></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});<\/script>')

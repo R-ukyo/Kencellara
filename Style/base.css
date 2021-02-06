@@ -2212,11 +2212,26 @@ input.accordion {
   background-color: cornsilk;
 }
 .headerBanzuke.sp {
-  border-top: 5px ridge black;
-  border-bottom: 5px ridge black;
-  border-radius: 15px;
-  height: 420px;
-  overflow-y: scroll;
+  /* border-top: 5px ridge black;
+  border-bottom: 5px ridge black; */
+  height: 465px;
+  overflow-y: hidden;
+}
+.headerBanzuke.sp.open {
+  height: calc(100% + 45px);
+}
+.openBanzuke {
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  top: -355px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: antiquewhite;
+}
+.openBanzuke.open {
+  top: 0;
 }
 .page-index .headerBanzuke {
   display: block;
