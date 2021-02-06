@@ -2180,7 +2180,7 @@ input.accordion {
 /* ヘッダー番付 */
 .headerBanzuke {
   display: none;
-  padding: 10px 0 10px 15px;
+  padding: 10px 0;
   background-color: cornsilk;
 }
 .page-index .headerBanzuke {
@@ -2202,9 +2202,13 @@ input.accordion {
 .headerBanzuke .lanking {
   width: 6%;
   padding-left: 5px;
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
   color: black;
+}
+.headerBanzuke.sp .lanking {
+  width: 15%;
 }
 .headerBanzuke .lanking.first {
   text-shadow: 3px 3px 3px gold;
@@ -2217,7 +2221,10 @@ input.accordion {
 }
 .headerBanzuke .articleZone {
   width: 30%;
-  padding: 0 10px;
+  padding: 5px 10px;
+}
+.headerBanzuke.sp .articleZone {
+  width: 55%;
 }
 .headerBanzuke h3 {
   margin: 5px 0;
@@ -2232,6 +2239,9 @@ input.accordion {
   position: relative;
   display:inline-block;
   font-size: 25px;
+}
+.sp .star-rating {
+  font-size: 20px;
 }
 .star-rating .star-rating-item{
   position:absolute;
@@ -2266,9 +2276,6 @@ footer {
   }
   .snsShare .twitter-button [class*=blogicon-].lg {
     right: -2%;
-  }
-  .page-index .headerBanzuke {
-    display: none;
   }
 }
 /* スマホ・タブレット */
@@ -2332,6 +2339,9 @@ footer {
     top: -20px;
     font-size: 60px !important;
   }
+  .headerBanzuke.pc {
+    display: none;
+  }
 }
 /* PC */
 @media screen and (min-width: 767px) {
@@ -2357,6 +2367,9 @@ footer {
     position: absolute;
     top: -10px;
     font-size: 80px !important;
+  }
+  .headerBanzuke.sp {
+    display: none;
   }
 }
 @media screen and (min-width: 1000px) {
