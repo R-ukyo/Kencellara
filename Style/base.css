@@ -1818,6 +1818,9 @@ body.page-archive-category .pager {
 /* スライドショー */
 
 /* 記事内 */
+.entry-header-html {
+  padding-top: 25px;
+}
 /*シェアボタン*/
 .snsShareInner {
   margin: 10px auto 5px;
@@ -2207,6 +2210,13 @@ input.accordion {
   display: none;
   padding: 10px 0;
   background-color: cornsilk;
+}
+.headerBanzuke.sp {
+  border-top: 5px ridge black;
+  border-bottom: 5px ridge black;
+  border-radius: 15px;
+  height: 420px;
+  overflow-y: scroll;
 }
 .page-index .headerBanzuke {
   display: block;
