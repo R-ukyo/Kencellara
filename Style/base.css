@@ -348,9 +348,9 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 .list10 li:after {
   content: "戦歴";
 }
-.list03 li:after {
+/* .list03 li:after {
   content: "メニュー";
-}
+} */
 .list02 li:after {
   content: "まとめ";
 }
@@ -1921,6 +1921,31 @@ body.page-archive-category .pager {
 }
 .page-entry .pager {
   display: none;
+}
+.entry-footer-section {
+  display: none;
+}
+.menuBox {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  margin: auto;
+  background-color: #fffbf5;
+  border: 3px solid #4682b4;
+  border-bottom: none;
+}
+.menuList,
+.list03 {
+  margin: 0;
+  height: 200px;
+  overflow-y: scroll;
+  background-color: #fffbf5;
+}
+.menuCaution {
+  margin-top: 5px;
+  text-align: end;
+  font-size: 0.7em;
 }
 /* 記事内 */
 
