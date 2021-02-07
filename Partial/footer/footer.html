@@ -2,11 +2,13 @@
 <script src="https://hatena.wackwack.net/v1.1/js/breadcrumb.min.js"></script>
 <script src="https://hatena.wackwack.net/v1.1/js/category_archive.min.js"></script>
 
+<!-- 店舗数表示 -->
 <script>
   const storeCount = $(".hatena-urllist .category-三重県のグルメ制覇").last().text().trim().substr(-4,3);
   $("#storeCounter").text(storeCount);
 </script>
 
+<!-- 番付スマホ -->
 <script>
   const button = $('#openBanzuke');
   button.on('click', () => {
@@ -21,6 +23,21 @@
       $('.headerBanzuke.sp').addClass('open');
       button.html('<i class="fa fa-chevron-circle-up" aria-hidden="true"></i>');
     }
+  });
+</script>
+
+<!-- ケンチェの窓口モーダル -->
+<script>
+  $('.js-modal-open').on('click', () => {
+    const target = $('.js-modal-open').data('target');
+    const modal = document.getElementById(target);
+    $(modal).fadeIn(300);
+    return false;
+  });
+
+  $('.js-modal-close').on('click', () => {
+    $('.js-modal').fadeOut( 300 );
+    return false;
   });
 </script>
 
