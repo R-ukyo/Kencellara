@@ -2417,11 +2417,10 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   color: black;
 }
 @media screen and (max-width: 700px) {
+  .kenceWindowAnnounce,
+  .kenceWindowCaution,
   .kenceWindowModalOpen {
-    display: none;
-  }
-  .kenceWindowAnnounce {
-    display: none;
+    display: none !important;
   }
 }
 
