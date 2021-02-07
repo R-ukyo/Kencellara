@@ -2409,6 +2409,9 @@ footer {
   .page-archive #main-inner {
     padding: 0 20px;
   }
+  .entry {
+    padding: 0 20px;
+  }
 }
 /* PC */
 @media screen and (min-width: 767px) {
@@ -2419,7 +2422,7 @@ footer {
     border: 3px outset antiquewhite;
   }
   .entry {
-    padding: 15px 40px;
+    padding: 10px 40px;
   }
   .header-info a {
     font-size: 1.5em;
