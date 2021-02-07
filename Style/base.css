@@ -1651,6 +1651,9 @@ body.page-static_page article {
 .codoc-entry {
   border: 3px outset crimson;
 }
+#top-box {
+  margin: auto;
+}
 /*カード*/
 .archive-entry {
   content-visibility: auto;
@@ -1705,7 +1708,7 @@ body.page-archive-category .pager {
   width: 50%;
   border: 3px outset burlywood;
   background-color: antiquewhite;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   text-shadow: 2px 2px 2px white;
   cursor: pointer;
@@ -2403,6 +2406,9 @@ footer {
   .headerBanzuke.pc {
     display: none;
   }
+  .page-archive #main-inner {
+    padding: 0 20px;
+  }
 }
 /* PC */
 @media screen and (min-width: 767px) {
@@ -2411,6 +2417,9 @@ footer {
     padding: 5px 10px !important;
     background-color: antiquewhite;
     border: 3px outset antiquewhite;
+  }
+  .entry {
+    padding: 15px 40px;
   }
   .header-info a {
     font-size: 1.5em;
