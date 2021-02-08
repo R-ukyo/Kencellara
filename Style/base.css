@@ -1824,73 +1824,6 @@ body.page-archive-category .pager {
 .entry-header-html {
   padding-top: 25px;
 }
-/*シェアボタン*/
-.snsShareInner {
-  margin: 10px auto 5px;
-  width: 90%;
-  text-align: center;
-}
-.snsShareInner span {
-  font-size: 22px;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px silver;
-  position: relative;
-  top: -8px;
-  left: -8px;
-}
-.snsShareInner a {
-  text-decoration: none;
-}
-.snsShareInner [class*=blogicon-].lg {
-  font-size: 1.5em;
-  font-style: normal !important;
-}
-.snsShare .hatena-bookmark-button {
-  color: #00a4de;
-  font-size: 40px;
-}
-.snsShare .hatena-bookmark-button:hover {
-  color: #00a4de;
-}
-.snsShare .facebook-button {
-  position: relative;
-  font-size: 36px;
-  margin: auto;
-  color: #3b5998;
-  left: -5px;
-}
-.snsShare .facebook-button:hover {
-  color: #3b5998;
-}
-.snsShare .twitter-button {
-  position: relative;
-  font-size: 30px;
-  vertical-align: bottom;
-  color: #fff;
-  background-color: #00aced;
-  top: -10px;
-  right: 9px;
-  border-radius: 5px;
-}
-.snsShare .twitter-button:hover {
-  color: #fff;
-}
-.snsShare .twitter-button [class*=blogicon-].lg {
-  position: relative;
-  vertical-align: -20%;
-  right: -1%;
-  font-size: 1.19em;
-}
-.snsShare .line-button img {
-  position: relative;
-  width: 42px;
-  height: 43px;
-  top: 5px;
-}
-.snsShare.below .line-button img {
-  top: -12px;
-}
-/* シェアボタン */
 .emphasize-link ul {
   margin: 0 0 0 1.5em;
 }
@@ -2058,6 +1991,21 @@ body.page-archive-category .pager {
 .page-index .monthlyBlogInfo {
   display: block;
 }
+
+/* SNS共通 */
+.twitter-button {
+  border-radius: 5px;
+  color: #fff !important;
+  background-color: #00aced;
+}
+.twitter-button:hover {
+  color: #fff;
+}
+.snsContainer a:hover,
+.snsShareInner a:hover {
+  opacity: 0.8;
+}
+/* SNSアイコン */
 .miniInfoArea {
   height: 30px;
   margin: 10px 0;
@@ -2078,11 +2026,82 @@ body.page-archive-category .pager {
 }
 .snsContainer img {
   height: 30px !important;
-  border-radius: 10px;
+  border-radius: 5px;
 }
-img.TwitterIcon {
-  border-radius: 0px;
+.snsContainer .twitter-button {
+  text-align: center;
+  font-size: 25px;
+  width: 30px;
 }
+.blogicon-twitter.lg {
+  font-size: 25px;
+  vertical-align: 15%;
+}
+.snsContainer.profile .twitter-button {
+  height: 30px;
+}
+/*シェアボタン*/
+.snsShareInner {
+  margin: 10px auto 5px;
+  width: 90%;
+  text-align: center;
+}
+.snsShareInner span {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px silver;
+  position: relative;
+  top: -8px;
+  left: -8px;
+}
+.snsShareInner a {
+  text-decoration: none;
+}
+.snsShareInner [class*=blogicon-].lg {
+  font-size: 1.5em;
+  font-style: normal !important;
+}
+.snsShare .hatena-bookmark-button {
+  color: #00a4de;
+  font-size: 40px;
+}
+.snsShare .hatena-bookmark-button:hover {
+  color: #00a4de;
+}
+.snsShare .facebook-button {
+  position: relative;
+  font-size: 36px;
+  margin: auto;
+  color: #3b5998;
+  left: -5px;
+}
+.snsShare .facebook-button:hover {
+  color: #3b5998;
+}
+.snsShare .twitter-button {
+  position: relative;
+  font-size: 30px;
+  vertical-align: bottom;
+  top: -10px;
+  right: 9px;
+}
+.snsShare .twitter-button [class*=blogicon-].lg {
+  position: relative;
+  vertical-align: -20%;
+  right: -1%;
+  font-size: 1.19em;
+}
+.snsShare .line-button img {
+  position: relative;
+  width: 42px;
+  height: 43px;
+  top: 5px;
+}
+.snsShare.below .line-button img {
+  top: -12px;
+}
+
+
 .storeCountArea {
   display: none;
 }
