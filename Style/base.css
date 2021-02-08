@@ -2013,7 +2013,7 @@ body.page-archive-category .pager {
 .snsContainer {
   display: flex;
   margin: 0 auto;
-  width: 220px;
+  width: 300px;
   height: 100%;
 }
 .snsContainer span {
@@ -2040,6 +2040,21 @@ body.page-archive-category .pager {
 .snsContainer.profile .twitter-button {
   height: 30px;
 }
+/* 追尾 */
+.miniInfoArea.fixed {
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 15px 0;
+}
+/* .miniInfoArea.fixed.none {
+  opacity: 0;
+  z-index: -1;
+} */
 /*シェアボタン*/
 .snsShareInner {
   margin: 10px auto 5px;
