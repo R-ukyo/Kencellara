@@ -137,16 +137,15 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 .page-archive-category .article-area,
 .page-archive-category .article-container
 {
-  display: none;/*記事ページなどには表示しない*/
+  display: none;
 }
-/*=== end of article window ===*/
 
 /*=== トップページ 地域別グルメ カテゴリー別 ===*/
 .article-area-1 {
-  background-color: white;/*背景色*/
+  background-color: white;
 }
 .article-container-1 {
-  width: 90%;/*画像表示の幅*/
+  width: 90%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -158,7 +157,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   text-align: center;
 }
 .article-container-1.first {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .article-container-1.last {
   padding-bottom: 20px;
@@ -1522,28 +1521,14 @@ li.urllist-item::after {
   display: none;
 }
 .recommend-heading {
-  margin: 0;
-  padding-top: 15px;
-  font-size: 22px;
+  margin: 30px auto 10px;
+  width: 350px;
+  box-shadow: 5px 5px 5px 1px black;
   font-weight: bold;
   text-align: center;
   position: relative;
-  margin-bottom: 10px;
   text-shadow: 1px 1px 1px silver;
-}
-.recommend-heading:after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  display: inline-block;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #8AC4C8;
+  font-size: 22px;
 }
 
 /*一覧記事タイトル*/
@@ -1889,25 +1874,6 @@ body.page-archive-category .pager {
 /* 記事内 */
 
 /* サイドバー */
-/* #box2-inner .hatena-module:nth-child(3),
-#box2-inner .hatena-module:nth-child(5) {
-  content-visibility: auto;
-  contain-intrinsic-size: 650px;
-}
-#box2-inner .hatena-module:nth-child(8),
-#box2-inner .hatena-module:nth-child(10) {
-  content-visibility: auto;
-  contain-intrinsic-size: 1100px;
-}
-.hatena-module-links,
-.hatena-module-archive {
-  content-visibility: auto;
-  contain-intrinsic-size: 210px;
-}
-.hatena-module-category {
-  content-visibility: auto;
-  contain-intrinsic-size: 170px;
-} */
 .supportNavTitle {
   margin-bottom: 10px;
 }
@@ -2184,8 +2150,11 @@ body.page-archive-category .pager {
   height: 100%;
 }
 .areaSearchTitle {
+  width: 250px;
   text-align: center;
   font-weight: bold;
+  margin: 10px auto;
+  box-shadow: 5px 5px 5px 1px black;
 }
 .areaSearchInner {
   display: flex;
@@ -2229,12 +2198,13 @@ body.page-archive-category .pager {
 .kiho {
   display: none;
 }
+/* PC */
 @media screen and (min-width: 750px) {
   .areaSearchZone {
     height: 865px;
   }
   .areaSearchContainer {
-    margin: 15px 0;
+    margin: 30px 0;
   }
   .areaSearchTitle {
     height: 35px;
@@ -2278,16 +2248,17 @@ body.page-archive-category .pager {
     font-size: 20px;
   }
 }
+/* スマホ */
 @media screen and (max-width: 749px) {
   .areaSearchZone {
-    height: 430px;
+    height: 435px;
   }
   .areaSearchContainer {
-    margin: 10px 0;
+    margin: 15px 0;
   }
   .areaSearchTitle {
-    height: 30px;
-    font-size: 18px;
+    height: 35px;
+    font-size: 22px;
   }
   .areaSearchInner {
     height: 400px;
@@ -2335,17 +2306,19 @@ body.page-archive-category .pager {
 }
 .page-index .howtoPulldown {
   display: block;
-  border: 3px ridge black;
+  border: 2px solid silver;
   border-radius: 15px;
+  background: linear-gradient(#fff, #FFF8DC);
 }
 .howtoPulldown .pulldownLabel {
   margin: 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 23px;
   font-weight: bold;
   border-radius: 15px;
   text-align: center;
   position: relative;
+  color: firebrick;
 }
 .pulldownLabel {
   width: 100%;
