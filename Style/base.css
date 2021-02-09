@@ -2001,6 +2001,16 @@ body.page-archive-category .pager {
 .twitter-button:hover {
   color: #fff;
 }
+.blogicon-twitter.lg {
+  font-size: 25px;
+  vertical-align: 13%;
+}
+.facebook-button {
+  color: #3b5998 !important;
+}
+.facebook-button:hover {
+  color: #3b5998;
+}
 .snsContainer a:hover,
 .snsShareInner a:hover {
   opacity: 0.8;
@@ -2013,7 +2023,7 @@ body.page-archive-category .pager {
 .snsContainer {
   display: flex;
   margin: 0 auto;
-  width: 300px;
+  width: 320px;
   height: 100%;
 }
 .snsContainer span {
@@ -2033,12 +2043,14 @@ body.page-archive-category .pager {
   font-size: 25px;
   width: 30px;
 }
-.blogicon-twitter.lg {
-  font-size: 25px;
-  vertical-align: 15%;
-}
 .snsContainer.profile .twitter-button {
   height: 30px;
+}
+.snsContainer .facebook-button {
+  font-size: 29px;
+}
+.snsContainer .blogicon-facebook.lg {
+  vertical-align: 10%;
 }
 /* 追尾 */
 .miniInfoArea.fixed {
@@ -2083,11 +2095,7 @@ body.page-archive-category .pager {
   position: relative;
   font-size: 36px;
   margin: auto;
-  color: #3b5998;
   left: -5px;
-}
-.snsShare .facebook-button:hover {
-  color: #3b5998;
 }
 .snsShare .twitter-button {
   position: relative;
