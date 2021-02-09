@@ -7,14 +7,14 @@ width = int(sys.argv[1])
 
 # png to jpg
 pngFiles = glob.glob("./*.png")
-# for file in pngFiles:
-#     fileName = os.path.splitext(os.path.basename(file))[0]
-#     saveFile = fileName + '.jpg'
-#     image = Image.open(file).convert('RGB')
-#     image.save(saveFile)
-#
-# # downsize jpg in this dir
-# jpgFiles = glob.glob("./*.jpg")
+for file in pngFiles:
+    fileName = os.path.splitext(os.path.basename(file))[0]
+    saveFile = fileName + '.jpg'
+    image = Image.open(file).convert('RGB')
+    image.save(saveFile)
+
+# downsize jpg in this dir
+jpgFiles = glob.glob("./*.jpg")
 for file in pngFiles:
     saveFile = os.path.basename(file)
     image = Image.open(file)
