@@ -53,9 +53,6 @@ article i {
   color: #fff;
 }
 
-
-
-
 /*関連記事カスタム*/
 li.urllist-item.related-entries-item {
   border-bottom: solid 2px #ececec;
@@ -140,7 +137,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   display: none;
 }
 
-/*=== トップページ 地域別グルメ カテゴリー別 ===*/
+/*=== トップページ カテゴリー別検索 ===*/
 .article-area-1 {
   background-color: white;
 }
@@ -165,9 +162,9 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 .article-box-1 {
   max-width: 150px;
   max-height: 150px;
-  margin: 10px auto;/*画像周りの空白*/
+  margin: 10px auto;
   box-sizing: border-box;
-  border: 0px solid #444;/*画像の枠色*/
+  border: 0px solid #444;
   width: 25%;
   padding: 0px;
   overflow: hidden;
@@ -178,14 +175,14 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   width: 100%;
   display: block;
   object-fit: cover;
-  transition-duration: 0.5s;/*ゆっくり戻る*/
+  transition-duration: 0.5s;
 }
-.article-img-1:hover{/*触れた時*/
+.article-img-1:hover {
   opacity: 0.5;
 }
-.article-img-1:hover img {/*マウスオーバーで拡大表示*/
-  transform: scale(1.5);/*1.1倍に表示*/
-  transition-duration: 0.5s;/*ゆっくり拡大*/
+.article-img-1:hover img {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
 }
 .page-entry .article-area-1,
 .page-entry .article-container-1,
@@ -194,7 +191,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 .page-archive-category .article-area-1,
 .page-archive-category .article-container-1
 {
-  display: none;/*記事ページなどには表示しない*/
+  display: none;
 }
 
 /* 記事内強調するための囲い枠*/
@@ -202,9 +199,9 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #474747;
-  background: whitesmoke;/*背景色*/
-  border-left: double 7px #4682b4;/*左線*/
-  border-right: double 7px #4682b4;/*右線*/
+  background: whitesmoke;
+  border-left: double 7px #4682b4;
+  border-right: double 7px #4682b4;
 }
 .box7 p {
   margin: 0;
@@ -257,7 +254,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   font-family: "blogicon";
   color: #fff;
 }
-.entry-content .emphasize-link-2 p{
+.entry-content .emphasize-link-2 p {
   margin: 0 0 0 0em;
 }
 
@@ -321,16 +318,16 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 .list li:last-of-type {
   border-bottom: none;
 }
+/*リスト内のアイコン*/
 .list li:before {
-  /*リスト内のアイコン*/
   font-family: "FontAwesome";
-  content: "\f138";/*アイコン種類*/
+  content: "\f138";
   position: absolute;
-  left : 0.5em; /*左端からのアイコンまで*/
-  color: #4682b4; /*アイコン色*/
+  left : 0.5em;
+  color: #4682b4;
 }
+/*タイトルタブ*/
 .list li:after {
-  /*タイトルタブ*/
   background: #4682b4;
   color: #fff;
   font-weight: bold;
@@ -339,7 +336,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   bottom: 100%;
   padding: 1px 7px;
   /* contentは個別のCSSで書く */
-  letter-spacing: 0.05em;/*字間*/
+  letter-spacing: 0.05em;
 }
 .list11 li:after {
   content: "具体例";
@@ -393,24 +390,24 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 .list05 li:last-of-type {
   border-bottom: none;
 }
+/*リスト内のアイコン*/
 .list11 li:before,
 .list10 li:before,
 .list03 li:before,
 .list02 li:before,
 .list05 li:before {
-  /*リスト内のアイコン*/
   font-family: "FontAwesome";
-  content: "\f138";/*アイコン種類*/
+  content: "\f138";
   position: absolute;
-  left : 0.5em; /*左端からのアイコンまで*/
-  color: #4682b4; /*アイコン色*/
+  left : 0.5em;
+  color: #4682b4;
 }
+/*タイトルタブ*/
 .list11 li:after,
 .list10 li:after,
 .list03 li:after,
 .list02 li:after,
 .list05 li:after {
-  /*タイトルタブ*/
   background: #4682b4;
   color: #fff;
   font-weight: bold;
@@ -418,7 +415,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   left: -2px;
   bottom: 100%;
   padding: 1px 7px;
-  letter-spacing: 0.05em;/*字間*/
+  letter-spacing: 0.05em;
 }
 
 /*黒線枠組みカスタム*/
@@ -539,7 +536,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
 }
 
 
-/* 前のページ 後のページデザイン */
+/* ページャー */
 .pager {
   position: relative;
   margin: 2em 0;
@@ -697,11 +694,6 @@ ul.table-of-contents a {
   padding: 2em 40px 1em 40px;
   font-size: 80%;
 }
-/* #blog-title-content a {
-  font-size: 00px;
-  font-weight: 100;
-  color: #fff;
-} */
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -737,8 +729,7 @@ ul.table-of-contents a {
 }
 
 
-/*吹き出し設置*/
-/* 吹き出しのCSS　*/
+/* 吹き出し */
 .entry-content .l-fuki,
 .entry-content .r-fuki {
   position: relative;
@@ -1018,8 +1009,6 @@ h4 {
 }
 
 
-/*カテゴリ作成*/
-
 
 /* サイドバー最新記事CSS */
 .ribbon-container {
@@ -1031,7 +1020,7 @@ h4 {
 	background: #32cd32;
 	text-shadow: 0 1px 2px #C3781D;
 	color: #fff !important;
-	top: 3px;/* リボンの位置調整して下さい */
+	top: 3px;
 	left: 0;
 	font-size: 9px;
 	padding: 2px 3px;
@@ -1052,7 +1041,7 @@ li.urllist-item::after {
 /* サイドバー題名 直線重ねる */
 .hatena-module-title {
   color: #555;
-  font-size: 120%;/* 文字サイズ */
+  font-size: 120%;
   position: relative;
   text-align: center;
   display: -webkit-flex;
@@ -1620,7 +1609,8 @@ li.urllist-item::after {
   background-color: antiquewhite;
   color: black;
 }
-/* ヘッダーから移植ここまで */
+
+
 
 /* 右京追加CSS */
 /* 広域 */
@@ -1651,14 +1641,14 @@ body.page-static_page article {
 .entry-thumb {
   border-radius: 0px;
 }
-/* 広域 */
+
 
 /* main */
 #content {
   content-visibility: auto;
   contain-intrinsic-size: 8200px;
 }
-/* main */
+
 
 /* パーツ */
 .p_f12em {
@@ -1672,7 +1662,7 @@ body.page-static_page article {
 .instaLink {
   color: deeppink;
 }
-/* 一般 */
+
 
 /* カテゴリー */
 .categoryImg {
@@ -1871,7 +1861,7 @@ body.page-archive-category .pager {
   text-align: end;
   font-size: 0.7em;
 }
-/* 記事内 */
+
 
 /* サイドバー */
 .supportNavTitle {
@@ -1892,7 +1882,7 @@ body.page-archive-category .pager {
 .kenceHistory li {
   font-size: 80%;
 }
-/* サイドバー */
+
 
 .eventArea {
   display: none;
