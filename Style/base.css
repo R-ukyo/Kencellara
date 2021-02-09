@@ -2296,6 +2296,7 @@ body.page-archive-category .pager {
 }
 .page-index .howtoPulldown {
   display: block;
+  margin: 20px 10px 30px;
   border: 2px solid silver;
   border-radius: 15px;
   background: linear-gradient(#fff, #FFF8DC);
