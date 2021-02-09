@@ -2138,6 +2138,11 @@ body.page-archive-category .pager {
   border-radius: 10px;
   text-shadow: 2px 2px 2px silver;
   font-size: 24px;
+  box-shadow: 5px 5px 5px gold;
+}
+.storeCountContainer img {
+  width: 32px;
+  vertical-align: text-top;
 }
 .storeCounter {
   font-size: 1.4em;
