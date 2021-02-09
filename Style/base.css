@@ -1754,6 +1754,7 @@ body.page-archive-category .pager {
   margin: 15px 0;
   font-size: 30px;
 }
+
 /* ロードバイクトップ */
 .roadbikeRecommendArea {
   margin-bottom: 20px;
@@ -1787,8 +1788,7 @@ body.page-archive-category .pager {
 .roadbikeRecommendArea .article-box {
   width: 50%;
 }
-/* ロードバイクトップ */
-/* カテゴリー */
+
 
 /* スライドショー */
 .slider {
@@ -1818,7 +1818,7 @@ body.page-archive-category .pager {
 .slick-prev {
   z-index: 1;
 }
-/* スライドショー */
+
 
 /* 記事内 */
 .entry-header-html {
@@ -2051,10 +2051,6 @@ body.page-archive-category .pager {
   margin: 0;
   padding: 15px 0;
 }
-/* .miniInfoArea.fixed.none {
-  opacity: 0;
-  z-index: -1;
-} */
 /*シェアボタン*/
 .snsShareInner {
   margin: 10px auto 5px;
@@ -2141,6 +2137,185 @@ body.page-archive-category .pager {
   margin: 0 8px;
   color: crimson;
 }
+
+
+/* 地域別検索エリア */
+.areaSearchZone {
+  display: none;
+}
+.page-index .areaSearchZone {
+  display: block;
+}
+.areaList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.areaSearchZone li {
+  list-style: none;
+  border: 1px solid #bce2e8;
+  border-radius: 5px;
+}
+.areaSearchZone a {
+  display: block;
+  background: linear-gradient(#fff, #bce2e8);
+}
+.areaSearchZone a:hover {
+  opacity: 0.6;
+  color: #fff;
+  background: linear-gradient(#fff, #ff6600);
+}
+.areaSearchContainer {
+  height: 100%;
+}
+.areaSearchTitle {
+  text-align: center;
+  font-weight: bold;
+}
+.areaSearchInner {
+  display: flex;
+  margin: auto;
+  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209002422.jpg");
+  background-size: contain;
+}
+.areaZone {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+.areaHeader {
+  color: #fff;
+  border-radius: 3px;
+}
+.hokubuHeader {
+  background-color: #1D87FB;
+}
+.igaHeader {
+  background-color: #92D050;
+}
+.chubuHeader {
+  background-color: #FFD13F;
+}
+.iseShimaHeader {
+  background-color: #91BCE3;
+}
+.higashikishuHeader {
+  background-color: #DA54BD;
+}
+.inabe,
+.komono,
+.suzuka,
+.nabari,
+.watarai,
+.tamaki,
+.taiki,
+.kumano,
+.mihama,
+.kiho {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .areaSearchZone {
+    height: 865px;
+  }
+  .areaSearchContainer {
+    margin: 15px 0;
+  }
+  .areaSearchTitle {
+    height: 35px;
+    font-size: 22px;
+  }
+  .areaSearchInner {
+    height: 800px;
+    width: 700px;
+  }
+  .areaZone {
+    width: 150px;
+    height: 200px;
+  }
+  .areaZone.hokubu {
+    top: 40px;
+    left: 150px;
+  }
+  .areaZone.iga {
+    top: 220px;
+    left: -100px;
+  }
+  .areaZone.chubu {
+    top: 220px;
+    right: -250px;
+  }
+  .areaZone.iseShima {
+    top: 520px;
+    right: -115px;
+  }
+  .areaZone.higashikishu {
+    top: 600px;
+    left: -600px;
+  }
+  .areaHeader {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .areaSearchZone li {
+    margin-bottom: 8px;
+    width: 65px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .areaSearchZone {
+    height: 430px;
+  }
+  .areaSearchContainer {
+    margin: 10px 0;
+  }
+  .areaSearchTitle {
+    height: 30px;
+    font-size: 18px;
+  }
+  .areaSearchInner {
+    height: 400px;
+    width: 350px;
+  }
+  .areaZone {
+    width: 80px;
+    height: 100px;
+  }
+  .areaZone.hokubu {
+    top: 10px;
+    left: 95px;
+  }
+  .areaZone.iga {
+    top: 135px;
+    left: -40px;
+  }
+  .areaZone.chubu {
+    top: 75px;
+    right: -110px;
+  }
+  .areaZone.iseShima {
+    top: 255px;
+    right: -5px;
+  }
+  .areaZone.higashikishu {
+    top: 240px;
+    left: -260px;
+  }
+  .areaHeader {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .areaSearchZone li {
+    margin-bottom: 4px;
+    width: 85%;
+    font-size: 13px;
+  }
+}
+
+
 /* ヘッダープルダウンエリア */
 .howtoPulldown {
   display: none;
