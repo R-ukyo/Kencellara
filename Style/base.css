@@ -2156,6 +2156,7 @@ body.page-archive-category .pager {
   position: relative;
   text-align: center;
   font-weight: bold;
+  flex-shrink: 0;
 }
 .areaHeader {
   color: #fff;
@@ -2191,7 +2192,7 @@ body.page-archive-category .pager {
 /* PC */
 @media screen and (min-width: 750px) {
   .areaSearchZone {
-    height: 865px;
+    height: 855px;
   }
   .areaSearchContainer {
     margin: 30px 0;
@@ -2209,24 +2210,24 @@ body.page-archive-category .pager {
     height: 200px;
   }
   .areaZone.hokubu {
-    top: 40px;
+    top: 30px;
     left: 150px;
   }
   .areaZone.iga {
-    top: 220px;
-    left: -100px;
+    top: 230px;
+    left: -120px;
   }
   .areaZone.chubu {
-    top: 220px;
-    right: -250px;
+    top: 190px;
+    right: -230px;
   }
   .areaZone.iseShima {
     top: 520px;
-    right: -115px;
+    right: -90px;
   }
   .areaZone.higashikishu {
-    top: 600px;
-    left: -600px;
+    top: 530px;
+    left: -580px;
   }
   .areaHeader {
     font-size: 30px;
@@ -2255,36 +2256,36 @@ body.page-archive-category .pager {
     width: 350px;
   }
   .areaZone {
-    width: 80px;
+    width: 100px;
     height: 100px;
   }
   .areaZone.hokubu {
     top: 10px;
-    left: 95px;
+    left: 70px;
   }
   .areaZone.iga {
-    top: 135px;
-    left: -40px;
+    top: 150px;
+    left: -95px;
   }
   .areaZone.chubu {
-    top: 75px;
-    right: -110px;
+    top: 95px;
+    right: -45px;
   }
   .areaZone.iseShima {
     top: 255px;
-    right: -5px;
+    right: 90px;
   }
   .areaZone.higashikishu {
-    top: 240px;
-    left: -260px;
+    top: 250px;
+    left: -395px;
   }
   .areaHeader {
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 4px;
   }
   .areaSearchZone li {
     margin-bottom: 4px;
-    width: 85%;
+    width: 46px;
     font-size: 13px;
   }
 }
