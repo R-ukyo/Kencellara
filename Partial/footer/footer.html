@@ -8,6 +8,7 @@
   $("#storeCounter").text(storeCount);
 </script>
 
+<!-- SNSアイコン追尾 -->
 <script>
   const fixedNode = $('#jsFixedSNS');
   const scrollStart = fixedNode.offset().top;
@@ -62,6 +63,7 @@
     $('ul.related-entries > li').eq(2).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><ins class=\"adsbygoogle\"     style=\"display:block\"     data-ad-format=\"fluid\"     data-ad-layout-key=\"-ga-2t-3w+5b+o7\"     data-ad-client=\"ca-pub-7898839193224300\"     data-ad-slot=\"1012737808\"></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});<\/script>')
 </script>
 
+<!-- スマホ記事一覧に広告挿入 -->
 <script>
   if ($(window).width() < 767) {
     $('.page-archive .autopagerize_page_element').eq(0).after('<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"><\/script><section class=\"archive-entry test-archive-entry ad\"><ins class=\"adsbygoogle\"style=\"display:block\"data-ad-client=\"ca-pub-7898839193224300\"data-ad-slot=\"9894433633\"data-ad-format=\"rectangle\"data-full-width-responsive=\"false\"><\/ins><\/section><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>');

@@ -1614,6 +1614,9 @@ li.urllist-item::after {
 
 /* 右京追加CSS */
 /* 広域 */
+html {
+  scroll-padding-top: 100px;
+}
 header.archive-header-category {
   margin: 0 0 20px 0;
 }
