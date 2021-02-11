@@ -2070,7 +2070,7 @@ body.page-archive-category .pager {
   position: relative;
   font-size: 30px;
   vertical-align: bottom;
-  top: -10px;
+  top: -13px;
   right: 9px;
 }
 .snsShare .twitter-button [class*=blogicon-].lg {
@@ -2079,14 +2079,14 @@ body.page-archive-category .pager {
   right: -1%;
   font-size: 1.19em;
 }
-.snsShare .line-button img {
-  position: relative;
-  width: 42px;
-  height: 43px;
-  top: 5px;
+.snsShare i {
+  font-style: normal !important;
 }
-.snsShare.below .line-button img {
-  top: -12px;
+.snsShare .line-button {
+  font-size: 47px;
+}
+.snsShare .line-button i {
+  color: #00B900;
 }
 
 
