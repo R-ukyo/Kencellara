@@ -2300,10 +2300,16 @@ body.page-archive-category .pager {
 }
 .page-index .howtoPulldown {
   display: block;
-  margin: 20px 10px 30px;
+  max-width: 700px;
+  margin: 20px auto 30px;
   border: 2px solid silver;
   border-radius: 15px;
   background: linear-gradient(#fff, #FFF8DC);
+}
+@media screen and (max-width: 700px) {
+  .page-index .howtoPulldown {
+    margin: 20px 10px 30px;
+  }
 }
 .howtoPulldown .pulldownLabel {
   margin: 0;
