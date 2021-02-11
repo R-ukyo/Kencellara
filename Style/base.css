@@ -1646,6 +1646,13 @@ body.page-static_page article {
 }
 
 
+/* 臨時 */
+.noticeZone {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
 /* main */
 #content {
   content-visibility: auto;
