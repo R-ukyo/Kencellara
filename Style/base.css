@@ -1573,7 +1573,7 @@ li.urllist-item::after {
 .headernew {
   margin: 0px!important;
   border: 10px ridge antiquewhite;
-  background-color: darkslategray;
+  background: content-box radial-gradient(white, darkslategrey);
 }
 .headernew img {
   max-width: 1100px;
@@ -2679,7 +2679,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   }
   /* 2列表示 */
   .headernew {
-    border: 7px ridge antiquewhite;
+    border: 5px ridge antiquewhite;
   }
   .pulldownInner p {
     display: block;
