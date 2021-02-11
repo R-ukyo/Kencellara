@@ -2153,7 +2153,7 @@ body.page-archive-category .pager {
   height: 100%;
 }
 .areaSearchTitle {
-  width: 250px;
+  width: 270px;
   text-align: center;
   font-weight: bold;
   margin: 10px auto;
@@ -2300,6 +2300,95 @@ body.page-archive-category .pager {
     margin-bottom: 4px;
     width: 46px;
     font-size: 13px;
+  }
+}
+
+
+/* ジャンル検索 */
+.genreSearchZone {
+  display: none;
+  margin: 30px 0 0;
+  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210212/20210212010912.jpg");
+}
+.page-index .genreSearchZone {
+  display: block;
+}
+.genreSearchContainer {
+  padding: 25px 0;
+}
+.genreSearchTitle {
+  font-size: 22px;
+  width: 290px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto;
+  box-shadow: 5px 5px 5px 1px silver;
+  background-color: white;
+}
+.genreSearchInner {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin: auto;
+}
+.genreSearchColumn {
+  display: flex;
+}
+.genreSearchCard {
+  transition: 0.5s;
+  background: radial-gradient(ellipse closest-side, #433d3c, #8d6449 10%, #bc763c 50%, #946243);
+  font-weight: bold;
+  text-align: center;
+}
+.genreSearchCard:hover {
+  transform: rotateZ(10deg);
+}
+.genreSearchColumn .fa-bookmark {
+  margin: auto;
+  position: relative;
+}
+.genreSearchCard a {
+  display: block;
+  color: white;
+  font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, sans-serif;
+}
+/* PC */
+@media screen and (min-width: 752px) {
+  .genreSearchCard {
+    margin: 45px;
+    height: 250px;
+  }
+  .genreSearchColumn .fa-bookmark {
+    font-size: 40px;
+    top: 80px;
+    text-shadow: 1px 1px 2px burlywood;
+  }
+  .genreSearchCard {
+    box-shadow: 3px 3px 3px 3px lightslategrey;
+    border: 3px outset burlywood;
+  }
+  .genreSearchCard a {
+    font-size: 45px;
+    padding: 45px 10px 0;
+  }
+}
+/* スマホ */
+@media screen and (max-width: 752px) {
+  .genreSearchCard {
+    margin: calc(45px / 2 - 6px);
+    height: calc(250px / 2);
+  }
+  .genreSearchColumn .fa-bookmark {
+    font-size: calc(40px / 2);
+    top: calc(80px / 2);
+    text-shadow: calc(1px / 2) calc(1px / 2) calc(2px / 2) burlywood;
+  }
+  .genreSearchCard {
+    box-shadow: calc(3px / 2) calc(3px / 2) calc(3px / 2) calc(3px / 2) lightslategrey;
+    border: calc(3px / 2) outset burlywood;
+  }
+  .genreSearchCard a {
+    font-size: calc(45px / 2);
+    padding: calc(45px / 2) calc(10px / 2) 0;
   }
 }
 
