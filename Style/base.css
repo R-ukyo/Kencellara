@@ -1971,6 +1971,7 @@ body.page-archive-category .pager {
 .snsShareInner a:hover {
   opacity: 0.8;
 }
+
 /* SNSアイコン */
 .miniInfoArea {
   height: 30px;
@@ -2008,6 +2009,7 @@ body.page-archive-category .pager {
 .snsContainer .blogicon-facebook.lg {
   vertical-align: 10%;
 }
+
 /* 追尾 */
 .miniInfoArea.fixed {
   position: fixed;
@@ -2019,6 +2021,7 @@ body.page-archive-category .pager {
   margin: 0;
   padding: 12px 0;
 }
+
 /*シェアボタン*/
 .snsShareInner {
   margin: 10px auto 5px;
@@ -2094,7 +2097,7 @@ body.page-archive-category .pager {
   border-radius: 10px;
   text-shadow: 2px 2px 2px silver;
   font-size: 24px;
-  box-shadow: 5px 5px 5px gold;
+  box-shadow: 0px 0px 10px 5px gold;
 }
 .storeCountContainer img {
   width: 32px;
