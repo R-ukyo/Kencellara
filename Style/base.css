@@ -1510,9 +1510,10 @@ li.urllist-item::after {
   display: none;
 }
 .recommend-heading {
+  color: black;
   background-color: white;
   margin: 30px auto 10px;
-  width: 350px;
+  width: 330px;
   box-shadow: 5px 5px 5px 1px black;
   font-weight: bold;
   text-align: center;
@@ -2154,6 +2155,7 @@ body.page-archive-category .pager {
   height: 100%;
 }
 .areaSearchTitle {
+  color: black;
   width: 270px;
   text-align: center;
   font-weight: bold;
@@ -2318,6 +2320,7 @@ body.page-archive-category .pager {
   padding: 25px 0;
 }
 .genreSearchTitle {
+  color: black;
   font-size: 22px;
   width: 290px;
   text-align: center;
@@ -2545,11 +2548,11 @@ input.accordion {
   display: block;
 }
 .headerBanzuke caption {
-  width: 200px;
+  width: 240px;
   margin: 10px auto;
   background-color: white;
   color: black;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
   box-shadow: 5px 5px 5px 1px black;
 }
