@@ -2156,7 +2156,7 @@ body.page-archive-category .pager {
   width: 270px;
   text-align: center;
   font-weight: bold;
-  margin: 10px auto;
+  margin: 10px auto 30px;
   box-shadow: 5px 5px 5px 1px black;
 }
 .areaSearchInner {
@@ -2205,7 +2205,7 @@ body.page-archive-category .pager {
 /* PC */
 @media screen and (min-width: 750px) {
   .areaSearchZone {
-    height: 855px;
+    height: 875px;
   }
   .areaSearchContainer {
     margin: 30px 0;
@@ -2255,7 +2255,7 @@ body.page-archive-category .pager {
 /* スマホ */
 @media screen and (max-width: 749px) {
   .areaSearchZone {
-    height: 435px;
+    height: 475px;
   }
   .areaSearchContainer {
     margin: 15px 0;
