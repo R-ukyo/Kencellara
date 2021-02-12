@@ -1510,6 +1510,7 @@ li.urllist-item::after {
   display: none;
 }
 .recommend-heading {
+  background-color: white;
   margin: 30px auto 10px;
   width: 350px;
   box-shadow: 5px 5px 5px 1px black;
@@ -2545,11 +2546,10 @@ input.accordion {
   width: 200px;
   margin: 8px auto;
   background-color: white;
-  border: 3px ridge silver;
   color: black;
   font-size: 25px;
   font-weight: bold;
-  text-shadow: 2px 2px 2px silver;
+  box-shadow: 5px 5px 5px 1px black;
 }
 .headerBanzuke table {
   margin: auto;
