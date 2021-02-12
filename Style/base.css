@@ -1677,6 +1677,30 @@ body.page-static_page article {
 
 
 /* カテゴリー */
+.category-ラーメン #container-inner {
+  background-color: #fff4f4 !important;
+}
+.category-居酒屋 #container-inner {
+  background-color: #fff4f9 !important;
+}
+.category-カフェ #container-inner {
+  background-color: #fff4ff !important;
+}
+.category-チェーン店 #container-inner {
+  background-color: #f9f4ff !important;
+}
+.category-寿司 #container-inner {
+  background-color: #f4fff4 !important;
+}
+.category-パン屋さん #container-inner {
+  background-color: #f9fff4 !important;
+}
+.category-お肉 #container-inner {
+  background-color: #fffff4 !important;
+}
+.category-定食 #container-inner {
+  background-color: #fff9f4 !important;
+}
 .categoryImg {
   border: 5px ridge silver;
 }
@@ -2348,28 +2372,28 @@ body.page-archive-category .pager {
   transition: 0.5s;
 }
 i.oniku {
-  color: #fffff4;
+  color: #ffffea;
 }
 i.teishoku {
-  color: #fff9f4;
+  color: #fff4ea;
 }
 i.kaisen {
-  color: #f4fff4;
+  color: #eaffea;
 }
 i.bread {
-  color: #f9fff4;
+  color: #f4ffea;
 }
 i.cafe {
-  color: #fff4ff;
+  color: #ffeaff;
 }
 i.chain {
-  color: #f9f4ff;
+  color: #f4eaff;
 }
 i.ramen {
-  color: #fff4f4;
+  color: #ffeaea;
 }
 i.izakaya {
-  color: #fff4f9;
+  color: #ffeaf4;
 }
 .genreSearchColumn .fa-bookmark {
   margin: auto;
