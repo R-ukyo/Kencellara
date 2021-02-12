@@ -1574,7 +1574,7 @@ li.urllist-item::after {
 #blog-title { display: none; }
 .headernew {
   margin: 0px!important;
-  border: 10px ridge antiquewhite;
+  border: 8px ridge antiquewhite;
   background: content-box radial-gradient(white, darkslategrey);
 }
 .headernew img {
@@ -1596,7 +1596,7 @@ li.urllist-item::after {
   text-align: center;
   padding: .5em .8em;
   border-radius: 0px;
-  border: 3px outset silver;
+  border: 2px outset silver;
   text-shadow: 1px 1px 1px black;
 }
 .header-info a:hover {
@@ -1618,6 +1618,9 @@ li.urllist-item::after {
 /* 広域 */
 html {
   scroll-padding-top: 100px;
+}
+.archive-heading {
+  text-shadow: 2px 2px 2px silver;
 }
 header.archive-header-category {
   margin: 0 0 20px 0;
@@ -1677,28 +1680,36 @@ body.page-static_page article {
 
 
 /* カテゴリー */
-.category-ラーメン #container-inner {
+.category-ラーメン #container-inner,
+.category-ラーメン .dropdownMenuList li {
   background-color: #fff4f4 !important;
 }
-.category-居酒屋 #container-inner {
+.category-居酒屋 #container-inner,
+.category-居酒屋 .dropdownMenuList li {
   background-color: #fff4f9 !important;
 }
-.category-カフェ #container-inner {
+.category-カフェ #container-inner,
+.category-カフェ .dropdownMenuList li {
   background-color: #fff4ff !important;
 }
-.category-チェーン店 #container-inner {
+.category-チェーン店 #container-inner,
+.category-チェーン店 .dropdownMenuList li {
   background-color: #f9f4ff !important;
 }
-.category-寿司 #container-inner {
+.category-寿司 #container-inner,
+.category-寿司 .dropdownMenuList li {
   background-color: #f4fff4 !important;
 }
-.category-パン屋さん #container-inner {
+.category-パン屋さん #container-inner,
+.category-パン屋さん .dropdownMenuList li {
   background-color: #f9fff4 !important;
 }
-.category-お肉 #container-inner {
+.category-お肉 #container-inner,
+.category-お肉 .dropdownMenuList li {
   background-color: #fffff4 !important;
 }
-.category-定食 #container-inner {
+.category-定食 #container-inner,
+.category-定食 .dropdownMenuList li {
   background-color: #fff9f4 !important;
 }
 .categoryImg {
@@ -1718,7 +1729,7 @@ body.page-archive-category .pager {
   position: relative;
   width: 50%;
   border: 3px outset burlywood;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   font-size: 22px;
   font-weight: bold;
   text-shadow: 2px 2px 2px white;
@@ -2832,9 +2843,8 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
     background-color: antiquewhite;
     border: 3px outset antiquewhite;
   }
-  /* 2列表示 */
   .headernew {
-    border: 5px ridge antiquewhite;
+    border: 3px ridge antiquewhite;
   }
   .pulldownInner p {
     display: block;
