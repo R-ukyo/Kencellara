@@ -2027,7 +2027,7 @@ body.page-archive-category .pager {
   position: fixed;
   top: 0;
   left: auto;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   background-color: #fff;
   margin: 0;
@@ -2343,8 +2343,33 @@ body.page-archive-category .pager {
   font-weight: bold;
   text-align: center;
 }
-.genreSearchCard:hover {
-  transform: rotateZ(10deg);
+.genreSearchColumn i {
+  z-index: 2;
+  transition: 0.5s;
+}
+i.oniku {
+  color: #fffff4;
+}
+i.teishoku {
+  color: #fff9f4;
+}
+i.kaisen {
+  color: #f4fff4;
+}
+i.bread {
+  color: #f9fff4;
+}
+i.cafe {
+  color: #fff4ff;
+}
+i.chain {
+  color: #f9f4ff;
+}
+i.ramen {
+  color: #fff4f4;
+}
+i.izakaya {
+  color: #fff4f9;
 }
 .genreSearchColumn .fa-bookmark {
   margin: auto;
@@ -2357,13 +2382,19 @@ body.page-archive-category .pager {
 }
 /* PC */
 @media screen and (min-width: 752px) {
+  .genreSearchCard:hover {
+    transform: rotateZ(10deg);
+  }
+  .genreSearchCard:hover + i {
+    transform: rotateZ(10deg) translateX(20px);
+  }
   .genreSearchCard {
     margin: 45px;
     height: 250px;
   }
   .genreSearchColumn .fa-bookmark {
     font-size: 40px;
-    top: 80px;
+    top: -305px;
     text-shadow: 1px 1px 2px burlywood;
   }
   .genreSearchCard {
@@ -2377,13 +2408,19 @@ body.page-archive-category .pager {
 }
 /* スマホ */
 @media screen and (max-width: 752px) {
+  .genreSearchCard:hover {
+    transform: rotateZ(calc(10deg / 2));
+  }
+  .genreSearchCard:hover + i {
+    transform: rotateZ(calc(10deg / 2)) translateX(calc(20px / 4));
+  }
   .genreSearchCard {
     margin: calc(45px / 2 - 6px);
     height: calc(250px / 2);
   }
   .genreSearchColumn .fa-bookmark {
     font-size: calc(40px / 2);
-    top: calc(80px / 2);
+    top: calc(-305px / 2 + 6px);
     text-shadow: calc(1px / 2) calc(1px / 2) calc(2px / 2) burlywood;
   }
   .genreSearchCard {
