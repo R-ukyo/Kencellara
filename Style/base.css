@@ -2509,12 +2509,14 @@ input.accordion {
   display: none;
   padding: 10px 0;
   background-color: cornsilk;
+  border: 5px inset cornsilk;
 }
 .headerBanzukeWrapper {
   display: none;
 }
 .headerBanzuke.sp {
   overflow-y: hidden;
+  border: 2px inset cornsilk;
 }
 .headerBanzuke.sp.open {
   height: calc(100% + 45px);
@@ -2544,10 +2546,10 @@ input.accordion {
 }
 .headerBanzuke caption {
   width: 200px;
-  margin: 8px auto;
+  margin: 10px auto;
   background-color: white;
   color: black;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
   box-shadow: 5px 5px 5px 1px black;
 }
