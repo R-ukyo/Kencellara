@@ -1664,6 +1664,14 @@ body.page-static_page article {
   contain-intrinsic-size: 8200px;
 }
 
+/* font awesome */
+.fa-fire {
+  color: firebrick;
+}
+.fa-trophy {
+  color: goldenrod;
+}
+
 
 /* パーツ */
 .p_f12em {
