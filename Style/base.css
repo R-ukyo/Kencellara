@@ -1673,6 +1673,7 @@ body.page-static_page article {
 }
 .fa-trophy {
   color: goldenrod;
+  text-shadow: 2px 2px 2px gold;
 }
 
 
@@ -1691,45 +1692,41 @@ body.page-static_page article {
 
 
 /* カテゴリー */
-.category-ラーメン:not(.page-entry) #container-inner,
-.category-ラーメン:not(.page-entry) .miniInfoArea.fixed,
-.category-ラーメン:not(.page-entry) .dropdownMenuList li {
+.page-archive #main-inner {
+  padding: 10px;
+  margin: 30px;
+}
+.category-ラーメン:not(.page-entry) #main-inner {
   background-color: #fff4f4 !important;
+  border: 3px ridge #fff4f4;
 }
-.category-居酒屋:not(.page-entry) #container-inner,
-.category-居酒屋:not(.page-entry) .miniInfoArea.fixed,
-.category-居酒屋:not(.page-entry) .dropdownMenuList li {
+.category-居酒屋:not(.page-entry) #main-inner {
   background-color: #fff4f9 !important;
+  border: 3px ridge #fff4f9;
 }
-.category-カフェ:not(.page-entry) #container-inner,
-.category-カフェ:not(.page-entry) .miniInfoArea.fixed,
-.category-カフェ:not(.page-entry) .dropdownMenuList li {
+.category-カフェ:not(.page-entry) #main-inner {
   background-color: #fff4ff !important;
+  border: 3px ridge #fff4ff;
 }
-.category-チェーン店:not(.page-entry) #container-inner,
-.category-チェーン店:not(.page-entry) .miniInfoArea.fixed,
-.category-チェーン店:not(.page-entry) .dropdownMenuList li {
+.category-チェーン店:not(.page-entry) #main-inner {
   background-color: #f9f4ff !important;
+  border: 3px ridge #f9f4ff;
 }
-.category-寿司:not(.page-entry) #container-inner,
-.category-寿司:not(.page-entry) .miniInfoArea.fixed,
-.category-寿司:not(.page-entry) .dropdownMenuList li {
+.category-寿司:not(.page-entry) #main-inner {
   background-color: #f4fff4 !important;
+  border: 3px ridge #f4fff4;
 }
-.category-パン屋さん:not(.page-entry) #container-inner,
-.category-パン屋さん:not(.page-entry) .miniInfoArea.fixed,
-.category-パン屋さん:not(.page-entry) .dropdownMenuList li {
+.category-パン屋さん:not(.page-entry) #main-inner {
   background-color: #f9fff4 !important;
+  border: 3px ridge #f9fff4;
 }
-.category-お肉:not(.page-entry) #container-inner,
-.category-お肉:not(.page-entry) .miniInfoArea.fixed,
-.category-お肉:not(.page-entry) .dropdownMenuList li {
+.category-お肉:not(.page-entry) #main-inner {
   background-color: #fffff4 !important;
+  border: 3px ridge #fffff4;
 }
-.category-定食:not(.page-entry) #container-inner,
-.category-定食:not(.page-entry) .miniInfoArea.fixed,
-.category-定食:not(.page-entry) .dropdownMenuList li {
+.category-定食:not(.page-entry) #main-inner {
   background-color: #fff9f4 !important;
+  border: 3px ridge #fff9f4;
 }
 .categoryImg {
   border: 5px ridge silver;
@@ -1748,7 +1745,7 @@ body.page-archive-category .pager {
   position: relative;
   width: 50%;
   border: 2px outset burlywood;
-  /* background-color: antiquewhite; */
+  background-color: antiquewhite;
   font-size: 22px;
   font-weight: bold;
   text-shadow: 2px 2px 2px white;
@@ -2379,7 +2376,7 @@ body.page-archive-category .pager {
   width: 290px;
   text-align: center;
   font-weight: bold;
-  margin: 10px auto;
+  margin: 10px auto 20px;
   box-shadow: 5px 5px 5px 1px silver;
   background-color: white;
 }
