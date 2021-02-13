@@ -1696,6 +1696,12 @@ body.page-static_page article {
   padding: 10px;
   margin: 30px;
 }
+@media screen and (max-width: 767px) {
+  .page-archive #main-inner {
+    padding: calc(10px / 2);
+    margin: calc(30px / 2);
+  }
+}
 .category-ラーメン:not(.page-entry) #main-inner {
   background-color: #fff4f4 !important;
   border: 3px ridge #fff4f4;
@@ -2891,9 +2897,6 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   }
   .headerBanzuke.pc {
     display: none;
-  }
-  .page-archive #main-inner {
-    padding: 0 20px;
   }
   .entry {
     padding: 0 20px;
