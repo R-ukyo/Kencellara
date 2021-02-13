@@ -1689,34 +1689,42 @@ body.page-static_page article {
 
 /* カテゴリー */
 .category-ラーメン #container-inner,
+.category-ラーメン .miniInfoArea.fixed,
 .category-ラーメン .dropdownMenuList li {
   background-color: #fff4f4 !important;
 }
 .category-居酒屋 #container-inner,
+.category-居酒屋 .miniInfoArea.fixed,
 .category-居酒屋 .dropdownMenuList li {
   background-color: #fff4f9 !important;
 }
 .category-カフェ #container-inner,
+.category-カフェ .miniInfoArea.fixed,
 .category-カフェ .dropdownMenuList li {
   background-color: #fff4ff !important;
 }
 .category-チェーン店 #container-inner,
+.category-チェーン店 .miniInfoArea.fixed,
 .category-チェーン店 .dropdownMenuList li {
   background-color: #f9f4ff !important;
 }
 .category-寿司 #container-inner,
+.category-寿司 .miniInfoArea.fixed,
 .category-寿司 .dropdownMenuList li {
   background-color: #f4fff4 !important;
 }
 .category-パン屋さん #container-inner,
+.category-パン屋さん .miniInfoArea.fixed,
 .category-パン屋さん .dropdownMenuList li {
   background-color: #f9fff4 !important;
 }
 .category-お肉 #container-inner,
+.category-お肉 .miniInfoArea.fixed,
 .category-お肉 .dropdownMenuList li {
   background-color: #fffff4 !important;
 }
 .category-定食 #container-inner,
+.category-定食 .miniInfoArea.fixed,
 .category-定食 .dropdownMenuList li {
   background-color: #fff9f4 !important;
 }
