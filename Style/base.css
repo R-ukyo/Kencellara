@@ -1513,7 +1513,7 @@ li.urllist-item::after {
   color: black;
   background-color: white;
   margin: 30px auto 10px;
-  width: 330px;
+  width: 320px;
   box-shadow: 5px 5px 5px 1px black;
   font-weight: bold;
   text-align: center;
@@ -2636,7 +2636,7 @@ input.accordion {
   display: block;
 }
 .headerBanzuke caption {
-  width: 240px;
+  width: 220px;
   margin: 10px auto;
   background-color: white;
   color: black;
