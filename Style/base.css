@@ -1661,12 +1661,6 @@ body.page-static_page article {
   font-size: 12px;
 }
 
-/* main */
-#content {
-  content-visibility: auto;
-  contain-intrinsic-size: 8200px;
-}
-
 /* font awesome */
 .fa-fire {
   color: firebrick;
