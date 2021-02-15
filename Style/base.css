@@ -1503,6 +1503,9 @@ li.urllist-item::after {
   background-color: #8AC4C8;
   border-radius: 2px;
 }
+.archive-entries.no_title {
+  padding-top: 40px;
+}
 .archive-entries.no_title::before,
 .archive-entries.no_title::after {
   display: none;
