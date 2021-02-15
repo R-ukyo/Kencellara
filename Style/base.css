@@ -1655,11 +1655,11 @@ body.page-static_page article {
 
 
 /* 臨時 */
-.noticeZone {
+/* .noticeZone {
   font-weight: bold;
   margin-top: 20px;
   font-size: 12px;
-}
+} */
 
 /* font awesome */
 .fa-fire {
@@ -2723,6 +2723,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 }
 .page-index .kenceWindowAnnounce {
   display: block;
+  border-top: 3px double brown;
   background-color: antiquewhite;
   text-align: center;
   padding: 10px 0;
@@ -2733,6 +2734,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 }
 .page-index .kenceWindowCaution {
   display: block;
+  border-bottom: 3px double brown;
   font-size: 12px;
   background-color: antiquewhite;
   text-align: center;
@@ -2766,7 +2768,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 10;
 }
 .kenceWindowModalBg {
   background: rgba(0, 0, 0, 0.6);
@@ -2805,10 +2807,20 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   color: black;
 }
 @media screen and (max-width: 700px) {
-  .kenceWindowAnnounce,
-  .kenceWindowCaution,
+  .kenceWindowAnnounce {
+    font-size: 0.75em;
+  }
+  .kenceWindowAnnounce i {
+    font-size: calc(50px / 2);
+  }
   .kenceWindowModalOpen {
-    display: none !important;
+    padding: 15px 0 20px;
+  }
+  .kenceWindowModalContent {
+    width: calc(700px / 2);
+  }
+  .kenceWindowModalContentInner {
+    max-height: 100vh;
   }
 }
 
