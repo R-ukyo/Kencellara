@@ -2063,7 +2063,7 @@ body.page-archive-category .pager {
 }
 .snsContainer img {
   height: 30px !important;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .snsContainer .twitter-button {
   text-align: center;
@@ -2077,6 +2077,8 @@ body.page-archive-category .pager {
   font-size: 29px;
 }
 .snsContainer .blogicon-facebook.lg {
+  background-color: white;
+  border-radius: 10px;
   vertical-align: 10%;
 }
 
@@ -2090,6 +2092,9 @@ body.page-archive-category .pager {
   background-color: #fff;
   margin: 0;
   padding: 12px 0;
+}
+.page-index .miniInfoArea.fixed {
+  background-color: antiquewhite;
 }
 
 /*シェアボタン*/
