@@ -1703,6 +1703,39 @@ body.page-static_page article {
     margin: 0 calc(30px / 2);
   }
 }
+.archive-heading {
+  background-color: white;
+}
+.category-桑名市グルメ:not(.page-entry) #main-inner,
+.category-四日市市グルメ:not(.page-entry) #main-inner,
+.category-亀山市グルメ:not(.page-entry) #main-inner {
+  background-color: #dbedff !important;
+  border: 3px ridge #dbedff;
+}
+.category-伊賀市グルメ:not(.page-entry) #main-inner {
+  background-color: #edffdb !important;
+  border: 3px ridge #edffdb;
+}
+.category-津市グルメ:not(.page-entry) #main-inner,
+.category-松阪市グルメ:not(.page-entry) #main-inner,
+.category-明和町グルメ:not(.page-entry) #main-inner,
+.category-多気町グルメ:not(.page-entry) #main-inner {
+  background-color: #ffffdb !important;
+  border: 3px ridge #ffffdb;
+}
+.category-伊勢市グルメ:not(.page-entry) #main-inner,
+.category-志摩市グルメ:not(.page-entry) #main-inner,
+.category-鳥羽市グルメ:not(.page-entry) #main-inner,
+.category-南伊勢町グルメ:not(.page-entry) #main-inner {
+  background-color: #dbffff !important;
+  border: 3px ridge #dbffff;
+}
+.category-尾鷲市グルメ:not(.page-entry) #main-inner,
+.category-紀北町グルメ:not(.page-entry) #main-inner,
+.category-大台町グルメ:not(.page-entry) #main-inner {
+  background-color: #ffdbed !important;
+  border: 3px ridge #ffdbed;
+}
 .category-ラーメン:not(.page-entry) #main-inner {
   background-color: #fff4f4 !important;
   border: 3px ridge #fff4f4;
