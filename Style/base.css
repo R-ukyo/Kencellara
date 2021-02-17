@@ -1777,6 +1777,139 @@ body.page-archive-category .pager {
 .categoryAd {
   margin: 20px 0;
 }
+.categoryRecommendTitle {
+  padding: 15px 0;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px auto 20px;
+  width: 300px;
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 1px red;
+  box-shadow: 0px 0px 10px 5px gold;
+  border-radius: 10px;
+}
+.recommendArticle {
+  display: flex;
+  background-color: navajowhite;
+  height: 126px;
+  padding: 8px 0;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+.recommendArticle .thumbnail {
+  width: 210px;
+  height: 126px;
+}
+.recommendArticle h3 {
+  margin: 10px 0 15px;
+}
+.recommendArticle a:hover {
+  color: #333;
+}
+.recommendArticle p {
+  margin: 10px 0;
+}
+.recommendArticle > div {
+  margin: auto;
+}
+.recommendArticle > div:nth-child(2) {
+  width: 330px;
+  text-align: left;
+  padding: 0 5px;
+}
+.recommendArticle > div:nth-child(n+3) {
+  font-size: 18px;
+  padding: 20px 5px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  width: 58px;
+}
+.recommendArticle > div:nth-child(4) {
+  background-color: #454545;
+}
+.recommendArticle > div.hokubu {
+  background-color: #1D87FB;
+}
+.recommendArticle > div.iga {
+  background-color: #92D050;
+}
+.recommendArticle > div.chubu {
+  background-color: #FFD13F;
+  color: #454545;
+}
+.recommendArticle > div.iseShima {
+  background-color: #91BCE3;
+}
+.recommendArticle > div.higashikishu {
+  background-color: #DA54BD;
+}
+.recommendArticle > div.tantammen {
+  background-color: #ff9999;
+}
+.recommendArticle > div.tonkotsu {
+  background-color: #ffcc99;
+  color: #454545;
+}
+.recommendArticle > div.shoyu {
+  background-color: #866629;
+}
+.recommendArticle > div.miso {
+  background-color: #bf783e;
+}
+.recommendArticle > div.tori {
+  background-color: #ffffb2;
+  color: #454545;
+}
+.recommendArticle > div.shio {
+  background-color: #d1ffff;
+  color: #454545;
+}
+.recommendArticle > div.jiro {
+  background-color: #e95388;
+}
+.openRecommend {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .categoryRecommendZone {
+    display: none;
+  }
+  /* .categoryRecommendTitle {
+    padding: calc(15px / 2) 0;
+    font-size: 20px;
+    margin: calc(5px / 2) auto calc(20px / 2);
+    width: calc(300px / 2);
+    box-shadow: 0px 0px 10px calc(5px / 2) gold;
+    border-radius: calc(10px / 2);
+  }
+  .recommendArticle {
+    height: calc(126px / 2);
+    padding: calc(8px / 2) 0;
+    margin: calc(10px / 2) 0;
+    border-radius: calc(3px / 2);
+  }
+  .recommendArticle .thumbnail {
+    width: calc(210px / 2);
+    height: calc(126px / 2);
+  }
+  .recommendArticle h3 {
+    margin: calc(10px / 2) 0 calc(15px / 2);
+  }
+  .recommendArticle p {
+    display: none;
+  }
+  .recommendArticle > div:nth-child(2) {
+    width: calc(330px / 2);
+    padding: 0 calc(5px / 2);
+  }
+  .recommendArticle > div:nth-child(n+3) {
+    font-size: 16px;
+    padding: calc(20px / 2) calc(5px / 2);
+    width: calc(58px);
+  } */
+}
 .dropdownMenu {
   display: flex;
   margin: 15px 0;
