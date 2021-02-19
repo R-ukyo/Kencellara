@@ -1475,12 +1475,14 @@ li.urllist-item::after {
   color: #555;
 }
 
-/***** トップページ最新記事上にラベル *****/
-.page-index .archive-entries {
+/***** トップページ・カテゴリーページ最新記事上にラベル *****/
+.page-index .archive-entries,
+.page-archive .archive-entries {
   padding-top: 60px;
   position: relative;
 }
-.page-index .archive-entries:before {
+.page-index .archive-entries:before,
+.page-archive .archive-entries:before {
   content: '最新記事';
   color: #444;
   font-size: 1.3rem;
@@ -1490,7 +1492,11 @@ li.urllist-item::after {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
-.page-index .archive-entries:after {
+.category-ラーメン .archive-entries:before {
+  content: '新着ラーメン';
+}
+.page-index .archive-entries:after,
+.page-archive .archive-entries:after {
   content: '';
   position: absolute;
   top: 40px;
@@ -1706,6 +1712,9 @@ body.page-static_page article {
 .archive-heading {
   background-color: white;
 }
+.category-ラーメン .archive-heading {
+  display: none;
+}
 .category-桑名市グルメ:not(.page-entry) #main-inner,
 .category-四日市市グルメ:not(.page-entry) #main-inner,
 .category-亀山市グルメ:not(.page-entry) #main-inner {
@@ -1776,6 +1785,9 @@ body.page-archive-category .pager {
 }
 .categoryAd {
   margin: 20px 0;
+}
+.categoryRecommendZone {
+  margin-top: 20px;
 }
 .categoryRecommendTitle {
   padding: 15px 0;
@@ -1909,6 +1921,21 @@ body.page-archive-category .pager {
     padding: calc(20px / 2) calc(5px / 2);
     width: calc(58px);
   } */
+}
+.categoryMenuZone {
+  padding: 30px 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 5px silver;
+}
+.categoryMenuTitle {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  color: brown;
+  width: 300px;
+  margin: auto;
+  background-color: white;
+  border: 3px double;
 }
 .dropdownMenu {
   display: flex;

@@ -137,8 +137,6 @@
 <script>
   if ($('.page-index').length) {
     if (location.href.indexOf('?page=') !== -1) {
-      // 最新記事を非表示に
-      $('.archive-entries').addClass('no_title');
       const pager = $('.pager').first();
       const span = $('<span></span>', {class: 'pager-prev'});
       let a;
@@ -154,6 +152,13 @@
       span.append(a);
       pager.prepend(span);
     }
+  }
+</script>
+
+<!-- 最新記事を非表示に -->
+<script>
+  if (location.href.indexOf('?page=') !== -1) {
+    $('.archive-entries').addClass('no_title');
   }
 </script>
 
