@@ -1849,10 +1849,10 @@ body.page-archive-category .pager {
   cursor: pointer;
 }
 .hokuchubuButton {
-  background-color: #FFD13F;
+  background: linear-gradient(45deg, #1D87FB 0%, #1D87FB calc(100% / 3), #92D050 calc(100% / 3), #92D050 calc(100% * 2/3), #FFD13F calc(100% * 2/3), #FFD13F 100%);
 }
 .nambuButton {
-  background-color: #91BCE3;
+  background: linear-gradient(45deg, #91BCE3 0%, #91BCE3 50%, #DA54BD 50%, #DA54BD 100%);
 }
 .areaButtonZone a {
   padding: 15px;
@@ -1886,9 +1886,12 @@ body.page-archive-category .pager {
 .colorBar {
   width: 150px;
 }
+.categoryRecommendContent {
+  margin-top: 100px;
+}
 .categoryRecommendAreaHeader {
   width: 200px;
-  margin: 30px auto 10px;
+  margin: 10px auto;
   font-size: 25px;
   font-weight: bold;
   background-color: white;
