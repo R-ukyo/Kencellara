@@ -1860,12 +1860,10 @@ body.page-archive-category .pager {
   font-size: 30px;
   color: black;
   font-weight: bold;
+  text-shadow: 1px 1px 1px white;
 }
 .areaButtonZone a:hover {
   display: block;
-}
-.areaColorListZone {
-  /* padding: 10px 0; */
 }
 .areaListTitle {
   width: 200px;
@@ -1895,13 +1893,12 @@ body.page-archive-category .pager {
   font-size: 25px;
   font-weight: bold;
   background-color: white;
-  border: 1px solid black;
 }
 .recommendArticle {
   display: flex;
   background-color: white;
   height: 132px;
-  padding: 8px 0;
+  padding: 8px 5px;
   margin: 10px 0;
   border-radius: 3px;
 }
@@ -1942,91 +1939,146 @@ body.page-archive-category .pager {
   color: black;
   font-weight: bold;
 }
-.recommendArticle > div {
-  margin: auto;
-}
 .recommendArticle > div:nth-child(2) {
   width: 370px;
   text-align: left;
-  padding: 0 5px;
+  padding: 0 15px;
   margin: auto 0;
 }
-.recommendArticle > div:nth-child(3) {
+.recommendArticleVisit {
+  display: none;
+}
+.genreWrapper {
+  margin: auto;
+}
+.recommendArticle .genre {
+  margin: auto;
   font-size: 18px;
-  padding: 20px 5px;
+  padding: 18px 0;
   font-weight: bold;
   color: white;
   border-radius: 50%;
-  width: 58px;
+  width: 66px;
+  height: 25px;
   background-color: #454545;
 }
-.recommendArticle > div.tantammen {
+.genre.tantammen {
   background-color: #dc143c;
 }
-.recommendArticle > div.tonkotsu {
+.genre.tonkotsu {
   background-color: #ffcc99;
   color: #454545;
 }
-.recommendArticle > div.shoyu {
+.genre.shoyu {
   background-color: #866629;
 }
-.recommendArticle > div.miso {
+.genre.miso {
   background-color: #bf783e;
 }
-.recommendArticle > div.tori {
+.genre.tori {
   background-color: #ffffb2;
   color: #454545;
 }
-.recommendArticle > div.shio {
+.genre.shio {
   background-color: #d1ffff;
   color: #454545;
 }
-.recommendArticle > div.jiro {
+.genre.jiro {
   background-color: #e95388;
 }
 .openRecommend {
   display: none;
 }
+@media screen and (min-width: 700px) {
+  .recommendArticle.manyGenre {
+    height: 180px;
+  }
+  .recommendArticle.manyGenre > div:first-child  {
+    margin: auto 0;
+  }
+  .areaButtonContainer > div {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 700px) {
-  .categoryRecommendZone {
-    display: none;
+  .categoryRecommendExplain {
+    display: block;
+    padding: 5px 10px;
   }
-  .categoryMenuZone {
-    display: none;
+  .areaButtonTitle {
+    font-size: 19px;
   }
-  /* .categoryRecommendTitle {
-    padding: calc(15px / 2) 0;
+  .areaButtonContainer > div {
+    width: 100px;
+    margin: 8px auto;
+  }
+  .areaButtonZone a {
+    padding: 10px;
     font-size: 20px;
-    margin: calc(5px / 2) auto calc(20px / 2);
-    width: calc(300px / 2);
-    box-shadow: 0px 0px 10px calc(5px / 2) gold;
-    border-radius: calc(10px / 2);
+  }
+  .areaListTitle {
+    margin: 5px auto;
+    font-size: 19px;
   }
   .recommendArticle {
-    height: calc(126px / 2);
-    padding: calc(8px / 2) 0;
-    margin: calc(10px / 2) 0;
-    border-radius: calc(3px / 2);
+    height: 395px;
+    display: block;
+    padding: 0;
+  }
+  .recommendArticle.manyGenre {
+    height: 415px;
   }
   .recommendArticle .thumbnail {
-    width: calc(210px / 2);
-    height: calc(126px / 2);
-  }
-  .recommendArticle h3 {
-    margin: calc(10px / 2) 0 calc(15px / 2);
-  }
-  .recommendArticle p {
-    display: none;
+    width: 302px;
+    height: calc(302px * 3/5);
   }
   .recommendArticle > div:nth-child(2) {
-    width: calc(330px / 2);
-    padding: 0 calc(5px / 2);
+    padding: 5px;
+    margin: auto;
+    width: 100%;
   }
-  .recommendArticle > div:nth-child(n+3) {
-    font-size: 16px;
-    padding: calc(20px / 2) calc(5px / 2);
-    width: calc(58px);
-  } */
+  .articleTitle {
+    background-color: #eee;
+    width: 95%;
+    margin: auto;
+    border: 3px solid #ccc;
+    border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .recommendArticle .articleArea {
+    display: block;
+    text-align: center;
+    margin: 8px 0;
+  }
+  .recommendArticle p {
+    width: 95%;
+    margin: 2px;
+  }
+  .recommendArticleVisit {
+    display: block;
+    float: left;
+    margin: 24px 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 2px;
+  }
+  .genreWrapper {
+    display: flex;
+    width: 60%;
+    margin: 0 0 0 auto;
+  }
+  .recommendArticle .genre {
+    font-size: 15px;
+    padding: 14px 0;
+    margin: 0 5px 0 auto;
+    width: 52px;
+  }
+  .genreWrapper .genre {
+    margin: 0 5px;
+  }
 }
 .categoryMenuZone {
   padding: 30px 0;
