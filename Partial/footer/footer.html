@@ -4,8 +4,16 @@
 
 <!-- 店舗数表示 -->
 <script>
-  const storeCount = $(".hatena-urllist .category-三重県のグルメ制覇").last().text().trim().substr(-4,3);
-  $("#storeCounter").text(storeCount);
+  let storeCount;
+  if ($('.page-index').length) {
+    storeCount = $(".hatena-urllist .category-三重県のグルメ制覇").last().text().trim().substr(-4,3);
+    $("#storeCounter").text(storeCount);
+  } else if ($('.page-archive.category-ラーメン').length) {
+    storeCount = $(".hatena-urllist .category-ラーメン").last().text().trim().substr(-3,2);
+    $("#storeCounter").text(storeCount);
+    $("#js-categoryStorePosition").after($("#js-storeCountArea"));
+    $("#js-storeCountArea").addClass("look")
+  }
 </script>
 
 <!-- SNSアイコン追尾 -->

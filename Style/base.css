@@ -1493,7 +1493,7 @@ li.urllist-item::after {
   transform: translateY(-50%) translateX(-50%);
 }
 .category-ラーメン .archive-entries:before {
-  content: '新着ラーメン';
+  content: 'ラーメンの新着';
 }
 .page-index .archive-entries:after,
 .page-archive .archive-entries:after {
@@ -1666,14 +1666,6 @@ body.page-static_page article {
   border-radius: 0px;
 }
 
-
-/* 臨時 */
-/* .noticeZone {
-  font-weight: bold;
-  margin-top: 20px;
-  font-size: 12px;
-} */
-
 /* font awesome */
 .fa-fire {
   color: firebrick;
@@ -1691,6 +1683,24 @@ body.page-static_page article {
 .p_link {
   font-weight: bold;
   color: crimson;
+}
+.p_crimson {
+  color: crimson;
+}
+.p_hokubu {
+  background-color: #1D87FB;
+}
+.p_iga {
+  background-color: #92D050;
+}
+.p_chubu {
+  background-color: #FFD13F;
+}
+.p_iseShima {
+  background-color: #91BCE3;
+}
+.p_higashikishu {
+  background-color: #DA54BD;
 }
 .instaText,
 .instaLink {
@@ -1793,69 +1803,159 @@ body.page-archive-category .pager {
   padding: 15px 0;
   font-size: 25px;
   font-weight: bold;
-  margin: 5px auto 20px;
+  margin: 5px auto 30px;
   width: 300px;
   background-color: black;
   color: white;
   text-shadow: 1px 1px 1px red;
-  box-shadow: 0px 0px 10px 5px gold;
+  box-shadow: 0px 0px 10px 5px firebrick;
   border-radius: 10px;
+}
+.categoryRecommendExplain {
+  text-align: left;
+  margin: auto;
+  background-color: white;
+  padding: 20px 10px;
+  display: flex;
+}
+.categoryRecommendExplain img {
+  max-width: 100%;
+  height: 120px;
+}
+.categoryRecommendExplain p {
+  font-weight: bold;
+}
+.areaSelectZone {
+  background-color: white;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+.areaButtonTitle {
+  width: 200px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 22px;
+}
+.areaButtonContainer {
+  display: flex;
+}
+.areaButtonContainer > div {
+  width: 150px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 3px outset white;
+}
+.areaButtonContainer > div:hover {
+  cursor: pointer;
+}
+.hokuchubuButton {
+  background-color: #FFD13F;
+}
+.nambuButton {
+  background-color: #91BCE3;
+}
+.areaButtonZone a {
+  padding: 15px;
+  display: block;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.areaButtonZone a:hover {
+  display: block;
+}
+.areaColorListZone {
+  /* padding: 10px 0; */
+}
+.areaListTitle {
+  width: 200px;
+  margin: 0 auto 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.areaColorItem {
+  font-size: 15px;
+  display: flex;
+  width: 300px;
+  margin: 5px auto;
+}
+.areaColorTitle {
+  width: 150px;
+  font-weight: bold;
+}
+.colorBar {
+  width: 150px;
+}
+.categoryRecommendAreaHeader {
+  width: 200px;
+  margin: 30px auto 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid black;
 }
 .recommendArticle {
   display: flex;
-  background-color: navajowhite;
-  height: 126px;
+  background-color: white;
+  height: 132px;
   padding: 8px 0;
   margin: 10px 0;
   border-radius: 3px;
 }
-.recommendArticle .thumbnail {
-  width: 210px;
-  height: 126px;
+.recommendArticle.hokubu {
+  border: 5px ridge #1D87FB;
 }
-.recommendArticle h3 {
-  margin: 10px 0 15px;
+.recommendArticle.iga {
+  border: 5px ridge #92D050;
+}
+.recommendArticle.chubu {
+  border: 5px ridge #FFD13F;
+}
+.recommendArticle.iseShima {
+  border: 5px ridge #91BCE3;
+}
+.recommendArticle.higashikishu {
+  border: 5px ridge #DA54BD;
+}
+.recommendArticle.tantammen {
+  border: 5px ridge #dc143c;
+}
+.recommendArticle.tonkotsu {
+  border: 5px ridge #ffcc99;
+}
+.recommendArticle .thumbnail {
+  width: 220px;
+  height: 132px;
+}
+.recommendArticle .articleTitle {
+  font-size: 22px;
+  font-weight: bold;
 }
 .recommendArticle a:hover {
   color: #333;
 }
-.recommendArticle p {
-  margin: 10px 0;
+.recommendArticle .articleArea {
+  margin-left: 30px;
+  color: black;
+  font-weight: bold;
 }
 .recommendArticle > div {
   margin: auto;
 }
 .recommendArticle > div:nth-child(2) {
-  width: 330px;
+  width: 370px;
   text-align: left;
   padding: 0 5px;
+  margin: auto 0;
 }
-.recommendArticle > div:nth-child(n+3) {
+.recommendArticle > div:nth-child(3) {
   font-size: 18px;
   padding: 20px 5px;
   font-weight: bold;
   color: white;
   border-radius: 50%;
   width: 58px;
-}
-.recommendArticle > div:nth-child(4) {
   background-color: #454545;
-}
-.recommendArticle > div.hokubu {
-  background-color: #1D87FB;
-}
-.recommendArticle > div.iga {
-  background-color: #92D050;
-}
-.recommendArticle > div.chubu {
-  background-color: #FFD13F;
-  color: #454545;
-}
-.recommendArticle > div.iseShima {
-  background-color: #91BCE3;
-}
-.recommendArticle > div.higashikishu {
-  background-color: #DA54BD;
 }
 .recommendArticle > div.tantammen {
   background-color: #dc143c;
@@ -1886,6 +1986,9 @@ body.page-archive-category .pager {
 }
 @media screen and (max-width: 700px) {
   .categoryRecommendZone {
+    display: none;
+  }
+  .categoryMenuZone {
     display: none;
   }
   /* .categoryRecommendTitle {
@@ -2356,6 +2459,10 @@ body.page-archive-category .pager {
   padding: 15px 0 10px;
   height: 50px;
   background-color: currentColor;
+}
+.storeCountArea.look {
+  display: block;
+  margin: 30px auto;
 }
 .storeCountContainer {
   margin: auto;
