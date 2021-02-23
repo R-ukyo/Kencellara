@@ -1258,7 +1258,7 @@ body.page-static_page article {
   border: 3px outset crimson;
 }
 #top-box {
-  margin: auto;
+  display: none;
 }
 /*カード*/
 .archive-entry {
