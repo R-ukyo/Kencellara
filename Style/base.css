@@ -1843,6 +1843,11 @@ body.page-archive-category .pager {
 .summaryTable td {
   border: 3px ridge silver !important;
 }
+@media screen and (max-width: 767px) {
+  .summaryTable th {
+    width: 30%;
+  }
+}
 .profileLinkArea {
   background: #faf0e6;
   margin-top: 20px;
