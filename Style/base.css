@@ -1,5 +1,6 @@
 @import url("https://blog.hatena.ne.jp/-/theme/8599973812333959601.css");
 
+/* 記事内装飾 */
 article em {
   font-weight: bold;
   font-style: normal;
@@ -10,7 +11,7 @@ article em {
 article i {
   font-style: oblique !important;
 }
-
+/* 記事内関連記事 */
 .entry-content .emphasize-link {
   position: relative;
   margin: 36px 0 16px;
@@ -50,7 +51,7 @@ article i {
   font-family: "blogicon";
   color: #fff;
 }
-
+/* 記事下関連記事 */
 li.urllist-item.related-entries-item {
   border-bottom: solid 2px #ececec;
   margin: 0;
@@ -68,14 +69,20 @@ a.urllist-title-link.related-entries-title-link.urllist-title.related-entries-ti
 a.urllist-title-link.related-entries-title-link.urllist-title.related-entries-title:hover {
   color: silver;
 }
+/* サイドバーラーメン特集 */
 a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-title {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
     font-size: 100%;
 }
+/* トップページケンチェ激押しグルメ */
 .article-area {
+  display: none;
   background-color: antiquewhite;
+}
+.page-index .article-area {
+  display: block;
 }
 .article-container {
   width: 90%;
@@ -84,16 +91,12 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  box-sizing: border-box;
   margin: 0px auto;
-  padding: 0px;
-  text-align: center;
 }
 .article-box {
   box-sizing: border-box;
   border: 3px outset silver;
   width: 25%;
-  padding: 0px;
   margin: 30px 15px;
   overflow: hidden;
 }
@@ -111,16 +114,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
-
-.page-entry .article-area,
-.page-entry .article-container,
-.page-static_page .article-area,
-.page-static_page .article-container,
-.page-archive-category .article-area,
-.page-archive-category .article-container
-{
-  display: none;
-}
+/* checked */
 
 /*=== トップページ カテゴリー別検索 ===*/
 .article-area-1 {
