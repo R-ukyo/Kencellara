@@ -114,64 +114,6 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
-/* checked */
-
-/*=== トップページ カテゴリー別検索 ===*/
-.article-area-1 {
-  background-color: white;
-}
-.article-container-1 {
-  width: 90%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  box-sizing: border-box;
-  margin: 0px auto;
-  padding: 0px;
-  text-align: center;
-}
-.article-container-1.first {
-  padding-top: 15px;
-}
-.article-container-1.last {
-  padding-bottom: 20px;
-}
-.article-box-1 {
-  max-width: 150px;
-  max-height: 150px;
-  margin: 10px auto;
-  box-sizing: border-box;
-  border: 0px solid #444;
-  width: 25%;
-  padding: 0px;
-  overflow: hidden;
-  background-color: antiquewhite;
-  border-radius: 120px;
-}
-.article-img-1 img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  transition-duration: 0.5s;
-}
-.article-img-1:hover {
-  opacity: 0.5;
-}
-.article-img-1:hover img {
-  transform: scale(1.5);
-  transition-duration: 0.5s;
-}
-.page-entry .article-area-1,
-.page-entry .article-container-1,
-.page-static_page .article-area-1,
-.page-static_page .article-container-1,
-.page-archive-category .article-area-1,
-.page-archive-category .article-container-1
-{
-  display: none;
-}
 
 /* 記事内強調するための囲い枠*/
 .box7 {
@@ -191,26 +133,21 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   padding: 0 0 0 1.5em;
 }
 
-
-/* 記事内「ケンチェのコメント」CSS*/
+/* 記事内「ケンチェの一言」「この記事の内容」*/
+.entry-content .emphasize-link-1,
 .entry-content .emphasize-link-2 {
   position: relative;
   margin: 36px 0 16px;
-  padding: 16px 10px;
-  margin-bottom: 0em;
-  padding-bottom: 0em;
+  padding: 16px 10px 13px;
   border: 3px solid #4682b4;
   background-color: #fffbf5;
 }
-.entry-content .emphasize-link-2 p:last-child {
-  margin-bottom: 0;
-}
+.entry-content .emphasize-link-1::before,
 .entry-content .emphasize-link-2::before {
   position: absolute;
   top: -12px;
   left: 10px;
   padding: 0 10px 0 26px;
-  content: "ケンチェの一言";
   background-color: #4682b4;
   border-radius: 10px;
   color: #fff;
@@ -218,6 +155,7 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   font-weight: bold;
   line-height: 20px;
 }
+.entry-content .emphasize-link-1::after,
 .entry-content .emphasize-link-2::after {
   position: absolute;
   top: -16px;
@@ -233,108 +171,22 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   font-family: "blogicon";
   color: #fff;
 }
+.entry-content .emphasize-link-1 p,
 .entry-content .emphasize-link-2 p {
-  margin: 0 0 0 0em;
+  margin: 0;
 }
-
-/* 記事内「この記事で分かること」CSS*/
-.entry-content .emphasize-link-1 {
-  position: relative;
-  margin-top: 36px;
-  padding: 16px 10px 0;
-  border: 3px solid #4682b4;
-  background-color: #fffbf5;
-}
-.entry-content .emphasize-link-1 p:last-child {
-  margin-bottom: 0;
-}
-.entry-content .emphasize-link-1::before {
-  position: absolute;
-  top: -12px;
-  left: 10px;
-  padding: 0 10px 0 26px;
-  content: "この記事の内容";
-  background-color: #4682b4;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
-}
-.entry-content .emphasize-link-1::after {
-  position: absolute;
-  top: -16px;
-  left: 4px;
-  width: 28px;
-  height: 28px;
-  background-color: #4682b4;
-  border-radius: 14px;
-  line-height: 25px;
-  text-align: center;
-  content: "\f010";
-  font-size: 18px;
-  font-family: "blogicon";
-  color: #fff;
-}
-
-/* リスト共通のstyle */
-/* すべてのリストに共通するCSSを書く */
-.list {
-  border: solid 3px #4682b4;
-  padding: 0.5em;
-  position: relative;
-  margin-top: 2em;
-}
-.list ul {
+.entry-content .emphasize-link-1 ul,
+.entry-content .emphasize-link-2 ul {
   margin: 0 0 0 1.5em;
 }
-.list li {
-  line-height: 1.5;
-  padding: 0.5em 0 0.5em 1.4em;
-  border-bottom: dashed 1px silver;
-  list-style-type: none!important;
+.entry-content .emphasize-link-1::before {
+  content: "この記事の内容";
 }
-.list li:last-of-type {
-  border-bottom: none;
-}
-/*リスト内のアイコン*/
-.list li:before {
-  font-family: "FontAwesome";
-  content: "\f138";
-  position: absolute;
-  left : 0.5em;
-  color: #4682b4;
-}
-/*タイトルタブ*/
-.list li:after {
-  background: #4682b4;
-  color: #fff;
-  font-weight: bold;
-  position: absolute;
-  left: -2px;
-  bottom: 100%;
-  padding: 1px 7px;
-  /* contentは個別のCSSで書く */
-  letter-spacing: 0.05em;
-}
-.list11 li:after {
-  content: "具体例";
-}
-.list10 li:after {
-  content: "戦歴";
-}
-/* .list03 li:after {
-  content: "メニュー";
-} */
-.list02 li:after {
-  content: "まとめ";
-}
-.list05 li:after {
-  content: "member";
+.entry-content .emphasize-link-2::before {
+  content: "ケンチェの一言";
 }
 
-/*具体例 箇条書きz*/
-/*レガシー これからは.listに共通スタイルを書く*/
+/* 記事内リスト */
 .list11,
 .list10,
 .list03,
@@ -396,6 +248,22 @@ a.urllist-title-link.recent-entries-title-link.urllist-title.recent-entries-titl
   padding: 1px 7px;
   letter-spacing: 0.05em;
 }
+.list11 li:after {
+  content: "具体例";
+}
+.list10 li:after {
+  content: "戦歴";
+}
+/* .list03 li:after {
+content: "メニュー";
+} */
+.list02 li:after {
+  content: "まとめ";
+}
+.list05 li:after {
+  content: "member";
+}
+/* checked */
 
 /*黒線枠組みカスタム*/
 .box1 {
