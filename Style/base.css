@@ -263,10 +263,10 @@ content: "メニュー";
 .list05 li:after {
   content: "member";
 }
-/* checked */
 
 /*黒線枠組みカスタム*/
-.box1 {
+/* もうない？ */
+/* .box1 {
   padding: 0.5em 1em;
   margin: 2em 0;
   border: solid 1px #000000;
@@ -293,10 +293,9 @@ content: "メニュー";
 .memobox p {
   margin: 0;
   padding: 0;
-}
+} */
 
-
-/* 目次カスタム */
+/* 目次 */
 .entry-content .table-of-contents {
   border: 3px solid #4682b4;
   background: #f6f6f6;
@@ -311,20 +310,20 @@ content: "メニュー";
   text-align: center;
   border-bottom: 2px dashed #4682b4;
 }
-.entry-content .table-of-contents li{
+.entry-content .table-of-contents li {
   list-style-type: disc;
   font-weight: bold;
 }
-.entry-content .table-of-contents li ul li{
+.entry-content .table-of-contents li ul li {
   list-style-type: circle;
   font-weight: normal;
 }
-.entry-content .table-of-contents li ul li ul li{
+.entry-content .table-of-contents li ul li ul li {
   list-style-type: square;
   font-weight: normal;
 }
 
-/* 続きを読むボタン */
+/* サイドバープロフ「続きをよむ」 */
 .cp_box *, .cp_box *:before, .cp_box *:after {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -337,7 +336,7 @@ content: "メニュー";
 	z-index: 1;
 	bottom: 0;
 	width: 100%;
-	height: 140px; /* グラデーションの高さ */
+	height: 140px;
 	cursor: pointer;
 	text-align: center;
 	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
@@ -365,11 +364,8 @@ content: "メニュー";
 }
 .cp_box .cp_container {
 	overflow: hidden;
-	height: 250px; /* 開く前に見えている部分の高さ */
+	height: 250px;
 	transition: all 0.5s;
-}
-.cp_box input:checked + label {
-	/* display: none ; 閉じるボタンを消す場合解放 */
 }
 .cp_box input:checked + label:after {
 	font-family: "FontAwesome";
@@ -377,10 +373,10 @@ content: "メニュー";
 }
 .cp_box input:checked ~ .cp_container {
 	height: auto;
-	padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
+	padding-bottom: 80px;
 	transition: all 0.5s;
 }
-
+/* checked */
 
 /* ページャー */
 .pager {
