@@ -376,9 +376,7 @@ content: "メニュー";
 	padding-bottom: 80px;
 	transition: all 0.5s;
 }
-/* checked */
 
-/* ページャー */
 .pager {
   position: relative;
   margin: 2em 0;
@@ -445,36 +443,31 @@ content: "メニュー";
   border: 1px solid #ddd;
   border-radius: 3px;
 }
-
-
 /* 記事の概要 */
 .page-index .entry-description {
   display : none;
 }
-
 /* はてなスター */
 .star-container {
   display : none;
 }
 
-/* リストの先頭マーク */
 .entry-content .table-of-contents li {
-  list-style-type:disc; /* 大見出し：黒丸 */
-  font-weight: bold; /* 太字 */
+  list-style-type: disc;
+  font-weight: bold;
 }
 .entry-content .table-of-contents li ul li {
-  font-weight: normal; /* 文字標準 */
+  font-weight: normal;
 }
 .entry-content .table-of-contents li ul li ul li {
-  font-weight: normal; /* 文字標準 */
+  font-weight: normal;
 }
 ul.table-of-contents a {
-  text-decoration: none; /* リンク下線なし */
+  text-decoration: none;
 }
+/* checked */
 
-
-/*スマホページトップボタン設置*/
-/* To Top */
+/*スマホページトップボタン*/
 .toTop-nav {
   position: fixed;
   bottom: 10px;
