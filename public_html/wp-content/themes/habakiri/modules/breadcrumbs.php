@@ -9,7 +9,8 @@
  * License URI: license.txt
  */
 
-if ( !is_front_page() ) {
-	$Bread_Crumb = new Habakiri_Breadcrumbs();
-	$Bread_Crumb->display();
-}
+// パンくず非表示
+// if ( !is_front_page() ) {
+// 	$Bread_Crumb = new Habakiri_Breadcrumbs();
+// 	$Bread_Crumb->display();
+// }
