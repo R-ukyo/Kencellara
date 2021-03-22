@@ -1,0 +1,18 @@
+.header {
+  border: 8px ridge antiquewhite;
+  background: content-box radial-gradient(white, darkslategrey);
+}
+.headerImgContainer {
+  width: 100%;
+}
+.site-branding {
+  padding: 0;
+}
+.site-branding__heading img {
+  max-width: 1100px;
+  margin: auto;
+  display: block;
+}
+.site-branding__heading a {
+  display: block;
+}
