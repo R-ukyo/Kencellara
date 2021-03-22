@@ -1,5 +1,6 @@
 *.zip
 *.log
+*.ftpconfig
 /Qiita/
 /Scrape/.scrapy/httpcache/
 /Scrape/images/
@@ -8,3 +9,4 @@
 /Assets/font-awesome/
 /Img/
 /Document/
+/public_html/wp-content/uploads/
