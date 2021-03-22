@@ -1,6 +1,7 @@
 *.zip
 *.log
 *.ftpconfig
+*sample.html
 /Qiita/
 /Scrape/.scrapy/httpcache/
 /Scrape/images/
