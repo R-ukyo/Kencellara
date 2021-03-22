@@ -47,8 +47,8 @@ class Habakiri_Customizer {
 				'is_displaying_thumbnail'          => 'true',
 				'is_displaying_bread_crumb'        => 'true',
 				'is_displaying_related_posts'      => 'true',
-				'is_displaying_page_header'        => 'true',
-				'is_displaying_page_header_lead'   => 'true',
+				'is_displaying_page_header'        => 'false',
+				'is_displaying_page_header_lead'   => 'false',
 				'link_color'                       => '#337ab7',
 				'link_hover_color'                 => '#23527c',
 				'gnav_bg_color'                    => '#fff',
@@ -115,7 +115,7 @@ class Habakiri_Customizer {
 			'title'    => __( 'Colors', 'habakiri' ),
 			'priority' => 110,
 		) );
-		
+
 		// colors - general
 
 		$this->Customizer_Framework->add_section( 'colors', array(
@@ -387,12 +387,12 @@ class Habakiri_Customizer {
 		) );
 
 		// layout
-		
+
 		$this->Customizer_Framework->add_panel( 'habakiri_layout', array(
 			'title'    => __( 'Layout', 'habakiri' ),
 			'priority' => 112,
 		) );
-		
+
 		// layout - header
 
 		$this->Customizer_Framework->add_section( 'habakiri_layout_header', array(
@@ -421,14 +421,14 @@ class Habakiri_Customizer {
 				'header--fixed' => __( 'Yes', 'habakiri' ),
 			),
 		) );
-		
+
 		// layout - footer
 
 		$this->Customizer_Framework->add_section( 'habakiri_layout_footer', array(
 			'title' =>  __( 'Footer', 'habakiri' ),
 			'panel' => 'habakiri_layout',
 		) );
-		
+
 		$this->Customizer_Framework->radio( 'footer_columns', array(
 			'label'   => __( 'Number of footer columns', 'habakiri' ),
 			'default' => self::get_default( 'footer_columns' ),
@@ -439,7 +439,7 @@ class Habakiri_Customizer {
 				'col-md-3' => __( '4 Columns', 'habakiri' ),
 			),
 		) );
-		
+
 		// layout - gnav
 
 		$this->Customizer_Framework->add_section( 'habakiri_layout_gnav', array(
@@ -517,7 +517,7 @@ class Habakiri_Customizer {
 				'left'  => __( 'Left', 'habakiri' ),
 			),
 		) );
-	
+
 		// layout - template
 
 		$this->Customizer_Framework->add_section( 'habakiri_layout_template', array(
