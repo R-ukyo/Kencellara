@@ -9,13 +9,6 @@
  * License URI: license.txt
  */
 ?>
-<?php add_action(
-	'wp_enqueue_scripts',
-	wp_enqueue_style(
-		'home-style',
-		get_template_directory_uri() . '/css/home.css'
-	));
-?>
 <?php get_header(); ?>
 
 <?php get_template_part( 'modules/page-header' ); ?>
