@@ -12,7 +12,7 @@
  */
 ?>
 <?php
-	add_filter( 'wp_footer', function() {
+	add_filter('wp_footer', function() {
 		?>
 		<script>
 			jQuery('.slider').slick({
@@ -74,9 +74,11 @@
 					  <a href="https://www.kencellara.com/kence_work">コラボ・お仕事のご依頼</a>
 					</div>
 
-					<div id="js-storeCountArea" class="storeCountArea">
+					<div class="storeCountArea">
 					  <div class="storeCountContainer">
-					    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />現在<span id="storeCounter" class="storeCounter"></span>店舗制覇<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
+					    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
+							現在<?php $cat = get_category(2); echo $cat->count; ?>店舗制覇
+							<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
 					  </div>
 					</div>
 
