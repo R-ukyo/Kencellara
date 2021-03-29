@@ -1,3 +1,80 @@
-.entry__title {
-  display: none;
+body.home .sub-page-contents {
+  padding-top: 20px;
+}
+.collab_req {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.collab_req a {
+  text-shadow: 2px 2px 2px silver;
+  background-color: antiquewhite;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: .5em .8em;
+  border-radius: 0px;
+  border: 2px outset silver;
+}
+.collab_req a:hover {
+  text-shadow: 2px 2px 2px black;
+}
+/* 店舗数 */
+.storeCountArea {
+  display: block;
+  padding: 15px 0 10px;
+  height: 50px;
+  background-color: currentColor;
+}
+.storeCountArea.look {
+  display: block;
+  margin: 30px auto;
+}
+.storeCountContainer {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px silver;
+  font-size: 24px;
+  box-shadow: 0px 0px 10px 5px gold;
+}
+.storeCountContainer img {
+  width: 32px;
+  vertical-align: text-top;
+}
+.storeCounter {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 8px;
+  color: crimson;
+}
+/* スライドショー */
+.slider {
+  background-color: currentColor;
+  padding: 20px 0;
+}
+.page-index .slider {
+  display: block !important;
+}
+.slider img {
+  width: 90%;
+  margin: 20px auto 0;
+}
+.slick-slide {
+  margin: 20px;
+  opacity: 0.6;
+}
+.slick-center {
+  opacity: 1;
+  transform: scale(1.5);
+}
+.slick-center img {
+  margin: 10px;
+  padding: 15px 0;
+}
+.slick-prev {
+  z-index: 1;
 }

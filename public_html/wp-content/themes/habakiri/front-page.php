@@ -11,40 +11,66 @@
  * License URI  : license.txt
  */
 ?>
-<?php add_action(
-	'wp_enqueue_scripts',
-	wp_enqueue_style(
-		'home-style',
-		get_template_directory_uri() . '/css/from_hatena.css'
-	));
+<?php
+	add_filter( 'wp_footer', function() {
+		?>
+		<script>
+			jQuery('.slider').slick({
+				arrows: true,
+				centerMode: true,
+				centerPadding: '70px',
+				slidesToShow: 3,
+				dots: true,
+				autoplay: true,
+				autoplaySpeed: 2500,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: true,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		</script>
+		<?php
+	} );
+?>
+<?php
+	function add_slick_scripts() {
+		wp_enqueue_script(
+			'slick-script',
+			get_theme_file_uri('/src/js/slick/slick.min.js'),
+			array('jquery')
+		);
+	}
+	add_action('wp_enqueue_scripts', 'add_slick_scripts');
+?>
+<?php
+	add_action('wp_enqueue_scripts', wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css', array('habakiri', 'common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
 ?>
 <?php get_header(); ?>
 
-<?php get_template_part( 'modules/page-header' ); ?>
 <div class="sub-page-contents">
-
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
 				<main id="main" role="main">
-					<div class="headerButtonZone">
-					  <div class="header-info headerNewArticle">
-					    <a class="toBicycle" href="https://www.kencellara.com/archive/category/ロードバイク全記事">
-					      自転車
-					    </a>
-					  </div>
-					  <div class="header-info headerNewArticle">
-					    <a id="toNewPost" class="toNewPost" href="https://www.kencellara.com/#main">最新記事</a>
-					  </div>
-					  <div class="header-info headerNewArticle">
-					    <a class="toAdventure" href="https://www.kencellara.com/archive/category/ブログ道">
-					      ブログ道
-					    </a>
-					  </div>
-					</div>
-
-					<!-- 細長いテキストリンク挿入2 -->
-					<div class="header-info header-info2">
+					<div class="collab_req">
 					  <a href="https://www.kencellara.com/kence_work">コラボ・お仕事のご依頼</a>
 					</div>
 
@@ -54,26 +80,24 @@
 					  </div>
 					</div>
 
+					<!-- スライドショー -->
 					<div class="slider">
-
-					<div>
+						<div>
 					    <a href="https://www.kencellara.com/entry/kence-1000">
 					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210217/20210217233602.jpg" alt="ケンチェ飯イベント" />
 					    </a>
 					  </div>
-
-					   <div>
+					  <div>
 					    <a href="https://www.kencellara.com/entry/goshichiya">
 					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210206/20210206203252.jpg" alt="麵屋 五七屋" />
 					    </a>
 					  </div>
-
 					  <div>
 					    <a href="https://www.kencellara.com/entry/ise-recommend-ramen">
 					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210127/20210127004833.jpg" alt="伊勢のおすすめラーメン" />
 					    </a>
 					  </div>
-					    <div>
+					  <div>
 					    <a href="https://www.kencellara.com/kence_work">
 					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215191350.jpg" alt="ケンチェ飯広告" />
 					    </a>
@@ -83,56 +107,17 @@
 					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210107/20210107233006.jpg" alt="ケンチェのプロフィール" />
 					    </a>
 					  </div>
-
-
-
 					  <div>
 					    <a href="https://www.kencellara.com/entry/yashiro">
 					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210205/20210205173339.jpg" alt="綱元の店 八代" />
 					    </a>
 					  </div>
-
-
-					   <div>
+					  <div>
 					    <a href="https://www.kencellara.com/entry/menya-banbi">
 					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210204/20210204212507.jpg" alt="麵屋 ばんび" />
 					    </a>
 					  </div>
 					</div>
-
-					<!-- スライドショー -->
-					<!-- 場所変えない -->
-					<script type="text/javascript">
-					  $('.slider').slick({
-					    arrows: true,
-					    centerMode: true,
-					    centerPadding: '70px',
-					    slidesToShow: 3,
-					    dots: true,
-					    autoplay: true,
-					    autoplaySpeed: 2500,
-					    responsive: [
-					    {
-					      breakpoint: 768,
-					      settings: {
-					        arrows: true,
-					        centerMode: true,
-					        centerPadding: '40px',
-					        slidesToShow: 3
-					      }
-					    },
-					    {
-					      breakpoint: 480,
-					      settings: {
-					        arrows: true,
-					        centerMode: true,
-					        centerPadding: '40px',
-					        slidesToShow: 1
-					      }
-					    }
-					  ]
-					  });
-					</script>
 
 					<div id="jsFixedSNS" class="miniInfoArea">
 					  <div class="snsContainer">

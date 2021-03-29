@@ -9,13 +9,6 @@
  * License URI: license.txt
  */
 ?>
-<?php add_action(
-	'wp_enqueue_scripts',
-	wp_enqueue_style(
-		'header-style',
-		get_template_directory_uri() . '/css/header.css'
-	));
-?>
 
 <?php do_action( 'habakiri_before_site_branding' ); ?>
 <div class="site-branding">
