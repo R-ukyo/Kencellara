@@ -140,3 +140,127 @@ body.home .sub-page-contents {
   font-size: 31px;
   color: #305097;
 }
+
+/* 地域別検索エリア */
+.areaList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.areaSearchZone li {
+  list-style: none;
+  border: 1px solid #bce2e8;
+  border-radius: 5px;
+}
+.areaSearchZone a {
+  display: block;
+  background: linear-gradient(#fff, #bce2e8);
+}
+.areaSearchZone a:hover {
+  opacity: 0.6;
+  color: #fff;
+  background: linear-gradient(#fff, #ff6600);
+}
+.areaSearchContainer {
+  height: 100%;
+}
+.areaSearchTitle {
+  color: black;
+  width: 270px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto 30px;
+  box-shadow: 5px 5px 5px 1px black;
+}
+.areaSearchInner {
+  display: flex;
+  margin: auto;
+  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209002422.jpg");
+  background-size: contain;
+}
+.areaZone {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.areaHeader {
+  color: #fff;
+  border-radius: 3px;
+}
+.hokubuHeader {
+  background-color: #1D87FB;
+}
+.igaHeader {
+  background-color: #92D050;
+}
+.chubuHeader {
+  background-color: #FFD13F;
+}
+.iseShimaHeader {
+  background-color: #91BCE3;
+}
+.higashikishuHeader {
+  background-color: #DA54BD;
+}
+.inabe,
+.komono,
+.suzuka,
+.nabari,
+.watarai,
+.tamaki,
+.taiki,
+.kumano,
+.mihama,
+.kiho {
+  display: none;
+}
+.areaSearchZone {
+  height: 875px;
+}
+.areaSearchContainer {
+  margin: 30px 0;
+}
+.areaSearchTitle {
+  height: 35px;
+  font-size: 22px;
+}
+.areaSearchInner {
+  height: 800px;
+  width: 700px;
+}
+.areaZone {
+  width: 150px;
+  height: 200px;
+}
+.areaZone.hokubu {
+  top: 30px;
+  left: 150px;
+}
+.areaZone.iga {
+  top: 230px;
+  left: -120px;
+}
+.areaZone.chubu {
+  top: 190px;
+  right: -230px;
+}
+.areaZone.iseShima {
+  top: 520px;
+  right: -90px;
+}
+.areaZone.higashikishu {
+  top: 530px;
+  left: -580px;
+}
+.areaHeader {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.areaSearchZone li {
+  margin-bottom: 8px;
+  width: 65px;
+  font-size: 20px;
+}
