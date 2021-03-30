@@ -148,7 +148,7 @@
 					  <input type="checkbox" id="kencemeshiPulldown" class="accordion" />
 					  <div class="pulldownContainer">
 					    <div class="pulldownInner">
-					      <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215233759.jpg" alt="ケンチェラーラのプロフィール." loading="lazy" />
+					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215233759.jpg" alt="ケンチェラーラのプロフィール." loading="lazy" />
 					      <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
 					      <p>三重県グルメを食べ歩き, <strong><u>どのサイトよりも詳しく</u></strong>グルメ情報を発信するサイト.</p>
 					      <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
@@ -159,7 +159,7 @@
 					  </div>
 					</div> -->
 
-					<!-- 地域別検索リニューアル -->
+					<!-- 地域別検索 -->
 					<div class="areaSearchZone">
 					  <div class="areaSearchContainer">
 					    <div class="areaSearchTitle">エリアでグルメ検索 <i class="fas fa-search"></i></div>
@@ -268,7 +268,7 @@
 					  </div>
 					</div>
 
-					<!-- ジャンル別検索リニューアル -->
+					<!-- ジャンル別検索 -->
 					<div class="genreSearchZone">
 					  <div class="genreSearchContainer">
 					    <div class="genreSearchTitle">ジャンルでグルメ検索 <i class="fas fa-search"></i></div>
@@ -333,74 +333,70 @@
 					  </div>
 					</div>
 
-					<div class="article-area">
-					  <p class="recommend-heading"><i class="fas fa-fire"></i> ケンチェ激押しグルメ <i class="fas fa-fire"></i></p>
-					  <div class="article-container first">
-					    <div class="article-box">
-					      <div class="article-img">
+					<div class="recommendGourmetZone">
+					  <div class="recommendGourmetHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
+					  <div class="recommendGourmetContainer first">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/jamise">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210207/20210207105029.jpg" alt="伊勢市のジャミセ" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210207/20210207105029.jpg" alt="伊勢市のジャミセ" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>
 
-					    <div class="article-box">
-					      <div class="article-img">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/nikumaru-obata">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210124/20210124101015.jpg" alt="肉丸小俣店" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210124/20210124101015.jpg" alt="肉丸小俣店" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>
 
-					    <div class="article-box">
-					      <div class="article-img">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/cultivate">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210110/20210110001930.jpg" alt="カルティベイト" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210110/20210110001930.jpg" alt="カルティベイト" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>
 
-					    <div class="article-box">
-					      <div class="article-img">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/killibilli">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210208/20210208223419.jpg" alt="伊勢市のクレープ屋" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210208/20210208223419.jpg" alt="伊勢市のクレープ屋" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>
 					  </div>
-					</div>
-
-					<!-- 三重県にある伝説のグルメ2 -->
-					<div class="article-area">
-					  <div class="article-container">
-					    <div class="article-box">
-					      <div class="article-img">
+					  <div class="recommendGourmetContainer">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/Kona-coffee">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210210/20210210213614.jpg" alt="津市のコナズ珈琲" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210210/20210210213614.jpg" alt="津市のコナズ珈琲" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>
 
-					    <div class="article-box">
-					      <div class="article-img">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/nikkoutei">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210118/20210118222638.jpg" alt="にっこう亭のお店情報まとめ" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210118/20210118222638.jpg" alt="にっこう亭のお店情報まとめ" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>
 
-					    <div class="article-box">
-					      <div class="article-img">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/cafe-shiroiro">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20201208/20201208160153.jpg" alt="明和のカフェシロイロ" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20201208/20201208160153.jpg" alt="明和のカフェシロイロ" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>
 
-					    <div class="article-box">
-					      <div class="article-img">
+					    <div class="recommendGourmetBox">
+					      <div class="recommendGourmetImg">
 					        <a href="https://www.kencellara.com/entry/meiwa-mugi">
-					          <img data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210118/20210118222647.jpg" alt="明和町の麦のお店情報ランチ" loading="lazy" />
+					          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210118/20210118222647.jpg" alt="明和町の麦のお店情報ランチ" loading="lazy" />
 					        </a>
 					      </div>
 					    </div>

@@ -264,3 +264,147 @@ body.home .sub-page-contents {
   width: 65px;
   font-size: 20px;
 }
+
+/* ジャンル検索 */
+.genreSearchZone {
+  margin: 30px 0 0;
+  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210212/20210212010912.jpg");
+}
+.genreSearchContainer {
+  padding: 20px 0 0;
+}
+.genreSearchTitle {
+  color: black;
+  font-size: 22px;
+  width: 290px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto 20px;
+  box-shadow: 5px 5px 5px 1px silver;
+  background-color: white;
+}
+.genreSearchInner {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin: auto;
+}
+.genreSearchColumn {
+  display: flex;
+}
+.genreSearchCard {
+  transition: 0.5s;
+  background: radial-gradient(ellipse closest-side, #433d3c, #8d6449 10%, #bc763c 50%, #946243);
+  font-weight: bold;
+  text-align: center;
+}
+.genreSearchColumn i {
+  z-index: 2;
+  transition: 0.5s;
+}
+i.oniku {
+  color: #ffffea;
+}
+i.teishoku {
+  color: #fff4ea;
+}
+i.kaisen {
+  color: #eaffea;
+}
+i.bread {
+  color: #f4ffea;
+}
+i.cafe {
+  color: #ffeaff;
+}
+i.chain {
+  color: #f4eaff;
+}
+i.ramen {
+  color: #ffeaea;
+}
+i.izakaya {
+  color: #ffeaf4;
+}
+.genreSearchColumn .fa-bookmark {
+  margin: auto;
+  position: relative;
+}
+.genreSearchCard a {
+  display: block;
+  color: #fff;
+  font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, sans-serif;
+}
+.genreSearchCard:hover {
+  transform: rotateZ(10deg);
+}
+.genreSearchCard:hover + i {
+  transform: rotateZ(10deg) translateX(20px);
+}
+.genreSearchCard {
+  margin: 30px;
+  height: 250px;
+}
+.genreSearchColumn .fa-bookmark {
+  font-size: 40px;
+  top: -280px;
+  text-shadow: 1px 1px 2px burlywood;
+}
+.genreSearchCard {
+  box-shadow: 3px 3px 3px 3px lightslategrey;
+  border: 3px outset burlywood;
+}
+.genreSearchCard a {
+  font-size: 45px;
+  padding: 45px 10px 0;
+}
+
+/* ケンチェ激推しグルメ */
+.recommendGourmetZone {
+  background-color: antiquewhite;
+  padding: 20px 10px;
+}
+.recommendGourmetHeader {
+  color: black;
+  background-color: white;
+  margin: auto;
+  width: 320px;
+  box-shadow: 5px 5px 5px 1px black;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+  font-size: 22px;
+}
+.recommendGourmetContainer {
+  width: 90%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0px auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recommendGourmetBox {
+  box-sizing: border-box;
+  border: 3px outset silver;
+  width: 45%;
+  margin: 15px;
+  overflow: hidden;
+}
+.recommendGourmetImg {
+  height: 100%;
+}
+.recommendGourmetImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition-duration: 0.5s;
+}
+.recommendGourmetImg:hover img {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}

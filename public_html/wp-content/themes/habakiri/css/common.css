@@ -1,6 +1,10 @@
-#container a {
-  color: #333 !important;
+.page_parent a {
+  color: #333;
 }
-#container a:hover {
-  text-decoration: none !important;
+.page_parent a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.fa-fire {
+  color: firebrick;
 }

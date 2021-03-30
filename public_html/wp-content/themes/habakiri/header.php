@@ -27,7 +27,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php do_action( 'habakiri_before_container' ); ?>
-<div id="container">
+<div id="container" class="page_parent">
 	<?php
 	$header_classes     = Habakiri::get_header_classses();
 	$site_branding_size = Habakiri::get_site_branding_size();
