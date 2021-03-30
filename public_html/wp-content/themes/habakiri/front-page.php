@@ -18,7 +18,7 @@
 			jQuery('.slider').slick({
 				arrows: true,
 				centerMode: true,
-				centerPadding: '70px',
+				centerPadding: '20px',
 				slidesToShow: 3,
 				dots: true,
 				autoplay: true,
@@ -29,7 +29,7 @@
 						settings: {
 							arrows: true,
 							centerMode: true,
-							centerPadding: '40px',
+							centerPadding: '20px',
 							slidesToShow: 3
 						}
 					},
@@ -59,7 +59,7 @@
 	add_action('wp_enqueue_scripts', 'add_slick_scripts');
 ?>
 <?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css', array('habakiri', 'common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css', array('habakiri', 'common-style'), false));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
 ?>
@@ -77,7 +77,7 @@
 					<div class="storeCountArea">
 					  <div class="storeCountContainer">
 					    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
-							現在<?php $cat = get_category(2); echo $cat->count; ?>店舗制覇
+							現在<span class="storeCounter"><?php $cat = get_category(2); echo $cat->count; ?></span>店舗制覇
 							<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
 					  </div>
 					</div>
@@ -130,18 +130,18 @@
 					      <img class="InstagramIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201213002.jpg" alt="instagram" />
 					    </a>
 					    <a class="twitter-button" href="https://twitter.com/kencellara_food" target="_blank" rel="noopener noreferrer">
-					      <i class="blogicon-twitter lg"></i>
+					      <i class="fab fa-twitter-square"></i>
 					    </a>
 					    <a href="https://lin.ee/kjAkh3g" target="_blank" rel="noopener noreferrer">
 					      <img class="LINEIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201212953.jpg" alt="LINE" />
 					    </a>
 					    <a class="facebook-button" href="https://www.facebook.com/kencellarafood" target="_blank" rel="noopener noreferrer">
-					      <i class="blogicon-facebook lg"></i>
+					      <i class="fab fa-facebook-square"></i>
 					    </a>
 					  </div>
 					</div>
 
-					<div class="pulldownArea howtoPulldown">
+					<!-- <div class="pulldownArea howtoPulldown">
 					  <label for="kencemeshiPulldown" class="pulldownLabel">
 					    ケンチェ飯とは？(Click!)
 					  </label>
@@ -157,7 +157,7 @@
 					      <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href="https://www.kencellara.com/support">こちら>></a></strong></p>
 					    </div>
 					  </div>
-					</div>
+					</div> -->
 
 					<!-- 地域別検索リニューアル -->
 					<div class="areaSearchZone">
