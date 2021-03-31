@@ -404,7 +404,7 @@
 					</div>
 
 					<!-- 番付PC -->
-					<div class="headerBanzuke pc">
+					<!-- <div class="headerBanzuke pc">
 					  <table>
 					    <caption>ケンチェ番付 <i class="fas fa-trophy"></i></caption>
 					    <tbody>
@@ -476,10 +476,10 @@
 					      </tr>
 					    </tbody>
 					  </table>
-					</div>
+					</div> -->
 					<!-- ケンチェ番付SP -->
 					<div class="headerBanzukeWrapper">
-					  <div class="headerBanzuke sp">
+					  <div class="headerBanzuke">
 					    <table>
 					      <caption>ケンチェ番付 <i class="fas fa-trophy"></i></caption>
 					      <tbody>
@@ -558,7 +558,7 @@
 					      </tbody>
 					    </table>
 					  </div>
-					  <div id="openBanzuke" class="openBanzuke"><i class="fas fa-chevron-circle-down"></i>4位以下を表示<i class="fas fa-chevron-circle-down"></i></div>
+					  <!-- <div id="openBanzuke" class="openBanzuke"><i class="fas fa-chevron-circle-down"></i>4位以下を表示<i class="fas fa-chevron-circle-down"></i></div> -->
 					</div>
 
 					<div class="kenceWindowAnnounce">

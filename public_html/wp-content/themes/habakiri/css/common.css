@@ -5,6 +5,12 @@
   color: #333;
   text-decoration: none;
 }
+
+/* font-awesome */
 .fa-fire {
   color: firebrick;
+}
+.fa-trophy {
+  color: goldenrod;
+  text-shadow: 2px 2px 2px gold;
 }

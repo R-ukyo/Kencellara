@@ -408,3 +408,96 @@ i.izakaya {
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
+
+/* ヘッダー番付 */
+.headerBanzuke {
+  padding: 10px 0;
+  background-color: cornsilk;
+}
+.headerBanzuke.sp {
+  overflow-y: hidden;
+  border: 2px inset cornsilk;
+}
+.headerBanzuke.sp.open {
+  height: calc(100% + 45px);
+}
+/* .headerBanzuke.sp tr:nth-child(n+4) {
+  display: none;
+} */
+.headerBanzuke.sp.open tr:nth-child(n+4) {
+  display: table-row;
+}
+.openBanzuke {
+  display: block;
+  font-size: 15px;
+  padding: 10px 15px 15px;
+  width: 160px;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: cornsilk;
+}
+.headerBanzuke caption {
+  padding: 0;
+  text-align: center;
+  width: 220px;
+  margin: 10px auto;
+  background-color: white;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px 1px black;
+}
+.headerBanzuke table {
+  margin: auto;
+}
+.headerBanzuke .lanking {
+  width: 70px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.headerBanzuke .lanking.first {
+  text-shadow: 3px 3px 3px gold;
+}
+.headerBanzuke .lanking.second {
+  text-shadow: 3px 3px 3px silver;
+}
+.headerBanzuke .lanking.third {
+  text-shadow: 3px 3px 3px #b87333;
+}
+.headerBanzuke .articleZone {
+  width: 400px;
+  padding: 12px 10px;
+}
+.headerBanzuke h3 {
+  margin: 5px 0;
+}
+.headerBanzuke p {
+  margin: 2px 0;
+}
+.headerBanzuke .starZone {
+  width: 150px;
+}
+.star-rating {
+  position: relative;
+  display:inline-block;
+  font-size: 25px;
+}
+.sp .star-rating {
+  font-size: 20px;
+}
+.star-rating .star-rating-item {
+  position:absolute;
+  overflow: hidden;
+}
+.star-rating .star-rating-item:before {
+  content:"★★★★★";
+  color: #ffcc33;
+}
+.star-rating:after {
+  content:"★★★★★";
+  color: #ccc;
+}
