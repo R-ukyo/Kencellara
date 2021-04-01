@@ -591,7 +591,7 @@
 					</div>
 
 					<!-- 細長いテキストリンク挿入1 -->
-					<div class="header-info header-info1 monthlyBlogInfo">
+					<div class="monthlyBlogInfo">
 					  <a href="https://www.kencellara.com/entry/kencellara_blog">ブログPV数・収益の公開はこちら</a>
 					</div>
 				</main>

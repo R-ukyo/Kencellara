@@ -608,3 +608,27 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 .kenceWindowModalContentInner {
   max-height: 100vh;
 }
+
+.monthlyBlogInfo {
+  position: relative;
+  max-width: 100%;
+}
+.monthlyBlogInfo:hover {
+  opacity: 0.8;
+}
+.monthlyBlogInfo a {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: .5em .8em;
+  border-radius: 0px;
+  border: 2px outset silver;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5em;
+  background-color: burlywood;
+  color: #fff;
+}
+.monthlyBlogInfo a:hover {
+  text-shadow: 3px 3px 3px black;
+}
