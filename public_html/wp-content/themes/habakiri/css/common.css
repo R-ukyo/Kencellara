@@ -1,7 +1,8 @@
 .page_parent a {
   color: #333;
 }
-.page_parent a:hover {
+.page_parent a:hover,
+.page_parent a:active {
   color: #333;
   text-decoration: none;
 }
