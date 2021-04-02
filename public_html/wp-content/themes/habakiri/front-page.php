@@ -71,13 +71,13 @@
 			<div class="col-md-9">
 				<main id="main" role="main">
 					<div class="collab_req">
-					  <a href="https://www.kencellara.com/kence_work">コラボ・お仕事のご依頼</a>
+					  <a href=<?php echo get_permalink( 709 ); ?>>コラボ・お仕事のご依頼</a>
 					</div>
 
 					<div class="storeCountArea">
 					  <div class="storeCountContainer">
 					    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
-							現在<span class="storeCounter"><?php $cat = get_category(2); echo $cat->count; ?></span>店舗制覇
+							現在<span class="storeCounter"><?php echo get_category(2)->count; ?></span>店舗制覇
 							<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
 					  </div>
 					</div>
@@ -171,16 +171,16 @@
 					            <a href="">いなべ</a>
 					          </li>
 					          <li class="kuwana">
-					            <a href="https://www.kencellara.com/archive/category/桑名市グルメ">桑名</a>
+					            <a href=<?php $category_id = get_cat_ID('桑名市グルメ'); echo get_category_link($category_id); ?>>桑名</a>
 					          </li>
 					          <li class="yokkaichi">
-					            <a href="https://www.kencellara.com/archive/category/四日市市グルメ">四日市</a>
+					            <a href=<?php $category_id = get_cat_ID('四日市市グルメ'); echo get_category_link($category_id); ?>>四日市</a>
 					          </li>
 					          <li class="komono">
 					            <a href="">菰野</a>
 					          </li>
 					          <li class="kameyama">
-					            <a href="https://www.kencellara.com/archive/category/亀山市グルメ">亀山</a>
+					            <a href=<?php $category_id = get_cat_ID('亀山市グルメ'); echo get_category_link($category_id); ?>>亀山</a>
 					          </li>
 					          <li class="suzuka">
 					            <a href="">鈴鹿</a>
@@ -191,7 +191,7 @@
 					        <div class="igaHeader areaHeader">伊賀</div>
 					        <ul class="areaList">
 					          <li class="iga">
-					            <a href="https://www.kencellara.com/archive/category/伊賀市グルメ">伊賀</a>
+					            <a href=<?php $category_id = get_cat_ID('伊賀市グルメ'); echo get_category_link($category_id); ?>>伊賀</a>
 					          </li>
 					          <li class="nabari">
 					            <a href="">名張</a>
@@ -202,16 +202,16 @@
 					        <div class="chubuHeader areaHeader">中部</div>
 					        <ul class="areaList">
 					          <li class="tsu">
-					            <a href="https://www.kencellara.com/archive/category/津市グルメ">津</a>
+					            <a href=<?php $category_id = get_cat_ID('津市グルメ'); echo get_category_link($category_id); ?>>津</a>
 					          </li>
 					          <li class="matsusaka">
-					            <a href="https://www.kencellara.com/archive/category/松阪市グルメ">松阪</a>
+					            <a href=<?php $category_id = get_cat_ID('松阪市グルメ'); echo get_category_link($category_id); ?>>松阪</a>
 					          </li>
 					          <li class="meiwa">
-					            <a href="https://www.kencellara.com/archive/category/明和町グルメ">明和</a>
+					            <a href=<?php $category_id = get_cat_ID('明和町グルメ'); echo get_category_link($category_id); ?>>明和</a>
 					          </li>
 					          <li class="taki">
-					            <a href="https://www.kencellara.com/archive/category/多気町グルメ">多気</a>
+					            <a href=<?php $category_id = get_cat_ID('多気町グルメ'); echo get_category_link($category_id); ?>>多気</a>
 					          </li>
 					        </ul>
 					      </div>
@@ -219,7 +219,7 @@
 					        <div class="iseShimaHeader areaHeader">伊勢志摩</div>
 					        <ul class="areaList">
 					          <li class="ise">
-					            <a href="https://www.kencellara.com/archive/category/伊勢市グルメ">伊勢</a>
+					            <a href=<?php $category_id = get_cat_ID('伊勢市グルメ'); echo get_category_link($category_id); ?>>伊勢</a>
 					          </li>
 					          <li class="watarai">
 					            <a href="">度会</a>
@@ -228,13 +228,13 @@
 					            <a href="">玉城</a>
 					          </li>
 					          <li class="toba">
-					            <a href="https://www.kencellara.com/archive/category/鳥羽市グルメ">鳥羽</a>
+					            <a href=<?php $category_id = get_cat_ID('鳥羽市グルメ'); echo get_category_link($category_id); ?>>鳥羽</a>
 					          </li>
 					          <li class="shima">
-					            <a href="https://www.kencellara.com/archive/category/志摩市グルメ">志摩</a>
+					            <a href=<?php $category_id = get_cat_ID('志摩市グルメ'); echo get_category_link($category_id); ?>>志摩</a>
 					          </li>
 					          <li class="minamiise">
-					            <a href="https://www.kencellara.com/archive/category/南伊勢町グルメ">南伊勢</a>
+					            <a href=<?php $category_id = get_cat_ID('南伊勢町グルメ'); echo get_category_link($category_id); ?>>南伊勢</a>
 					          </li>
 					        </ul>
 					      </div>
@@ -242,16 +242,16 @@
 					        <div class="higashikishuHeader areaHeader">東紀州</div>
 					        <ul class="areaList">
 					          <li class="odai">
-					            <a href="https://www.kencellara.com/archive/category/大台町グルメ">大台</a>
+					            <a href=<?php $category_id = get_cat_ID('大台町グルメ'); echo get_category_link($category_id); ?>>大台</a>
 					          </li>
 					          <li class="kihoku">
-					            <a href="https://www.kencellara.com/archive/category/紀北町グルメ">紀北</a>
+					            <a href=<?php $category_id = get_cat_ID('紀北町グルメ'); echo get_category_link($category_id); ?>>紀北</a>
 					          </li>
 					          <li class="taiki">
 					            <a href="">大紀</a>
 					          </li>
 					          <li class="owase">
-					            <a href="https://www.kencellara.com/archive/category/尾鷲市グルメ">尾鷲</a>
+					            <a href=<?php $category_id = get_cat_ID('尾鷲市グルメ'); echo get_category_link($category_id); ?>>尾鷲</a>
 					          </li>
 					          <li class="kumano">
 					            <a href="">熊野</a>
@@ -275,13 +275,13 @@
 					    <div class="genreSearchInner">
 					      <div class="genreSearchColumn">
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/お肉">
+					          <a href=<?php $category_id = get_cat_ID('お肉'); echo get_category_link($category_id); ?>>
 					            お肉
 					          </a>
 					        </div>
 					        <i class="fas fa-bookmark oniku"></i>
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/定食">
+					          <a href=<?php $category_id = get_cat_ID('定食'); echo get_category_link($category_id); ?>>
 					            定食
 					          </a>
 					        </div>
@@ -289,13 +289,13 @@
 					      </div>
 					      <div class="genreSearchColumn">
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/寿司">
+					          <a href=<?php $category_id = get_cat_ID('寿司'); echo get_category_link($category_id); ?>>
 					            海鮮
 					          </a>
 					        </div>
 					        <i class="fas fa-bookmark kaisen"></i>
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/パン屋さん">
+					          <a href=<?php $category_id = get_cat_ID('パン屋さん'); echo get_category_link($category_id); ?>>
 					            パン
 					          </a>
 					        </div>
@@ -303,13 +303,13 @@
 					      </div>
 					      <div class="genreSearchColumn">
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/カフェ">
+					          <a href=<?php $category_id = get_cat_ID('カフェ'); echo get_category_link($category_id); ?>>
 					            カフェ
 					          </a>
 					        </div>
 					        <i class="fas fa-bookmark cafe"></i>
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/チェーン店">
+					          <a href=<?php $category_id = get_cat_ID('チェーン店'); echo get_category_link($category_id); ?>>
 					            チェーン
 					          </a>
 					        </div>
@@ -317,13 +317,13 @@
 					      </div>
 					      <div class="genreSearchColumn">
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/ラーメン">
+					          <a href=<?php $category_id = get_cat_ID('ラーメン'); echo get_category_link($category_id); ?>>
 					            ラーメン
 					          </a>
 					        </div>
 					        <i class="fas fa-bookmark ramen"></i>
 					        <div class="genreSearchCard">
-					          <a href="https://www.kencellara.com/archive/category/居酒屋">
+					          <a href=<?php $category_id = get_cat_ID('居酒屋'); echo get_category_link($category_id); ?>>
 					            居酒屋
 					          </a>
 					        </div>
