@@ -15,3 +15,8 @@
   color: goldenrod;
   text-shadow: 2px 2px 2px gold;
 }
+
+/* codoc */
+.codoc-entry {
+  border: 3px outset crimson;
+}
