@@ -70,9 +70,9 @@
 		<div class="row">
 			<div class="col-md-9">
 				<main id="main" role="main">
-					<div class="collab_req">
+					<!-- <div class="collab_req">
 					  <a href=<?php echo get_permalink( 709 ); ?>>コラボ・お仕事のご依頼</a>
-					</div>
+					</div> -->
 
 					<div class="storeCountArea">
 					  <div class="storeCountContainer">
@@ -121,7 +121,7 @@
 					  </div>
 					</div>
 
-					<div id="jsFixedSNS" class="miniInfoArea">
+					<!-- <div id="jsFixedSNS" class="miniInfoArea">
 					  <div class="snsContainer">
 					    <span>
 					      おトク情報GET! <i class="far fa-hand-point-right"></i>
@@ -138,24 +138,6 @@
 					    <a class="facebook-button" href="https://www.facebook.com/kencellarafood" target="_blank" rel="noopener noreferrer">
 					      <i class="fab fa-facebook-square"></i>
 					    </a>
-					  </div>
-					</div>
-
-					<!-- <div class="pulldownArea howtoPulldown">
-					  <label for="kencemeshiPulldown" class="pulldownLabel">
-					    ケンチェ飯とは？(Click!)
-					  </label>
-					  <input type="checkbox" id="kencemeshiPulldown" class="accordion" />
-					  <div class="pulldownContainer">
-					    <div class="pulldownInner">
-					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215233759.jpg" alt="ケンチェラーラのプロフィール." loading="lazy" />
-					      <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
-					      <p>三重県グルメを食べ歩き, <strong><u>どのサイトよりも詳しく</u></strong>グルメ情報を発信するサイト.</p>
-					      <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
-					      <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
-					      <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-					      <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href="https://www.kencellara.com/support">こちら>></a></strong></p>
-					    </div>
 					  </div>
 					</div> -->
 
@@ -590,10 +572,27 @@
 					  ※ページの遷移はございません
 					</div>
 
-					<!-- 細長いテキストリンク挿入1 -->
+					<!-- ブログ道リンク -->
 					<!-- <div class="monthlyBlogInfo">
 					  <a href="https://www.kencellara.com/entry/kencellara_blog">ブログPV数・収益の公開はこちら</a>
 					</div> -->
+
+					<div class="kencemeshiExplain">
+						<div class="kencemeshiExplainTitle">
+					    ケンチェ飯とは？
+						</div>
+					  <div class="pulldownContainer">
+					    <div class="pulldownInner">
+					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215233759.jpg" alt="ケンチェラーラのプロフィール." loading="lazy" />
+					      <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
+					      <p>三重県グルメを食べ歩き, <strong><u>どのサイトよりも詳しく</u></strong>グルメ情報を発信するサイト.</p>
+					      <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
+					      <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
+					      <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
+					      <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href="https://www.kencellara.com/support">こちら>></a></strong></p>
+					    </div>
+					  </div>
+					</div>
 				</main>
 			</div>
 			<div class="col-md-3">
