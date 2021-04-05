@@ -99,12 +99,13 @@
 				);
 				$categories = get_categories( $args );
 			?>
-
-			<?php foreach( $categories as $category ) : ?>
-				<li>
-					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
-				</li>
-			<?php endforeach; ?>
+			<ul>
+				<?php foreach( $categories as $category ) : ?>
+					<li>
+						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
+					</li>
+				<?php endforeach; ?>
+			</ul>
 		</div>
 		<div class="sb_archive sb_content">
 			<ul class="archive_list">
