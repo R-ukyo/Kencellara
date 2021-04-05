@@ -20,3 +20,48 @@
 .codoc-entry {
   border: 3px outset crimson;
 }
+
+/* SNSアイコン */
+.miniInfoArea {
+  height: 30px;
+  margin: 10px 0;
+}
+.snsContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 320px;
+  height: 100%;
+}
+.snsContainer span {
+  margin: auto;
+  font-size: 17px;
+  font-weight: bold;
+}
+.snsContainer a {
+  margin: 0 auto;
+}
+.snsContainer img {
+  height: 30px !important;
+  border-radius: 10px;
+}
+.snsContainer .twitter-button {
+  text-align: center;
+  font-size: 25px;
+  width: 30px;
+}
+.snsContainer .fa-twitter-square {
+	background-color: #fff;
+	color: #55acee;
+  font-size: 31px;
+  vertical-align: top;
+}
+.snsContainer .facebook-button {
+  font-size: 29px;
+}
+.snsContainer .fa-facebook-square {
+  background-color: white;
+  border-radius: 10px;
+  vertical-align: top;
+  font-size: 31px;
+  color: #305097;
+}
