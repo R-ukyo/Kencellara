@@ -2,20 +2,6 @@
   margin: 20px 0;
 }
 
-/* プロフィール */
-.cp_box *, .cp_box *:before, .cp_box *:after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.cp_box {
-	position: relative;
-}
-.cp_box .cp_container {
-	overflow: hidden;
-	height: 250px;
-	transition: all 0.5s;
-}
-
 /* インスタ */
 iframe.instagram-media {
   min-width: 0 !important;
