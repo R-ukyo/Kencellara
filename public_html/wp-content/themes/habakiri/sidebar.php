@@ -12,6 +12,16 @@
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css', array('common-style')));
 ?>
+<!-- 変数定義 -->
+<?php
+	$kw_page_id = get_page_by_path('kence_work')->ID;
+	$cg_args = array(
+		'parent' => 0,
+		'orderby' => 'term_order',
+		'order' => 'ASC'
+	);
+	$categories = get_categories( $cg_args );
+?>
 <aside id="sub">
 	<div class="sidebar">
 		<?php get_template_part( 'searchform' ); ?>
@@ -26,7 +36,7 @@
 					どのサイトよりも詳しく三重県のグルメ情報を発信.<br>
 					三重で本当に美味い食べ物を探すならココ！<br>
 					取材依頼・食事のお誘いお待ちしております.<br>
-					スポンサー・取材依頼は<a>コチラ≻≻≻</a>
+					スポンサー・取材依頼は<a href=<?php echo get_permalink( $kw_page_id ); ?>>コチラ≻≻≻</a>
 				</div>
 			</div>
 		</div>
@@ -90,15 +100,6 @@
 			</script>
 		</div>
 		<div class="sb_categories sb_content">
-			<?php
-				// 親カテゴリーのものだけを一覧で取得
-				$args = array(
-					'parent' => 0,
-					'orderby' => 'term_order',
-					'order' => 'ASC'
-				);
-				$categories = get_categories( $args );
-			?>
 			<ul>
 				<?php foreach( $categories as $category ) : ?>
 					<li>
