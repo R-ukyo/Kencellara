@@ -574,17 +574,44 @@
 						<div class="kencemeshiExplainTitle">
 					    ケンチェ飯とは？
 						</div>
-					  <div class="pulldownContainer">
-					    <div class="pulldownInner">
-					      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215233759.jpg" alt="ケンチェラーラのプロフィール." loading="lazy" />
-					      <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
-					      <p>三重県グルメを食べ歩き, <strong><u>どのサイトよりも詳しく</u></strong>グルメ情報を発信するサイト.</p>
-					      <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
-					      <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
-					      <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-					      <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href="https://www.kencellara.com/support">こちら>></a></strong></p>
-					    </div>
-					  </div>
+				    <div class="kencemeshiExplainContents">
+				      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215233759.jpg" alt="ケンチェラーラのプロフィール." loading="lazy" />
+				      <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
+				      <p>三重県グルメを食べ歩き, <strong><u>どのサイトよりも詳しく</u></strong>グルメ情報を発信するサイト.</p>
+				      <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
+				      <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
+				      <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
+				      <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href="https://www.kencellara.com/support">こちら>></a></strong></p>
+				    </div>
+					</div>
+
+					<div class="kencemeshiHistory">
+						<div class="kencemeshiHistoryTitle">ケンチェ飯の実績</div>
+						<div class="kencemeshiHistoryContents">
+						</div>
+					</div>
+
+					<div class="supportZone">
+						<script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
+						<div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェラーラを支援する" data-show-like="0" data-show-powered-by="0" data-support-message="サイトの維持費・広告費・活動費に補填させて頂きます。"></div>
+						<h3 class="supportNavTitle">お気持ありがとうございます。
+						支援金は、当ブログの活動費として大切に使わせていただきます。
+						今後も応援よろしくお願いします。</h3>
+						<div class="supportNav">
+							<h3 class="supportNavTitle">■ 支援金の使い道</h3>
+							<p class="supportNavBody">
+								・ブログ維持費
+								・活動費
+								・宣伝費
+							</p>
+							<h3 class="supportNavTitle">■ 支援額</h3>
+							<p class="supportNavBody">・100円～10000円</p>
+							<h3 class="supportNavTitle">■ サポート・スポンサー募集</h3>
+							<h3 class="supportNavTitle">■ コラボ・お仕事の依頼</h3>
+							<p class="supportNavBody">
+								・<a class="supportLink" href="https://www.kencellara.com/kence_work">こちら</a>をクリック！
+							</p>
+						</div>
 					</div>
 				</main>
 			</div>

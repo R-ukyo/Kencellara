@@ -588,3 +588,12 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 .monthlyBlogInfo a:hover {
   text-shadow: 3px 3px 3px black;
 }
+
+/* ケンチェ飯とは？ */
+.kencemeshiExplain {
+  text-align: center;
+}
+.kencemeshiExplainTitle {
+  font-size: 35px;
+  font-weight: bold;
+}
