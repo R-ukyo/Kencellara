@@ -65,3 +65,15 @@
   font-size: 31px;
   color: #305097;
 }
+/* 追尾 */
+.miniInfoArea.fixed {
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 5;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 12px 0;
+  height: 50px;
+}
