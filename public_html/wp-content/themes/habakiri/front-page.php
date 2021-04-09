@@ -12,7 +12,7 @@
  */
 ?>
 <?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css', array('habakiri', 'common-style'), false));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css', array('habakiri', 'common-style'), '1.0.0'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
 ?>
@@ -137,7 +137,7 @@
 					<!-- 地域別検索 -->
 					<div class="areaSearchZone">
 					  <div class="areaSearchContainer">
-					    <div class="areaSearchTitle">エリアでグルメ検索 <i class="fas fa-search"></i></div>
+					    <div class="areaSearchHeader topPageHeader">エリアでグルメ検索 <i class="fas fa-search"></i></div>
 					    <div class="areaSearchInner">
 					      <div class="hokubu areaZone">
 					        <div class="hokubuHeader areaHeader">北部</div>
@@ -246,7 +246,7 @@
 					<!-- ジャンル別検索 -->
 					<div class="genreSearchZone">
 					  <div class="genreSearchContainer">
-					    <div class="genreSearchTitle">ジャンルでグルメ検索 <i class="fas fa-search"></i></div>
+					    <div class="genreSearchHeader topPageHeader">ジャンルでグルメ検索 <i class="fas fa-search"></i></div>
 					    <div class="genreSearchInner">
 					      <div class="genreSearchColumn">
 					        <div class="genreSearchCard">
@@ -309,7 +309,7 @@
 					</div>
 
 					<div class="recommendGourmetZone">
-					  <div class="recommendGourmetHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
+					  <div class="recommendGourmetHeader topPageHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
 					  <div class="recommendGourmetContainer first">
 					    <div class="recommendGourmetBox">
 					      <div class="recommendGourmetImg">
@@ -456,7 +456,7 @@
 					<div class="headerBanzukeWrapper">
 					  <div class="headerBanzuke">
 					    <table>
-					      <caption>ケンチェ番付 <i class="fas fa-trophy"></i></caption>
+					      <caption class="topPageHeader">ケンチェ番付 <i class="fas fa-trophy"></i></caption>
 					      <tbody>
 					        <tr>
 					          <td class="lanking first">1位</td>
@@ -571,7 +571,7 @@
 					</div> -->
 
 					<div class="kencemeshiExplain">
-						<div class="kencemeshiExplainTitle">
+						<div class="kencemeshiExplainHeader topPageHeader">
 					    ケンチェ飯とは？
 						</div>
 				    <div class="kencemeshiExplainContents">
@@ -586,7 +586,7 @@
 					</div>
 
 					<div class="kencemeshiHistory">
-						<div class="kencemeshiHistoryTitle">ケンチェ飯の実績</div>
+						<div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の実績</div>
 						<div class="kencemeshiHistoryContents">
 						</div>
 					</div>
@@ -609,7 +609,7 @@
 							<h3 class="supportNavTitle">■ サポート・スポンサー募集</h3>
 							<h3 class="supportNavTitle">■ コラボ・お仕事の依頼</h3>
 							<p class="supportNavBody">
-								・<a class="supportLink" href="https://www.kencellara.com/kence_work">こちら</a>をクリック！
+								・<a class="supportLink" href=<?php echo get_permalink( 709 ); ?>>こちら</a>をクリック！
 							</p>
 						</div>
 					</div>

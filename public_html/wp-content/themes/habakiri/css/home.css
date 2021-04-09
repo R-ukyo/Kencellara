@@ -1,25 +1,19 @@
 body.home .sub-page-contents {
   padding-top: 0px;
 }
-/* .collab_req {
-  text-align: center;
+/* ヘッダー共通 */
+.topPageHeader {
+  color: black;
+  background-color: white;
+  margin: 10px auto;
+  width: 320px;
+  box-shadow: 5px 5px 5px 1px black;
   font-weight: bold;
-  font-size: 24px;
-}
-.collab_req a {
-  text-shadow: 2px 2px 2px silver;
-  background-color: antiquewhite;
-  font-weight: bold;
-  display: block;
-  text-decoration: none;
   text-align: center;
-  padding: .5em .8em;
-  border-radius: 0px;
-  border: 2px outset silver;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+  font-size: 22px;
 }
-.collab_req a:hover {
-  text-shadow: 2px 2px 2px black;
-} */
 
 /* 店舗数 */
 .storeCountArea {
@@ -27,7 +21,7 @@ body.home .sub-page-contents {
   padding: 15px 0 10px;
   height: 90px;
   margin: 30px 0;
-  /* background-color: currentColor; */
+  background-color: silver;
 }
 .storeCountArea.look {
   display: block;
@@ -122,7 +116,7 @@ body.home .sub-page-contents {
 .areaSearchContainer {
   height: 100%;
 }
-.areaSearchTitle {
+.areaSearchHeader {
   color: black;
   width: 270px;
   text-align: center;
@@ -179,7 +173,7 @@ body.home .sub-page-contents {
 .areaSearchContainer {
   margin: 30px 0;
 }
-.areaSearchTitle {
+.areaSearchHeader {
   height: 35px;
   font-size: 22px;
 }
@@ -229,7 +223,7 @@ body.home .sub-page-contents {
 .genreSearchContainer {
   padding: 20px 0 0;
 }
-.genreSearchTitle {
+.genreSearchHeader {
   color: black;
   font-size: 22px;
   width: 290px;
@@ -591,9 +585,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 
 /* ケンチェ飯とは？ */
 .kencemeshiExplain {
+  padding: 10px 0;
   text-align: center;
-}
-.kencemeshiExplainTitle {
-  font-size: 35px;
-  font-weight: bold;
+  background-color: cornsilk;
 }
