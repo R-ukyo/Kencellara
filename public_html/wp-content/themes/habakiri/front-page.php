@@ -80,26 +80,6 @@
 					</div>
 					<?php get_template_part( 'modules/slick-js' ); ?>
 
-					<!-- <div id="jsFixedSNS" class="miniInfoArea">
-					  <div class="snsContainer">
-					    <span>
-					      おトク情報GET! <i class="far fa-hand-point-right"></i>
-					    </span>
-					    <a href="https://www.instagram.com/kencellara_food" target="_blank" rel="noopener noreferrer">
-					      <img class="InstagramIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201213002.jpg" alt="instagram" />
-					    </a>
-					    <a class="twitter-button" href="https://twitter.com/kencellara_food" target="_blank" rel="noopener noreferrer">
-					      <i class="fab fa-twitter-square"></i>
-					    </a>
-					    <a href="https://lin.ee/kjAkh3g" target="_blank" rel="noopener noreferrer">
-					      <img class="LINEIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201212953.jpg" alt="LINE" />
-					    </a>
-					    <a class="facebook-button" href="https://www.facebook.com/kencellarafood" target="_blank" rel="noopener noreferrer">
-					      <i class="fab fa-facebook-square"></i>
-					    </a>
-					  </div>
-					</div> -->
-
 					<!-- 地域別検索 -->
 					<div class="areaSearchZone">
 					  <div class="areaSearchContainer">
@@ -344,81 +324,7 @@
 					  </div>
 					</div>
 
-					<!-- 番付PC -->
-					<!-- <div class="headerBanzuke pc">
-					  <table>
-					    <caption>ケンチェ番付 <i class="fas fa-trophy"></i></caption>
-					    <tbody>
-					      <tr>
-					        <td class="lanking first">1位</td>
-					        <td class="articleZone">
-					          <h3><a class="articleLink" href="https://www.kencellara.com/entry/nakamura">お食事処 なかむら</a></h3>
-					          <p>松阪市飯高町にある伝説の定食屋</p>
-					        </td>
-					        <td class="starZone first">
-					          <div class="star-rating">
-					            <div class="star-rating-item" style="width:96%;"></div>
-					          </div>
-					        </td>
-					        <td class="lanking fourth">4位</td>
-					        <td class="articleZone">
-					          <h3><a class="articleLink" href="https://www.kencellara.com/entry/itiensou">一円相</a></h3>
-					          <p>三重県松阪市にあるコスパ最強の居酒屋</p>
-					        </td>
-					        <td class="starZone fourth">
-					          <div class="star-rating">
-					            <div class="star-rating-item" style="width:78%;"></div>
-					          </div>
-					        </td>
-					      </tr>
-					      <tr>
-					        <td class="lanking second">2位</td>
-					        <td class="articleZone">
-					          <h3><a class="articleLink" href="https://www.kencellara.com/entry/toramaru">虎丸</a></h3>
-					          <p>ミシュランガイド掲載！伊勢で一番美味い海産物</p>
-					        </td>
-					        <td class="starZone second">
-					          <div class="star-rating">
-					            <div class="star-rating-item" style="width:90%;"></div>
-					          </div>
-					        </td>
-					        <td class="lanking fifth">5位</td>
-					        <td class="articleZone">
-					          <h3><a class="articleLink" href="https://www.kencellara.com/entry/misono">味園焼肉店</a></h3>
-					          <p>松阪と言えばの極上霜降り焼肉を堪能</p>
-					        </td>
-					        <td class="starZone fifth">
-					          <div class="star-rating">
-					            <div class="star-rating-item" style="width:76%;"></div>
-					          </div>
-					        </td>
-					      </tr>
-					      <tr>
-					        <td class="lanking third">3位</td>
-					        <td class="articleZone">
-					          <h3><a class="articleLink" href="https://www.kencellara.com/entry/cafe-raku">Cafe&Store 楽</a></h3>
-					          <p>雰囲気・料理など全てが完璧のカフェ</p>
-					        </td>
-					        <td class="starZone third">
-					          <div class="star-rating">
-					            <div class="star-rating-item" style="width:86%;"></div>
-					          </div>
-					        </td>
-					        <td class="lanking sixth">6位</td>
-					        <td class="articleZone">
-					          <h3><a class="articleLink" href="https://www.kencellara.com/entry/owase-onigawara">鬼瓦</a></h3>
-					          <p>三重県南部を代表する海鮮料理の王様</p>
-					        </td>
-					        <td class="starZone sixth">
-					          <div class="star-rating">
-					            <div class="star-rating-item" style="width:74%;"></div>
-					          </div>
-					        </td>
-					      </tr>
-					    </tbody>
-					  </table>
-					</div> -->
-					<!-- ケンチェ番付SP -->
+					<!-- ケンチェ番付 -->
 					<div class="headerBanzukeWrapper">
 					  <div class="headerBanzuke">
 					    <table>
@@ -499,7 +405,6 @@
 					      </tbody>
 					    </table>
 					  </div>
-					  <!-- <div id="openBanzuke" class="openBanzuke"><i class="fas fa-chevron-circle-down"></i>4位以下を表示<i class="fas fa-chevron-circle-down"></i></div> -->
 					</div>
 
 					<div class="kenceWindowAnnounce">
