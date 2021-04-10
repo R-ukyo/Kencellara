@@ -1,0 +1,22 @@
+#footer {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 2em 40px 1em 40px;
+  font-size: 80%;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  display: inline-block;
+  padding: 0 6px;
+  font-size: 14.5px;
+}
+.footer-links ul li a{
+  color: #ffffff;
+}
+.copyright {
+  font-size: 10px;
+}
