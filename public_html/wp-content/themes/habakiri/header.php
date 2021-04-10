@@ -39,19 +39,11 @@
 			<div class="row header__content">
 				<div class="headerImgContainer col-xs-10 <?php echo esc_attr( $site_branding_size ); ?> header__col">
 					<?php get_template_part( 'modules/site-branding' ); ?>
-				<!-- end .header__col --></div>
-				<?php
-					/*
-						<div class="col-xs-2 <?php echo esc_attr( $gnav_size ); ?> header__col global-nav-wrapper clearfix">
-							<?php get_template_part( 'modules/gnav' ); ?>
-							<div id="responsive-btn"></div>
-						<!-- end .header__col --></div>
-					*/
-				?>
-			<!-- end .row --></div>
-		<!-- end .container --></div>
+				</div>
+			</div>
+		</div>
 		<?php do_action( 'habakiri_after_header_content' ); ?>
-	<!-- end #header --></header>
+	</header>
 	<div id="jsFixedSNS" class="miniInfoArea">
 		<div class="snsContainer">
 			<span>

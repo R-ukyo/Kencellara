@@ -12,6 +12,10 @@
  */
 ?>
 <?php
+	$support_page_id = get_page_by_path('support')->ID;
+	$kence_work_page_id = get_page_by_path('kence_work')->ID;
+?>
+<?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css', array('habakiri', 'common-style'), '1.0.0'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
@@ -543,7 +547,7 @@
 				      <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
 				      <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
 				      <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-				      <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href="https://www.kencellara.com/support">こちら>></a></strong></p>
+				      <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href=<?php echo get_permalink( $support_page_id ); ?>>こちら>></a></strong></p>
 				    </div>
 					</div>
 
@@ -571,7 +575,7 @@
 							<h3 class="supportNavTitle">■ サポート・スポンサー募集</h3>
 							<h3 class="supportNavTitle">■ コラボ・お仕事の依頼</h3>
 							<p class="supportNavBody">
-								・<a class="supportLink" href=<?php echo get_permalink( 709 ); ?>>こちら</a>をクリック！
+								・<a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！
 							</p>
 						</div>
 					</div>

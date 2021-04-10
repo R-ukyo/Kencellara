@@ -13,10 +13,9 @@
 <?php do_action( 'habakiri_before_site_branding' ); ?>
 <div class="site-branding">
 	<h1 class="site-branding__heading">
-		<a href="https://www.kencellara.com/">
+		<a href=<?php echo home_url() ?>>
 	    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210218/20210218212338.jpg" alt="ケンチェラーラのブログ" width="100%">
 	  </a>
-		<?php #get_template_part( 'modules/logo' ); ?>
 	</h1>
-<!-- end .site-branding --></div>
+</div>
 <?php do_action( 'habakiri_after_site_branding' ); ?>
