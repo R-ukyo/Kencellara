@@ -16,63 +16,7 @@
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
 ?>
-<?php
-	add_filter('wp_footer', function() {
-		?>
-		<script>
-			jQuery('.slider').slick({
-				arrows: true,
-				centerMode: true,
-				centerPadding: '20px',
-				slidesToShow: 3,
-				dots: true,
-				autoplay: true,
-				autoplaySpeed: 2500,
-				responsive: [
-					{
-						breakpoint: 768,
-						settings: {
-							arrows: true,
-							centerMode: true,
-							centerPadding: '20px',
-							slidesToShow: 3
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: true,
-							centerMode: true,
-							centerPadding: '40px',
-							slidesToShow: 1
-						}
-					}
-				]
-			});
-		</script>
-		<?php
-	} );
-?>
-<?php add_filter('wp_footer', function() { ?>
-	<script>
-		const fixedNode = jQuery('#jsFixedSNS');
-		const scrollStart = fixedNode.offset().top;
-		let distance = 0;
-
-		jQuery(document).scroll(() => {
-			distance = jQuery(this).scrollTop();
-
-			if (scrollStart <= distance) {
-				fixedNode.addClass('fixed');
-			} else if (scrollStart >= distance) {
-				fixedNode.removeClass('fixed');
-			}
-		});
-	</script>
-<?php } ); ?>
-<?php
-	add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery')));
-?>
+<?php get_template_part( 'modules/top-js' ); ?>
 <?php get_header(); ?>
 
 <div class="sub-page-contents">
@@ -130,6 +74,7 @@
 					    </a>
 					  </div>
 					</div>
+					<?php get_template_part( 'modules/slick-js' ); ?>
 
 					<!-- <div id="jsFixedSNS" class="miniInfoArea">
 					  <div class="snsContainer">
