@@ -549,9 +549,6 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 .kenceWindowModalOpen {
   padding: 15px 0 20px;
 }
-.kenceWindowModalContent {
-  width: calc(700px / 2);
-}
 iframe[src^="https://docs.google.com/forms/d/e"] {
   height: 100vh;
 }
