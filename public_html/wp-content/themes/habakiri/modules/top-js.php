@@ -34,6 +34,13 @@
   </script>
 <?php } ); ?>
 
+<!--ページトップボタン-->
+<?php add_filter('wp_footer', function() { ?>
+  <script>
+    function smoothScroll(o){var e=window.pageYOffset,l=o>e;setTimeout(function(){l&&o>=e?(e=e+(o-e)/20+1,window.scrollTo(0,e),setTimeout(arguments.callee,10)):!l&&e>=o?(e=e-(e-o)/20-1,window.scrollTo(0,e),setTimeout(arguments.callee,10)):window.scrollTo(0,o)},10)}
+  </script>
+<?php } ); ?>
+
 <!-- slick -->
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery')));

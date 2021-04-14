@@ -10,7 +10,7 @@
  */
 ?>
 <?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style'), false));
 ?>
 		<?php do_action( 'habakiri_after_contents_content' ); ?>
 	<!-- end #contents --></div>
@@ -39,6 +39,9 @@
 	    <p class="copyright">© 2020 kencellara.com All rights reserved.</p>
 		</div>
 	</footer>
+	<ul class="toTop-nav">
+    <li><a href="javascript:void(0);" onclick="smoothScroll(0);return false;"><i class="fas fa-chevron-up"></i></a></li>
+  </ul>
 <!-- end #container --></div>
 <?php wp_footer(); ?>
 </body>
