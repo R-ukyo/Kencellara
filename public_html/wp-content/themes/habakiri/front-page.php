@@ -459,6 +459,28 @@
 					<div class="kencemeshiHistory">
 						<div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の実績</div>
 						<div class="kencemeshiHistoryContents">
+							<p><strong>2020年</strong></p>
+							<ul>
+								<li>8月　「ケンチェ飯」本格始動</li>
+								<li>9月　GoogleAdsense広告連携開始</li>
+								<li>11月　<span style="color: #ff0000;"><strong>月間アクセス数 12703 PV</strong></span></li>
+								<li>12月　<strong><span style="color: #ff0000;">月間アクセス数  13948 PV</span></strong></li>
+							</ul>
+							<p><strong>2021年</strong></p>
+							<ul>
+								<li>1月　<strong><span style="color: #ff0000;">月間アクセス数 18757 PV</span></strong></li>
+								<li>1月　<a href="https://miecolle.net/hito/1282">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載</a></li>
+								<li>1月　にっこう亭 取材依頼 受託</li>
+								<li>1月　<a href="https://www.kencellara.com/entry/2021-1-event">江戸橋 富や コラボイベント 開催</a></li>
+								<li>2月　<span style="color: #ff0000;"><strong>月間アクセス数 27704 PV</strong></span></li>
+								<li>2月　三重タイムズ「ケンチェ飯」新聞掲載</li>
+								<li>2月　<a href="https://otonamie.jp/?page_id=34706">OTONAMIE 地域のWEBメディアとして「ケンチェ飯」掲載</a></li>
+								<li>2月　CAFE&amp;BAR TRIPLE A 取材依頼 受託</li>
+								<li>3月　B&amp;Bフォレスト志摩 取材依頼 受託</li>
+								<li>3月　株式会社えんこね 業務提携</li>
+								<li>4月　ごきげんえびすHANARE 取材依頼 受託</li>
+								<li>4月　麵屋AZITO 取材依頼 受託</li>
+							</ul>
 						</div>
 					</div>
 
