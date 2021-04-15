@@ -59,7 +59,6 @@ section.typeA input:checked + .tabLabel {
 }
 section.typeA input:checked + .tabLabel + .content {
 	height: auto;
-	overflow: auto;
 	transition: .5s opacity;
 	opacity: 1;
 }
