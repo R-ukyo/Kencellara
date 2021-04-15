@@ -519,7 +519,7 @@
 						<input id="TAB-A03" type="radio" name="TAB-A">
 						<label class="tabLabel" for="TAB-A03">コラボ</label>
 						<div class="content">
-							<p>コラボ依頼</p>
+							<?php get_template_part( 'modules/kence_work' ); ?>
 						</div>
 					</section>
 				</main>
