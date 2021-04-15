@@ -17,6 +17,7 @@ body.home .sub-page-contents {
 
 /* 3タブ */
 section.typeA {
+  margin-top: 10px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -332,6 +333,9 @@ i.izakaya {
   color: #fff;
   font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, sans-serif;
 }
+.genreSearchCard a:hover {
+  color: #fff;
+}
 .genreSearchCard:hover {
   transform: rotateZ(10deg);
 }
@@ -469,6 +473,10 @@ i.izakaya {
 .headerBanzuke .articleZone {
   width: 400px;
   padding: 12px 10px;
+}
+.headerBanzuke a:hover {
+  text-shadow: 1px 1px 3px silver;
+  opacity: 0.8;
 }
 .headerBanzuke h3 {
   margin: 5px 0;
