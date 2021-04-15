@@ -2,6 +2,11 @@
   margin: 20px 0;
 }
 
+.profileSentence {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
 /* インスタ */
 iframe.instagram-media {
   min-width: 0 !important;

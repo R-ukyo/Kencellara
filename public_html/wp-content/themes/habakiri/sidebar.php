@@ -26,17 +26,18 @@
 	<div class="sidebar">
 		<?php get_template_part( 'searchform' ); ?>
 		<div class="sb_plofile sb_content">
-			<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210107/20210107235634.jpg" alt="f:id:ken_chan_bike:20200902121305p:plain" />
-			<div class="cp_box">
-				<div class="cp_container">
-					三重県で一番詳しいグルメディア.<br>
-					三重県生まれ, 三重県育ちのケンチェラーラが, 県内飲食店を全店舗制覇します.<br>
-					年間300食以上の食べ歩き.<br>
-					どのサイトよりも詳しく三重県のグルメ情報を発信.<br>
-					三重で本当に美味い食べ物を探すならココ！<br>
-					取材依頼・食事のお誘いお待ちしております.<br>
-					スポンサー・取材依頼は<a href=<?php echo get_permalink( $kw_page_id ); ?>>コチラ≻≻≻</a>
-				</div>
+			<div class="profileImg">
+				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210107/20210107235634.jpg" alt="f:id:ken_chan_bike:20200902121305p:plain" />
+			</div>
+			<div class="profileSentence">
+				三重県で一番詳しいグルメディア.<br>
+				三重県生まれ, 三重県育ちのケンチェラーラが, 県内飲食店を全店舗制覇します.<br>
+				年間300食以上の食べ歩き.<br>
+				どのサイトよりも詳しく三重県のグルメ情報を発信.<br>
+				三重で本当に美味い食べ物を探すならココ！<br>
+				取材依頼・食事のお誘いお待ちしております.<br>
+				スポンサー・取材依頼は<a class="workLink" href=<?php echo get_permalink( $kw_page_id ); ?>>コチラ≻≻≻</a>
+			</div>
 			</div>
 		</div>
 		<div class="sb_adsense sb_content">
