@@ -9,12 +9,13 @@
  * License URI: license.txt
  */
 ?>
+<?php $upload_dir = wp_upload_dir(); ?>
 
 <?php do_action( 'habakiri_before_site_branding' ); ?>
 <div class="site-branding">
 	<h1 class="site-branding__heading">
 		<a href=<?php echo home_url() ?>>
-	    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210218/20210218212338.jpg" alt="ケンチェラーラのブログ" width="100%">
+	    <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/header.jpg" alt="ケンチェラーラのブログ" width="100%">
 	  </a>
 	</h1>
 </div>

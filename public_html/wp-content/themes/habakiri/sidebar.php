@@ -14,6 +14,7 @@
 ?>
 <!-- 変数定義 -->
 <?php
+	$upload_dir = wp_upload_dir();
 	$kw_page_id = get_page_by_path('kence_work')->ID;
 	$cg_args = array(
 		'parent' => 0,
@@ -27,7 +28,7 @@
 		<?php get_template_part( 'searchform' ); ?>
 		<div class="sb_plofile sb_content">
 			<div class="profileImg">
-				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210107/20210107235634.jpg" alt="f:id:ken_chan_bike:20200902121305p:plain" />
+				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="<?php echo $upload_dir['baseurl']; ?>/toppage/profile.jpg" alt="f:id:ken_chan_bike:20200902121305p:plain" />
 			</div>
 			<div class="profileSentence">
 				三重県で一番詳しいグルメディア.<br>
