@@ -1,3 +1,53 @@
-.newPostCard img {
-  width: 300px;
+.newPostsZone {
+  background-color: antiquewhite;
+  border: 3px outset antiquewhite;
+}
+.newPostsZone:nth-child(n + 2) {
+  margin-top: 20px;
+}
+.newPostsZone.ramen {
+  background-color: #ffeaea;
+}
+.newPostsZone.oniku {
+  background-color: #ffffea;
+}
+.newPostsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  padding: 5px 10px;
+}
+.newPostCard {
+  background-color: #fff;
+  border: 3px outset silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+.newPostTitle {
+  margin: 10px;
+  line-height: 1.0;
+  font-weight: bold;
+  font-size: 19px;
+  padding: 15px;
+  border: 3px solid #ccc;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+.newPostTitle a {
+  color: #333;
+}
+.newPostTitle a:hover {
+  color: #375A7F;
+}
+.newPostThumbnail {
+  text-align: center;
 }
