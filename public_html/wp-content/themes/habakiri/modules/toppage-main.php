@@ -1,7 +1,12 @@
+<?php
+  $all_posts_count = wp_count_posts()->publish;
+  $other_posts_count = get_category_by_slug('others')->count;
+  $gourmet_posts_count = $all_posts_count - $other_posts_count
+?>
 <div class="storeCountArea">
   <div class="storeCountContainer">
     <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
-    現在<span class="storeCounter"><?php echo get_category(2)->count; ?></span>店舗制覇
+    現在<span class="storeCounter"><?php echo $gourmet_posts_count; ?></span>店舗制覇
     <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
   </div>
 </div>
