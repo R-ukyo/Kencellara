@@ -58,16 +58,16 @@
             <a href="">いなべ</a>
           </li>
           <li class="kuwana">
-            <a href=<?php $category_id = get_cat_ID('桑名市グルメ'); echo get_category_link($category_id); ?>>桑名</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('kuwana')->cat_ID); ?>>桑名</a>
           </li>
           <li class="yokkaichi">
-            <a href=<?php $category_id = get_cat_ID('四日市市グルメ'); echo get_category_link($category_id); ?>>四日市</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('yokkaichi')->cat_ID); ?>>四日市</a>
           </li>
           <li class="komono">
             <a href="">菰野</a>
           </li>
           <li class="kameyama">
-            <a href=<?php $category_id = get_cat_ID('亀山市グルメ'); echo get_category_link($category_id); ?>>亀山</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('kameyama')->cat_ID); ?>>亀山</a>
           </li>
           <li class="suzuka">
             <a href="">鈴鹿</a>
@@ -78,7 +78,7 @@
         <div class="igaHeader areaHeader">伊賀</div>
         <ul class="areaList">
           <li class="iga">
-            <a href=<?php $category_id = get_cat_ID('伊賀市グルメ'); echo get_category_link($category_id); ?>>伊賀</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('iga')->cat_ID); ?>>伊賀</a>
           </li>
           <li class="nabari">
             <a href="">名張</a>
@@ -89,16 +89,16 @@
         <div class="chubuHeader areaHeader">中部</div>
         <ul class="areaList">
           <li class="tsu">
-            <a href=<?php $category_id = get_cat_ID('津市グルメ'); echo get_category_link($category_id); ?>>津</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('tsu')->cat_ID); ?>>津</a>
           </li>
           <li class="matsusaka">
-            <a href=<?php $category_id = get_cat_ID('松阪市グルメ'); echo get_category_link($category_id); ?>>松阪</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('matsusaka')->cat_ID); ?>>松阪</a>
           </li>
           <li class="meiwa">
-            <a href=<?php $category_id = get_cat_ID('明和町グルメ'); echo get_category_link($category_id); ?>>明和</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('meiwa')->cat_ID); ?>>明和</a>
           </li>
           <li class="taki">
-            <a href=<?php $category_id = get_cat_ID('多気町グルメ'); echo get_category_link($category_id); ?>>多気</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('taki')->cat_ID); ?>>多気</a>
           </li>
         </ul>
       </div>
@@ -106,7 +106,7 @@
         <div class="iseShimaHeader areaHeader">伊勢志摩</div>
         <ul class="areaList">
           <li class="ise">
-            <a href=<?php $category_id = get_cat_ID('伊勢市グルメ'); echo get_category_link($category_id); ?>>伊勢</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('ise')->cat_ID); ?>>伊勢</a>
           </li>
           <li class="watarai">
             <a href="">度会</a>
@@ -115,13 +115,13 @@
             <a href="">玉城</a>
           </li>
           <li class="toba">
-            <a href=<?php $category_id = get_cat_ID('鳥羽市グルメ'); echo get_category_link($category_id); ?>>鳥羽</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('toba')->cat_ID); ?>>鳥羽</a>
           </li>
           <li class="shima">
-            <a href=<?php $category_id = get_cat_ID('志摩市グルメ'); echo get_category_link($category_id); ?>>志摩</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('shima')->cat_ID); ?>>志摩</a>
           </li>
           <li class="minamiise">
-            <a href=<?php $category_id = get_cat_ID('南伊勢町グルメ'); echo get_category_link($category_id); ?>>南伊勢</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('minamiise')->cat_ID); ?>>南伊勢</a>
           </li>
         </ul>
       </div>
@@ -129,16 +129,16 @@
         <div class="higashikishuHeader areaHeader">東紀州</div>
         <ul class="areaList">
           <li class="odai">
-            <a href=<?php $category_id = get_cat_ID('大台町グルメ'); echo get_category_link($category_id); ?>>大台</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('odai')->cat_ID); ?>>大台</a>
           </li>
           <li class="kihoku">
-            <a href=<?php $category_id = get_cat_ID('紀北町グルメ'); echo get_category_link($category_id); ?>>紀北</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('kihoku')->cat_ID); ?>>紀北</a>
           </li>
           <li class="taiki">
             <a href="">大紀</a>
           </li>
           <li class="owase">
-            <a href=<?php $category_id = get_cat_ID('尾鷲市グルメ'); echo get_category_link($category_id); ?>>尾鷲</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('owase')->cat_ID); ?>>尾鷲</a>
           </li>
           <li class="kumano">
             <a href="">熊野</a>
@@ -162,13 +162,13 @@
     <div class="genreSearchInner">
       <div class="genreSearchColumn">
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('お肉'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('meat')->cat_ID); ?>>
             お肉
           </a>
         </div>
         <i class="fas fa-bookmark oniku"></i>
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('定食'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('set-meal')->cat_ID); ?>>
             定食
           </a>
         </div>
@@ -176,13 +176,13 @@
       </div>
       <div class="genreSearchColumn">
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('寿司'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('sushi')->cat_ID); ?>>
             海鮮
           </a>
         </div>
         <i class="fas fa-bookmark kaisen"></i>
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('パン屋さん'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('bakery')->cat_ID); ?>>
             パン
           </a>
         </div>
@@ -190,13 +190,13 @@
       </div>
       <div class="genreSearchColumn">
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('カフェ'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('cafe')->cat_ID); ?>>
             カフェ
           </a>
         </div>
         <i class="fas fa-bookmark cafe"></i>
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('チェーン店'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('chain')->cat_ID); ?>>
             チェーン
           </a>
         </div>
@@ -204,13 +204,13 @@
       </div>
       <div class="genreSearchColumn">
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('ラーメン'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('ramen')->cat_ID); ?>>
             ラーメン
           </a>
         </div>
         <i class="fas fa-bookmark ramen"></i>
         <div class="genreSearchCard">
-          <a href=<?php $category_id = get_cat_ID('居酒屋'); echo get_category_link($category_id); ?>>
+          <a href=<?php echo get_category_link(get_category_by_slug('izakaya')->cat_ID); ?>>
             居酒屋
           </a>
         </div>
