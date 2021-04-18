@@ -61,12 +61,3 @@
     <a href=<?php echo get_category_link(get_category_by_slug('set-meal')->cat_ID); ?>>定食一覧へ >></a>
   </div>
 </div>
-<div class="newPostsZone chain">
-  <div class="newPostsHeader topPageHeader">チェーン店</div>
-  <div class="newPostsContainer">
-    <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'chain', 'count'=>2) ); ?>
-  </div>
-  <div class="goToArchivePage">
-    <a href=<?php echo get_category_link(get_category_by_slug('chain')->cat_ID); ?>>チェーン店一覧へ >></a>
-  </div>
-</div>
