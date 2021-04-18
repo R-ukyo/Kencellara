@@ -51,3 +51,18 @@
 .newPostThumbnail {
   text-align: center;
 }
+.goToArchivePage {
+  text-align: center;
+  width: 250px;
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px outset silver;
+}
+.goToArchivePage a {
+  display: block;
+}
+.goToArchivePage a:hover {
+  color: crimson;
+}
