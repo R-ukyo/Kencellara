@@ -8,6 +8,10 @@
       $posts = get_posts( $args );
       foreach ( $posts as $post ):
       setup_postdata( $post );
+      $cat = get_the_category();
+      $cat_name_1 = $cat[0]->name;
+      $cat_name_2 = $cat[1]->name;
+      $cat_name_3 = $cat[2]->name;
     ?>
     <div class="newPostCard">
       <div class="newPostThumbnail">
@@ -15,6 +19,11 @@
       </div>
       <div class="newPostTitle">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </div>
+      <div class="newPostCategory">
+        <a><?php echo $cat_name_1; ?></a>
+        <a><?php echo $cat_name_2; ?></a>
+        <a><?php echo $cat_name_3; ?></a>
       </div>
     </div>
     <?php
@@ -34,6 +43,10 @@
       $posts = get_posts( $args );
       foreach ( $posts as $post ):
       setup_postdata( $post );
+      $cat = get_the_category();
+      $cat_name_1 = $cat[0]->name;
+      $cat_name_2 = $cat[1]->name;
+      $cat_name_3 = $cat[2]->name;
     ?>
     <div class="newPostCard">
       <div class="newPostThumbnail">
@@ -41,6 +54,11 @@
       </div>
       <div class="newPostTitle">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </div>
+      <div class="newPostCategory">
+        <a><?php echo $cat_name_1; ?></a>
+        <a><?php echo $cat_name_2; ?></a>
+        <a><?php echo $cat_name_3; ?></a>
       </div>
     </div>
     <?php
@@ -60,6 +78,10 @@
       $posts = get_posts( $args );
       foreach ( $posts as $post ):
       setup_postdata( $post );
+      $cat = get_the_category();
+      $cat_name_1 = $cat[0]->name;
+      $cat_name_2 = $cat[1]->name;
+      $cat_name_3 = $cat[2]->name;
     ?>
     <div class="newPostCard">
       <div class="newPostThumbnail">
@@ -67,6 +89,11 @@
       </div>
       <div class="newPostTitle">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </div>
+      <div class="newPostCategory">
+        <a><?php echo $cat_name_1; ?></a>
+        <a><?php echo $cat_name_2; ?></a>
+        <a><?php echo $cat_name_3; ?></a>
       </div>
     </div>
     <?php
