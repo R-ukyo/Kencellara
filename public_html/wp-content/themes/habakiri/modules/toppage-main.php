@@ -49,6 +49,7 @@
     </a>
   </div>
 </div>
+<!-- slickはレイアウト崩れを避けるため直後読み込み -->
 <?php get_template_part( 'modules/slick-js' ); ?>
 
 <!-- 地域別検索 -->
