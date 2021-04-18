@@ -44,7 +44,7 @@
 							<?php get_template_part( 'modules/new-posts' ); ?>
 						</div>
 						<input id="TAB-A02" type="radio" name="TAB-A" checked="checked">
-						<label class="tabLabel" for="TAB-A02">TOP</label>
+						<label class="tabLabel" for="TAB-A02">トップ</label>
 						<div class="content">
 							<?php get_template_part( 'modules/toppage-main' ); ?>
 						</div>
