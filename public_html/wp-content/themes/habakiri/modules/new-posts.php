@@ -16,7 +16,7 @@
     <a href=<?php echo get_category_link(get_category_by_slug('ramen')->cat_ID); ?>>ラーメン一覧へ >></a>
   </div>
 </div>
-<div class="newPostsZone oniku">
+<div class="newPostsZone meat">
   <div class="newPostsHeader topPageHeader">お肉</div>
   <div class="newPostsContainer">
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'meat', 'count'=>2) ); ?>

@@ -7,9 +7,31 @@
 }
 .newPostsZone.ramen {
   background-color: #ffeaea;
+  border-color: #ffeaea;
 }
-.newPostsZone.oniku {
+.newPostsZone.meat {
   background-color: #ffffea;
+  border-color: #ffffea;
+}
+.newPostsZone.cafe {
+  background-color: #ffeaff;
+  border-color: #ffeaff;
+}
+.newPostsZone.izakaya {
+  background-color: #ffeaf4;
+  border-color: #ffeaf4;
+}
+.newPostsZone.bakery {
+  background-color: #f4ffea;
+  border-color: #f4ffea;
+}
+.newPostsZone.set-meal {
+  background-color: #fff4ea;
+  border-color: #fff4ea;
+}
+.newPostsZone.chain {
+  background-color: #f4eaff;
+  border-color: #f4eaff;
 }
 .newPostsContainer {
   display: -webkit-box;
@@ -50,6 +72,18 @@
 }
 .newPostThumbnail {
   text-align: center;
+}
+.newPostCategory {
+  margin: 0 0 8px 8px;
+}
+.newPostCategory a {
+  background: #C2EEFF;
+  color: #000000;
+  border-radius: 0.2em;
+  font-size: 11px;
+  display: inline-block;
+  margin: 8px 4px 0 0;
+  padding: 4px 8px 2px;
 }
 .goToArchivePage {
   text-align: center;
