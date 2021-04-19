@@ -25,8 +25,12 @@
 ?>
 <aside id="sub">
 	<div class="sidebar">
-		<?php get_template_part( 'searchform' ); ?>
+		<div class="sb_search sb_content">
+			<div class="searchHeader sb_header">検索</div>
+			<?php get_template_part( 'searchform' ); ?>
+		</div>
 		<div class="sb_plofile sb_content">
+			<div class="profileHeader sb_header">プロフィール.</div>
 			<div class="profileImg">
 				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="<?php echo $upload_dir['baseurl']; ?>/toppage/profile.jpg" alt="f:id:ken_chan_bike:20200902121305p:plain" />
 			</div>
@@ -50,6 +54,7 @@
 			</script>
 		</div>
 		<div class="sb_insta sb_content">
+			<div class="instaHeader sb_header">Instagram</div>
 			<blockquote class="instagram-media" style="background: #FFF; border: 0; border-radius: 3px; box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding: 0; width: calc(100% - 2px);" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/CGU64UZnqjJ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13">
 				<div style="padding: 16px;">
 					&nbsp;
@@ -101,6 +106,7 @@
 			</script>
 		</div>
 		<div class="sb_categories sb_content">
+			<div class="categoryHeader sb_header">カテゴリー</div>
 			<ul>
 				<?php foreach( $categories as $category ) : ?>
 					<li>
@@ -110,6 +116,7 @@
 			</ul>
 		</div>
 		<div class="sb_archive sb_content">
+			<div class="archiveHeader sb_header">アーカイブ</div>
 			<ul class="archive_list">
 			  <?php
 		      $string = wp_get_archives(
@@ -122,6 +129,7 @@
 			</ul>
 		</div>
 		<div class="sb_twitter sb_content">
+			<div class="twitterHeader sb_header">Twitter</div>
 			<a class="twitter-timeline" href="https://twitter.com/kencellara_food?ref_src=twsrc%5Etfw">Tweets by kencellara_food</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
