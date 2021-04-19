@@ -10,7 +10,8 @@
  */
 ?>
 <?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style'), false));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_script('to_pagetop-script', get_template_directory_uri() . '/js/to_pagetop.js'));
 ?>
 		<?php do_action( 'habakiri_after_contents_content' ); ?>
 	<!-- end #contents --></div>
