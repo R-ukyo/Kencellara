@@ -1,3 +1,29 @@
+.sb_header {
+  color: saddlebrown;
+  position: relative;
+  font-size: 120%;
+  font-weight: bold;
+  height: 37px;
+  line-height: 30px;
+  padding: 0.2em 0.5em;
+  background-color: cornsilk;
+  box-shadow: 0px 0px 0px 5px cornsilk;
+  border: 1px dashed #fff;
+  margin-bottom: 25px;
+}
+.sb_header::before,
+.sb_header::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+}
+.sb_header::before {
+  top: 40px;
+  left: -6px;
+  border-width: 0 15px 15px 0;
+  border-right-color: darkgoldenrod;
+}
 .sb_content {
   margin: 20px 0;
 }
@@ -5,6 +31,15 @@
 .profileSentence {
   font-weight: bold;
   padding-top: 10px;
+}
+.sb_categories ul,
+.sb_archive ul {
+  padding-left: 10px;
+}
+.sb_categories a,
+.sb_archive a {
+  font-weight: bold;
+  color: saddlebrown;
 }
 
 /* インスタ */
