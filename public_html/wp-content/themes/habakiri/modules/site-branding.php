@@ -15,7 +15,7 @@
 <div class="site-branding">
 	<h1 class="site-branding__heading">
 		<a href=<?php echo home_url() ?>>
-	    <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/header.jpg" alt="ケンチェラーラのブログ" width="100%">
+	    <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/header_1.jpg" alt="ケンチェラーラのブログ" width="100%">
 	  </a>
 	</h1>
 </div>
