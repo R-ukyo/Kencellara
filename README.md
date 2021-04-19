@@ -1,3 +1,3 @@
 # Kencellara
-public_html内がwordpress移行後のコード
-移行完了したら他のファイルは消す
+public_html内がwordpress移行後のコード.  
+移行完了したら他のファイルは消す.
