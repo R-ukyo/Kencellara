@@ -1,6 +1,6 @@
 .header {
-  border: 8px ridge antiquewhite;
-  background: content-box radial-gradient(white, antiquewhite);
+  border: 5px ridge cornsilk;
+  background: content-box radial-gradient(white, cornsilk);
 }
 .headerImgContainer {
   width: 100%;
