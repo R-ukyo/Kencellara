@@ -408,11 +408,6 @@
   ※ページの遷移はございません
 </div>
 
-<!-- ブログ道リンク -->
-<!-- <div class="monthlyBlogInfo">
-  <a href="https://www.kencellara.com/entry/kencellara_blog">ブログPV数・収益の公開はこちら</a>
-</div> -->
-
 <div class="kencemeshiExplain">
   <div class="kencemeshiExplainHeader topPageHeader">
     ケンチェ飯とは？
@@ -431,14 +426,14 @@
 <div class="kencemeshiHistory">
   <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の実績</div>
   <div class="kencemeshiHistoryContents">
-    <p><strong>2020年</strong></p>
+    <h3>2020年</h3>
     <ul>
       <li>8月　「ケンチェ飯」本格始動</li>
       <li>9月　GoogleAdsense広告連携開始</li>
       <li>11月　<span style="color: #ff0000;"><strong>月間アクセス数 12703 PV</strong></span></li>
       <li>12月　<strong><span style="color: #ff0000;">月間アクセス数  13948 PV</span></strong></li>
     </ul>
-    <p><strong>2021年</strong></p>
+    <h3>2021年</h3>
     <ul>
       <li>1月　<strong><span style="color: #ff0000;">月間アクセス数 18757 PV</span></strong></li>
       <li>1月　<a href="https://miecolle.net/hito/1282">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載</a></li>
@@ -454,27 +449,26 @@
       <li>4月　麵屋AZITO 取材依頼 受託</li>
     </ul>
   </div>
-</div>
-
-<div class="supportZone">
-  <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
-  <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェラーラを支援する" data-show-like="0" data-show-powered-by="0" data-support-message="サイトの維持費・広告費・活動費に補填させて頂きます。"></div>
-  <h3 class="supportNavTitle">お気持ありがとうございます。
-  支援金は、当ブログの活動費として大切に使わせていただきます。
-  今後も応援よろしくお願いします。</h3>
-  <div class="supportNav">
-    <h3 class="supportNavTitle">■ 支援金の使い道</h3>
-    <p class="supportNavBody">
-      ・ブログ維持費
-      ・活動費
-      ・宣伝費
-    </p>
-    <h3 class="supportNavTitle">■ 支援額</h3>
-    <p class="supportNavBody">・100円～10000円</p>
-    <h3 class="supportNavTitle">■ サポート・スポンサー募集</h3>
-    <h3 class="supportNavTitle">■ コラボ・お仕事の依頼</h3>
-    <p class="supportNavBody">
-      ・<a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！
-    </p>
-  </div>
+  <div class="supportZone">
+    <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
+    <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェラーラを支援する" data-show-like="0" data-show-powered-by="0" data-support-message="サイトの維持費・広告費・活動費に補填させて頂きます。"></div>
+    <h3 class="supportNavTitle">お気持ありがとうございます。
+      支援金は、当ブログの活動費として大切に使わせていただきます。
+      今後も応援よろしくお願いします。</h3>
+      <div class="supportNav">
+        <h3 class="supportNavTitle">■ 支援金の使い道</h3>
+        <p class="supportNavBody">
+          ・ブログ維持費
+          ・活動費
+          ・宣伝費
+        </p>
+        <h3 class="supportNavTitle">■ 支援額</h3>
+        <p class="supportNavBody">・100円～10000円</p>
+        <h3 class="supportNavTitle">■ サポート・スポンサー募集</h3>
+        <h3 class="supportNavTitle">■ コラボ・お仕事の依頼</h3>
+        <p class="supportNavBody">
+          ・<a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！
+        </p>
+      </div>
+    </div>
 </div>

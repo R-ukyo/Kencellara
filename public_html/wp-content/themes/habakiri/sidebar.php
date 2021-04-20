@@ -26,13 +26,13 @@
 <aside id="sub">
 	<div class="sidebar">
 		<div class="sb_search sb_content">
-			<div class="searchHeader sb_header">検索</div>
+			<div class="searchHeader sb_header">ワードで検索 <i class="fas fa-search"></i></div>
 			<?php get_template_part( 'searchform' ); ?>
 		</div>
 		<div class="sb_plofile sb_content">
-			<div class="profileHeader sb_header">プロフィール.</div>
+			<div class="profileHeader sb_header">ケンチェ飯とは</div>
 			<div class="profileImg">
-				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="<?php echo $upload_dir['baseurl']; ?>/toppage/profile.jpg" alt="f:id:ken_chan_bike:20200902121305p:plain" />
+				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="<?php echo $upload_dir['baseurl']; ?>/toppage/profile_1.jpg" alt="f:id:ken_chan_bike:20200902121305p:plain" />
 			</div>
 			<div class="profileSentence">
 				三重県で一番詳しいグルメディア.<br>

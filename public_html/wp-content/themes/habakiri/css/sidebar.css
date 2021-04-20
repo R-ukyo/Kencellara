@@ -24,8 +24,8 @@
   border-width: 0 15px 15px 0;
   border-right-color: darkgoldenrod;
 }
-.sb_content {
-  margin: 20px 0;
+.sb_content:nth-child(n+2) {
+  margin: 30px 0;
 }
 
 .profileSentence {

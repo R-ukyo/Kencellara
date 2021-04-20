@@ -27,7 +27,7 @@ section.typeA::after {
 	height: 3px;
 	order: -1;
 	display: block;
-	background: cornsilk;
+	background: darkgoldenrod;
 }
 section.typeA .tabLabel {	/* タブ */
   font-size: 20px;
@@ -66,10 +66,10 @@ section.typeA input:checked + .tabLabel + .content {
 /* 店舗数 */
 .storeCountArea {
   display: block;
-  padding: 15px 0 10px;
-  height: 90px;
-  margin: 30px 0;
+  height: 120px;
+  padding: 30px 0;
   background-color: cornsilk;
+  margin-bottom: 8px;
 }
 .storeCountArea.look {
   display: block;
@@ -138,8 +138,16 @@ section.typeA input:checked + .tabLabel + .content {
   font-size: 60px !important;
   right: -70px;
 }
+.slick-dots {
+  background-color: cornsilk;
+}
 
 /* 地域別検索エリア */
+.areaSearchZone {
+  padding-top: 10px;
+  height: 900px;
+  background-color: antiquewhite;
+}
 .areaList {
   margin: 0;
   padding: 0;
@@ -215,12 +223,6 @@ section.typeA input:checked + .tabLabel + .content {
 .kiho {
   display: none;
 }
-.areaSearchZone {
-  height: 875px;
-}
-.areaSearchContainer {
-  margin: 30px 0;
-}
 .areaSearchHeader {
   height: 35px;
   font-size: 22px;
@@ -265,7 +267,6 @@ section.typeA input:checked + .tabLabel + .content {
 
 /* ジャンル検索 */
 .genreSearchZone {
-  margin: 30px 0 0;
   background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210212/20210212010912.jpg");
 }
 .genreSearchContainer {
@@ -363,6 +364,7 @@ i.izakaya {
 .recommendGourmetZone {
   background-color: antiquewhite;
   padding: 20px 10px;
+  margin: 20px 0;
 }
 .recommendGourmetHeader {
   color: black;
@@ -410,9 +412,13 @@ i.izakaya {
   transition-duration: 0.5s;
 }
 
-/* ヘッダー番付 */
+/* ケンチェ番付 */
+.banzukeZone {
+  margin: 20px 0;
+}
 .banzukeContainer {
   padding: 10px 0;
+  border: 5px ridge cornsilk;
   background-color: cornsilk;
 }
 .banzukeContainer.sp {
@@ -634,7 +640,15 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 
 /* ケンチェ飯とは？ */
 .kencemeshiExplain {
+  margin: 20px 0;
   padding: 10px 0;
   text-align: center;
   background-color: cornsilk;
+}
+
+/* ケンチェ飯の実績 */
+.kencemeshiHistory {
+  padding: 10px 20px;
+  background-color: #eee;
+  font-weight: bold;
 }
