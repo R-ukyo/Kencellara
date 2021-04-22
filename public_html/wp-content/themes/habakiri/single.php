@@ -9,6 +9,9 @@
  * License URI: license.txt
  */
 ?>
+<?php
+	add_action('wp_enqueue_scripts', wp_enqueue_style('single-style', get_template_directory_uri() . '/css/single.css', array('habakiri', 'common-style')));
+?>
 <?php get_header(); ?>
 
 

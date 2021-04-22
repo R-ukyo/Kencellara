@@ -1,0 +1,322 @@
+article em {
+  font-weight: bold;
+  font-style: normal;
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
+  background: linear-gradient(to bottom, transparent 60%, #ffd700 60%);
+}
+article i {
+  font-style: oblique;
+}
+article h2 {
+  font-size: 22px;
+  padding: 6px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: black;
+  line-height: 1.5;
+}
+article h3 {
+  font-size: 20px;
+  padding: 0.25em 0.5em;
+  color: black;
+  background: transparent;
+  border-left: solid 5px #4682b4;
+}
+article h4 {
+  font-size: 15px;
+  position: relative;
+  padding-bottom: 10px;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
+article h4:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 40px;
+  background-color: #333;
+}
+article h4:first-letter {
+  font-size: 1.6em;
+  letter-spacing: .04em;
+}
+article p {
+  font-size: 15px;
+}
+article ul {
+  font-size: 15px;
+}
+.entry-title {
+  box-shadow: 0 7px 10px -5px rgba(0, 0, 0, .1) inset;
+  background: #f4f4f4;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 1em;
+  border: 3px solid #ccc;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+
+/* 目次 */
+.table-of-contents {
+  border: 3px solid #4682b4;
+  background: #f6f6f6;
+  border-radius: 15px;
+}
+.table-of-contents::before {
+  display: block;
+  content: ”- Contents -“;
+  font-size: 18px;
+  color: #4682b4;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px dashed #4682b4;
+}
+.table-of-contents li {
+  list-style-type: disc;
+  font-weight: bold;
+}
+.table-of-contents li ul li {
+  list-style-type: circle;
+  font-weight: normal;
+}
+.table-of-contents li ul li ul li {
+  list-style-type: square;
+  font-weight: normal;
+}
+/* 記事内強調するための囲い枠*/
+.box7 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #474747;
+  background: whitesmoke;
+  border-left: double 7px #4682b4;
+  border-right: double 7px #4682b4;
+}
+.box7 p {
+  margin: 0;
+  padding: 0;
+}
+.box7 ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+/* 記事内「ケンチェの一言」「この記事の内容」*/
+.emphasize-link-1,
+.emphasize-link-2 {
+  position: relative;
+  margin: 36px 0 16px;
+  padding: 16px 10px 13px;
+  border: 3px solid #4682b4;
+  background-color: #fffbf5;
+}
+.emphasize-link-1::before,
+.emphasize-link-2::before {
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  padding: 0 10px 0 26px;
+  background-color: #4682b4;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.emphasize-link-1::after,
+.emphasize-link-2::after {
+  position: absolute;
+  top: -16px;
+  left: 4px;
+  width: 28px;
+  height: 28px;
+  background-color: #4682b4;
+  border-radius: 14px;
+  line-height: 25px;
+  text-align: center;
+  content: "\f010";
+  font-size: 18px;
+  font-family: "blogicon";
+  color: #fff;
+}
+.emphasize-link-1 p,
+.emphasize-link-2 p {
+  margin: 0;
+}
+.emphasize-link-1 ul,
+.emphasize-link-2 ul {
+  margin: 0 0 0 1.5em;
+}
+.emphasize-link-1::before {
+  content: "この記事の内容";
+}
+.emphasize-link-2::before {
+  content: "ケンチェの一言";
+}
+/* 記事内リスト */
+.list11,
+.list10,
+.list03,
+.list02,
+.list05 {
+  border: solid 3px #4682b4;
+  padding: 0.5em;
+  position: relative;
+  margin-top: 2em;
+}
+.list11 ul,
+.list10 ul,
+.list03 ul,
+.list02 ul,
+.list05 ul {
+  margin: 0 0 0 1.5em;
+}
+.list11 li,
+.list10 li,
+.list03 li,
+.list02 li,
+.list05 li {
+  line-height: 1.5;
+  padding: 0.5em 0 0.5em 1.4em;
+  border-bottom: dashed 1px silver;
+  list-style-type: none!important;
+}
+.list11 li:last-of-type,
+.list10 li:last-of-type,
+.list03 li:last-of-type,
+.list02 li:last-of-type,
+.list05 li:last-of-type {
+  border-bottom: none;
+}
+/*リスト内のアイコン*/
+.list11 li:before,
+.list10 li:before,
+.list03 li:before,
+.list02 li:before,
+.list05 li:before {
+  font-family: "FontAwesome";
+  content: "\f138";
+  position: absolute;
+  left : 0.5em;
+  color: #4682b4;
+}
+/*タイトルタブ*/
+.list11 li:after,
+.list10 li:after,
+.list03 li:after,
+.list02 li:after,
+.list05 li:after {
+  background: #4682b4;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  left: -2px;
+  bottom: 100%;
+  padding: 1px 7px;
+  letter-spacing: 0.05em;
+}
+.list11 li:after {
+  content: "具体例";
+}
+.list10 li:after {
+  content: "戦歴";
+}
+/* .list03 li:after {
+content: "メニュー";
+} */
+.list02 li:after {
+  content: "まとめ";
+}
+.list05 li:after {
+  content: "member";
+}
+/* 吹き出し */
+.l-fuki,
+.r-fuki {
+  position: relative;
+  width: calc(100% - 82px);
+  padding: 20px;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+  box-shadow: 0 3px 8px -2px rgba(0,0,0,.16);
+  background-color: #EEEEEE;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.l-fuki {
+  margin: 20px auto 36px 0;
+}
+.r-fuki {
+  margin: 20px 0 36px auto;
+}
+.l-fuki::before,
+.r-fuki::before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  background-color: #fff;
+  z-index: 2;
+}
+.l-fuki::before {
+  right: -7px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.r-fuki::before {
+  left: -7px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.l-fuki::after,
+.r-fuki::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: -6px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 5px #aaa;
+  box-sizing: border-box;
+}
+.l-fuki::after {
+  right: -82px;
+}
+.r-fuki::after {
+  left: -82px;
+}
+@media screen and (min-width: 478px) {
+  .l-fuki::after,
+  .r-fuki::after {
+    width: 80px;
+    height: 80px;
+  }
+  .l-fuki,
+  .r-fuki {
+    width: calc(100% - 106px);
+  }
+  .l-fuki::after {
+    right: -106px;
+  }
+  .r-fuki::after {
+    left: -106px;
+  }
+}
+.kensuke01::after {
+  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20200818/20200818112652.jpg);
+}
+.kensuke02::after {
+  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20200826/20200826072843.png);
+}
