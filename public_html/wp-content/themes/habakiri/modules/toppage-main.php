@@ -1,7 +1,9 @@
 <?php
   $all_posts_count = wp_count_posts()->publish;
   $other_posts_count = get_category_by_slug('others')->count;
-  $gourmet_posts_count = $all_posts_count - $other_posts_count
+  $gourmet_posts_count = $all_posts_count - $other_posts_count;
+	$support_page_id = get_page_by_path('support')->ID;
+	$kence_work_page_id = get_page_by_path('kence_work')->ID;
 ?>
 <div class="storeCountArea">
   <div class="storeCountContainer">
@@ -452,23 +454,26 @@
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
     <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェラーラを支援する" data-show-like="0" data-show-powered-by="0" data-support-message="サイトの維持費・広告費・活動費に補填させて頂きます。"></div>
-    <h3 class="supportNavTitle">お気持ありがとうございます。
-      支援金は、当ブログの活動費として大切に使わせていただきます。
-      今後も応援よろしくお願いします。</h3>
       <div class="supportNav">
-        <h3 class="supportNavTitle">■ 支援金の使い道</h3>
         <p class="supportNavBody">
-          ・ブログ維持費
-          ・活動費
-          ・宣伝費
+          お気持ありがとうございます。<br>
+          支援金は、当ブログの活動費として大切に使わせていただきます。<br>
+          今後も応援よろしくお願いします。
         </p>
-        <h3 class="supportNavTitle">■ 支援額</h3>
-        <p class="supportNavBody">・100円～10000円</p>
-        <h3 class="supportNavTitle">■ サポート・スポンサー募集</h3>
-        <h3 class="supportNavTitle">■ コラボ・お仕事の依頼</h3>
-        <p class="supportNavBody">
-          ・<a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！
-        </p>
+        <h3 class="supportNavTitle">支援金の使い道</h3>
+        <ul class="supportNavList">
+          <li>ブログ維持費</li>
+          <li>活動費</li>
+          <li>宣伝費</li>
+        </ul>
+        <h3 class="supportNavTitle">支援額</h3>
+        <ul class="supportNavList">
+          <li>100円～10000円</li>
+        </ul>
+        <h3 class="supportNavTitle">コラボ・お仕事の依頼</h3>
+        <ul class="supportNavList">
+          <li><a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！</li>
+        </ul>
       </div>
     </div>
 </div>

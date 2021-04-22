@@ -5,7 +5,7 @@ body.home .sub-page-contents {
 .topPageHeader {
   color: black;
   background-color: white;
-  margin: 10px auto;
+  margin: 10px auto 20px;
   width: 320px;
   box-shadow: 5px 5px 5px 1px black;
   font-weight: bold;
@@ -98,7 +98,7 @@ section.typeA input:checked + .tabLabel + .content {
 
 /* スライドショー */
 .slider {
-  background-color: black;
+  background-color: currentColor;
   padding: 20px 0;
 }
 .slider img {
@@ -145,8 +145,7 @@ section.typeA input:checked + .tabLabel + .content {
 /* 地域別検索エリア */
 .areaSearchZone {
   padding-top: 10px;
-  height: 900px;
-  background-color: antiquewhite;
+  height: 950px;
 }
 .areaList {
   margin: 0;
@@ -157,28 +156,30 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .areaSearchZone li {
   list-style: none;
-  border: 1px solid #bce2e8;
+  border: 1px solid saddlebrown;
   border-radius: 5px;
+  margin-bottom: 8px;
+  width: 65px;
+  font-size: 20px;
 }
 .areaSearchZone a {
+  color: saddlebrown;
   display: block;
-  background: linear-gradient(#fff, #bce2e8);
+  background: linear-gradient(#fff, cornsilk);
 }
 .areaSearchZone a:hover {
   opacity: 0.6;
   color: #fff;
-  background: linear-gradient(#fff, #ff6600);
+  background: linear-gradient(#fff, saddlebrown);
 }
 .areaSearchContainer {
   height: 100%;
 }
 .areaSearchHeader {
-  color: black;
   width: 270px;
   text-align: center;
   font-weight: bold;
   margin: 10px auto 30px;
-  box-shadow: 5px 5px 5px 1px black;
 }
 .areaSearchInner {
   display: flex;
@@ -259,27 +260,21 @@ section.typeA input:checked + .tabLabel + .content {
   font-size: 30px;
   margin-bottom: 8px;
 }
-.areaSearchZone li {
-  margin-bottom: 8px;
-  width: 65px;
-  font-size: 20px;
-}
 
 /* ジャンル検索 */
 .genreSearchZone {
+  margin: 20px 0;
   background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210212/20210212010912.jpg");
 }
 .genreSearchContainer {
   padding: 20px 0 0;
 }
 .genreSearchHeader {
-  color: black;
   font-size: 22px;
   width: 290px;
   text-align: center;
   font-weight: bold;
   margin: 10px auto 20px;
-  box-shadow: 5px 5px 5px 1px silver;
   background-color: white;
 }
 .genreSearchInner {
@@ -362,16 +357,13 @@ i.izakaya {
 
 /* ケンチェ激推しグルメ */
 .recommendGourmetZone {
-  background-color: antiquewhite;
+  background-color: cornsilk;
   padding: 20px 10px;
   margin: 20px 0;
 }
 .recommendGourmetHeader {
-  color: black;
   background-color: white;
-  margin: auto;
   width: 320px;
-  box-shadow: 5px 5px 5px 1px black;
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -418,7 +410,7 @@ i.izakaya {
 }
 .banzukeContainer {
   padding: 10px 0;
-  border: 5px ridge cornsilk;
+  border: 3px ridge saddlebrown;
   background-color: cornsilk;
 }
 .banzukeContainer.sp {
@@ -451,20 +443,19 @@ i.izakaya {
   width: 220px;
   margin: 10px auto;
   background-color: white;
-  color: black;
   font-size: 22px;
   font-weight: bold;
-  box-shadow: 5px 5px 5px 1px black;
 }
 .banzukeContainer table {
   margin: auto;
 }
 .banzukeRank {
-  width: 90px;
+  width: 70px;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: black;
+  padding-right: 30px;
 }
 .banzukeRank.first {
   text-shadow: 3px 3px 3px gold;
@@ -515,8 +506,8 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   width: 100%;
 }
 .kenceWindowAnnounce {
-  border-top: 3px double brown;
-  background-color: antiquewhite;
+  border-top: 3px double saddlebrown;
+  background-color: cornsilk;
   text-align: center;
   padding: 10px 0;
   font-weight: bold;
@@ -526,15 +517,15 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 }
 .kenceWindowCaution {
   display: block;
-  border-bottom: 3px double brown;
+  border-bottom: 3px double saddlebrown;
   font-size: 12px;
-  background-color: antiquewhite;
+  background-color: cornsilk;
   text-align: center;
   padding-bottom: 10px;
 }
 .kenceWindowModalOpen {
   display: block;
-  background-color: antiquewhite;
+  background-color: cornsilk;
   text-align: center;
   color: black;
   padding: 20px 0;
@@ -645,10 +636,24 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   text-align: center;
   background-color: cornsilk;
 }
+.kencemeshiExplainContents img {
+  margin-bottom: 20px;
+}
+.kencemeshiExplainContents p {
+  font-size: 18px;
+}
 
 /* ケンチェ飯の実績 */
 .kencemeshiHistory {
   padding: 10px 20px;
   background-color: #eee;
   font-weight: bold;
+}
+.kencemeshiHistoryHeader {
+  color: black;
+  box-shadow: 5px 5px 5px 1px black;
+}
+
+.supportNavList li {
+  font-size: 17px;
 }

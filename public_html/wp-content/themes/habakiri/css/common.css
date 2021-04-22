@@ -25,6 +25,8 @@ ul {
 /* codoc */
 .codoc-entry {
   border: 3px outset crimson;
+  margin: 30px auto;
+  background-color: #fff;
 }
 
 a.instaLink {
