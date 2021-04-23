@@ -358,6 +358,7 @@ i.izakaya {
 /* ケンチェ激推しグルメ */
 .recommendGourmetZone {
   background-color: cornsilk;
+  border: 3px outset cornsilk;
   padding: 20px 10px;
   margin: 20px 0;
 }
@@ -635,6 +636,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   padding: 10px 0;
   text-align: center;
   background-color: cornsilk;
+  border: 3px inset cornsilk;
 }
 .kencemeshiExplainContents img {
   margin-bottom: 20px;
@@ -645,7 +647,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 
 /* ケンチェ飯の実績 */
 .kencemeshiHistory {
-  padding: 10px 20px;
+  padding: 10px 50px;
   background-color: #eee;
   font-weight: bold;
 }
