@@ -7,9 +7,6 @@
   foreach ( $posts as $post ):
   setup_postdata( $post );
   $cats = get_the_category();
-  // $cat_name_1 = $cats[0]->name;
-  // $cat_name_2 = $cats[1]->name;
-  // $cat_name_3 = $cats[2]->name;
 ?>
 <div class="newPostCard">
   <div class="newPostThumbnail">
@@ -20,7 +17,7 @@
   </div>
   <div class="newPostCategory">
     <?php foreach ($cats as $cat) { ?>
-      <a><?php echo $cat->name; ?></a>
+      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
     <?php } ?>
   </div>
 </div>
