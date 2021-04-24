@@ -56,11 +56,11 @@
 .entry-content p {
   font-size: 16px;
 }
-.entry-content img {
-  max-width: 550px;
-}
 .entry-content ul {
   font-size: 16px;
+}
+.entry-content img {
+  max-width: 600px;
 }
 .entry-title {
   color: brown;
