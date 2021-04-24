@@ -13,6 +13,8 @@ ul {
 }
 .btn {
   color: saddlebrown;
+  background-color: cornsilk;
+  border-color: saddlebrown;
 }
 
 /* font-awesome */

@@ -1,29 +1,37 @@
-article em {
+.sub-page-contents {
+  padding-top: 20px;
+}
+.entry-content {
+  padding: 20px;
+}
+.entry-content em {
   font-weight: bold;
   font-style: normal;
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
   background: linear-gradient(to bottom, transparent 60%, #ffd700 60%);
 }
-article i {
+.entry-content i {
   font-style: oblique;
 }
-article h2 {
+.entry-content h3 {
   font-size: 22px;
-  padding: 6px 0;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  color: black;
+  padding: 6px;
+  border-top: 2px solid saddlebrown;
+  border-bottom: 2px solid saddlebrown;
+  color: saddlebrown;
   line-height: 1.5;
+  background-color: cornsilk;
 }
-article h3 {
+.entry-content h4 {
+  margin: 15px 0;
   font-size: 20px;
-  padding: 0.25em 0.5em;
+  padding: 10px;
   color: black;
   background: transparent;
-  border-left: solid 5px #4682b4;
+  border-left: solid 5px brown;
 }
-article h4 {
+.entry-content h5 {
   font-size: 15px;
   position: relative;
   padding-bottom: 10px;
@@ -31,7 +39,7 @@ article h4 {
   line-height: 1.5;
   text-align: center;
 }
-article h4:after {
+.entry-content h5:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -41,24 +49,34 @@ article h4:after {
   width: 40px;
   background-color: #333;
 }
-article h4:first-letter {
+.entry-content h5:first-letter {
   font-size: 1.6em;
   letter-spacing: .04em;
 }
-article p {
-  font-size: 15px;
+.entry-content p {
+  font-size: 16px;
 }
-article ul {
-  font-size: 15px;
+.entry-content img {
+  max-width: 550px;
+}
+.entry-content ul {
+  font-size: 16px;
 }
 .entry-title {
-  box-shadow: 0 7px 10px -5px rgba(0, 0, 0, .1) inset;
-  background: #f4f4f4;
+  color: brown;
+  box-shadow: 0 7px 10px -5px saddlebrown inset;
+  background: cornsilk;
   font-weight: bold;
   font-size: 20px;
   padding: 1em;
-  border: 3px solid #ccc;
+  border: 3px solid saddlebrown;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+.entry-meta {
+  display: none;
+}
+.trackbacks {
+  display: none;
 }
 
 /* 目次 */
@@ -90,12 +108,12 @@ article ul {
 }
 /* 記事内強調するための囲い枠*/
 .box7 {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  color: #474747;
-  background: whitesmoke;
-  border-left: double 7px #4682b4;
-  border-right: double 7px #4682b4;
+  padding: 5px 10px;
+  margin: 35px 0;
+  color: black;
+  background: cornsilk;
+  border-left: double 7px saddlebrown;
+  border-right: double 7px saddlebrown;
 }
 .box7 p {
   margin: 0;
@@ -150,7 +168,8 @@ article ul {
 }
 .emphasize-link-1 ul,
 .emphasize-link-2 ul {
-  margin: 0 0 0 1.5em;
+  margin: 0;
+  list-style: disclosure-closed;
 }
 .emphasize-link-1::before {
   content: "この記事の内容";
@@ -164,16 +183,18 @@ article ul {
 .list03,
 .list02,
 .list05 {
-  border: solid 3px #4682b4;
-  padding: 0.5em;
+  border: outset 3px saddlebrown;
+  padding: 5px;
   position: relative;
   margin-top: 2em;
+  background-color: cornsilk;
 }
 .list11 ul,
 .list10 ul,
 .list03 ul,
 .list02 ul,
 .list05 ul {
+  padding: 0;
   margin: 0 0 0 1.5em;
 }
 .list11 li,
@@ -184,7 +205,7 @@ article ul {
   line-height: 1.5;
   padding: 0.5em 0 0.5em 1.4em;
   border-bottom: dashed 1px silver;
-  list-style-type: none!important;
+  list-style-type: none;
 }
 .list11 li:last-of-type,
 .list10 li:last-of-type,
@@ -202,8 +223,8 @@ article ul {
   font-family: "FontAwesome";
   content: "\f138";
   position: absolute;
-  left : 0.5em;
-  color: #4682b4;
+  left : 10px;
+  color: saddlebrown;
 }
 /*タイトルタブ*/
 .list11 li:after,
@@ -235,6 +256,10 @@ content: "メニュー";
 .list05 li:after {
   content: "member";
 }
+.menuCaution {
+  text-align: right;
+}
+
 /* 吹き出し */
 .l-fuki,
 .r-fuki {
@@ -242,9 +267,9 @@ content: "メニュー";
   width: calc(100% - 82px);
   padding: 20px;
   border-radius: 6px;
-  border: 2px solid #ddd;
-  box-shadow: 0 3px 8px -2px rgba(0,0,0,.16);
-  background-color: #EEEEEE;
+  border: 2px solid saddlebrown;
+  box-shadow: 0 3px 8px -2px rgb(0 0 0 / 16%);
+  background-color: antiquewhite;
   z-index: 1;
   box-sizing: border-box;
 }
@@ -261,9 +286,9 @@ content: "メニュー";
   top: 16px;
   width: 10px;
   height: 10px;
-  border-right: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
-  background-color: #fff;
+  border-right: 2px solid saddlebrown;
+  border-bottom: 2px solid saddlebrown;
+  background-color: antiquewhite;
   z-index: 2;
 }
 .l-fuki::before {
@@ -284,11 +309,11 @@ content: "メニュー";
   height: 60px;
   top: -6px;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid saddlebrown;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  box-shadow: 1px 1px 5px #aaa;
+  box-shadow: 1px 1px 5px saddlebrown;
   box-sizing: border-box;
 }
 .l-fuki::after {
