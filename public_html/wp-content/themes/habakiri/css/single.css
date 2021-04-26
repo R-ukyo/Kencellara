@@ -318,7 +318,7 @@ content: "メニュー";
   height: 60px;
   top: -6px;
   border-radius: 50%;
-  border: 3px solid saddlebrown;
+  border: 2px solid saddlebrown;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -348,9 +348,7 @@ content: "メニュー";
     left: -106px;
   }
 }
-.kensuke01::after {
-  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20200818/20200818112652.jpg);
-}
+.kensuke01::after,
 .kensuke02::after {
-  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20200826/20200826072843.png);
+  background-image: url(https://kencellara.com/wp-content/uploads/toppage/butace.png);
 }
