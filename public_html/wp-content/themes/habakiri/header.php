@@ -22,6 +22,12 @@
 		add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/css/common.css', array('habakiri')));
 		add_action('wp_enqueue_scripts', wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css'));
 	?>
+	<?php
+		function header_scripts() {
+			wp_enqueue_script( 'header_sns-script', get_template_directory_uri() . '/js/header_sns.js', array('jquery'));
+		}
+		add_action( 'wp_enqueue_scripts', 'header_scripts' );
+	?>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	<?php wp_head(); ?>
 </head>

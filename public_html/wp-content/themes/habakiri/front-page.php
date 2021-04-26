@@ -20,8 +20,7 @@
 <?php add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery'))); ?>
 <?php
 	function toppage_scripts() {
-		wp_enqueue_script( 'header_sns-script', get_template_directory_uri() . '/js/header_sns.js', array('jquery'));
-		wp_enqueue_script( 'modal-script', get_template_directory_uri() . '/js/modal.js');
+		wp_enqueue_script( 'modal-script', get_template_directory_uri() . '/js/modal.js', array('jquery'));
 	}
 	add_action( 'wp_enqueue_scripts', 'toppage_scripts' );
 ?>
