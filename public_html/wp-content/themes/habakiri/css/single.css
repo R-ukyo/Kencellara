@@ -180,6 +180,10 @@
   margin: 0;
   list-style: disclosure-closed;
 }
+.emphasize-link-1 li,
+.emphasize-link-2 li {
+  font-weight: bold;
+}
 .emphasize-link-1::before {
   content: "この記事の内容";
 }
@@ -256,9 +260,6 @@
 .list10 li:after {
   content: "戦歴";
 }
-/* .list03 li:after {
-content: "メニュー";
-} */
 .list02 li:after {
   content: "まとめ";
 }
@@ -267,6 +268,22 @@ content: "メニュー";
 }
 .menuCaution {
   text-align: right;
+}
+.list03::before {
+  content: "MENU";
+  position: relative;
+  right: calc(-50% + 41px);
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px;
+  background-color: saddlebrown;
+  border-radius: 5px;
+}
+.list03 {
+  height: 320px;
+  overflow-y: scroll;
+  border-radius: 8px;
 }
 
 /* 吹き出し */
@@ -278,7 +295,7 @@ content: "メニュー";
   border-radius: 6px;
   border: 2px solid saddlebrown;
   box-shadow: 0 3px 8px -2px rgb(0 0 0 / 16%);
-  background-color: antiquewhite;
+  background-color: #ffe4e1;
   z-index: 1;
   box-sizing: border-box;
 }
@@ -297,7 +314,7 @@ content: "メニュー";
   height: 10px;
   border-right: 2px solid saddlebrown;
   border-bottom: 2px solid saddlebrown;
-  background-color: antiquewhite;
+  background-color: #ffe4e1;
   z-index: 2;
 }
 .l-fuki::before {
@@ -351,4 +368,28 @@ content: "メニュー";
 .kensuke01::after,
 .kensuke02::after {
   background-image: url(https://kencellara.com/wp-content/uploads/toppage/butace.png);
+}
+
+.summaryTable {
+  font-size: 16px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.summaryTable caption {
+  font-weight: bold;
+  background-color: cornsilk;
+  color: brown;
+  text-align: center;
+}
+.summaryTable th, .summaryTable td {
+  border: 1px ridge brown;
+}
+.summaryTable th {
+  width: 22%;
+  text-align: center;
+  color: brown;
+  background-color: cornsilk;
+}
+.summaryTable td {
+  padding: 7px;
 }
