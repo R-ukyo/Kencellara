@@ -415,7 +415,7 @@ h1.entry-title {
   line-height: 1;
   border: 1px solid #eeeeee;
   word-wrap: break-word;
-  margin: 40px;
+  margin: 40px 0;
   box-shadow: 0 0 3px 2px black;
 }
 .blogcard.ex {
