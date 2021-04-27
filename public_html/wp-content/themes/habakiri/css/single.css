@@ -34,7 +34,7 @@ h1.entry-title {
   background-color: cornsilk;
 }
 .entry-content h3 {
-  margin: 15px 0;
+  margin: 18px 0;
   font-size: 20px;
   padding: 10px;
   color: black;
@@ -65,6 +65,7 @@ h1.entry-title {
 }
 .entry-content p {
   font-size: 16px;
+  margin: 0 0 13px;
 }
 .entry-content ul {
   font-size: 16px;
@@ -81,20 +82,43 @@ h1.entry-title {
 .trackbacks {
   display: none;
 }
-.table-of-contents,
-.box7,
-.emphasize-link-1,
-.emphasize-link-2,
-.list11,
-.list10,
-.list03,
-.list02,
-.list05,
-.l-fuki,
-.r-fuki,
-.menuCaution,
-.summaryTable {
-  /* max-width: 600px; */
+
+/* 関連記事 */
+.emphasize-link {
+  position: relative;
+  margin: 36px 0 16px;
+  padding: 18px 10px 16px;
+  border-top: 3px ridge black;
+  border-bottom: 3px ridge black;
+  background-color: snow;
+}
+.emphasize-link::before {
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 48px);
+  padding: 0 10px 0 26px;
+  content: "関連記事";
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.emphasize-link::after {
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 54px);
+  width: 28px;
+  height: 28px;
+  background-color: black;
+  border-radius: 14px;
+  line-height: 28px;
+  text-align: center;
+  content: "\f044";
+  font-size: 18px;
+  font-family: "FontAwesome";
+  color: #fff;
 }
 
 /* 目次 */
@@ -103,7 +127,7 @@ h1.entry-title {
   padding: 1.2em;
   font-size: .9em;
   border: 3px solid saddlebrown;
-  background: cornsilk;
+  background: floralwhite;
   border-radius: 15px;
 }
 .table-of-contents::before {
@@ -135,7 +159,7 @@ h1.entry-title {
   padding: 5px 10px;
   margin: 35px 0;
   color: black;
-  background: cornsilk;
+  background: floralwhite;
   border-left: double 7px saddlebrown;
   border-right: double 7px saddlebrown;
 }
@@ -215,7 +239,7 @@ h1.entry-title {
   padding: 5px;
   position: relative;
   margin-top: 2em;
-  background-color: cornsilk;
+  background-color: snow;
 }
 .list11 ul,
 .list10 ul,
@@ -315,10 +339,10 @@ h1.entry-title {
   box-sizing: border-box;
 }
 .l-fuki {
-  margin: 20px auto 36px 0;
+  margin: 20px auto 36px 0 !important;
 }
 .r-fuki {
-  margin: 20px 0 36px auto;
+  margin: 20px 0 36px auto !important;
 }
 .l-fuki::before,
 .r-fuki::before {
@@ -388,9 +412,10 @@ h1.entry-title {
 .summaryTable {
   font-size: 15px;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
 }
 .summaryTable caption {
+  font-size: 1.1em;
   font-weight: bold;
   background-color: #eee;
   color: black;
@@ -415,7 +440,7 @@ h1.entry-title {
   line-height: 1;
   border: 1px solid #eeeeee;
   word-wrap: break-word;
-  margin: 40px 0;
+  margin: 20px;
   box-shadow: 0 0 3px 2px black;
 }
 .blogcard.ex {
