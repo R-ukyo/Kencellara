@@ -14,9 +14,19 @@
 .entry-content i {
   font-style: oblique;
 }
+h1.entry-title {
+  font-size: 25px;
+  color: brown;
+  box-shadow: 0 7px 10px -5px saddlebrown inset;
+  background: cornsilk;
+  font-weight: bold;
+  padding: 1em;
+  border: 3px solid saddlebrown;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
 .entry-content h2 {
-  font-size: 22px;
-  padding: 6px;
+  font-size: 23px;
+  padding: 8px;
   border-top: 2px solid saddlebrown;
   border-bottom: 2px solid saddlebrown;
   color: saddlebrown;
@@ -65,21 +75,26 @@
 .entry-content a:hover {
   opacity: 0.7;
 }
-.entry-title {
-  color: brown;
-  box-shadow: 0 7px 10px -5px saddlebrown inset;
-  background: cornsilk;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 1em;
-  border: 3px solid saddlebrown;
-  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
-}
 .entry-meta {
   display: none;
 }
 .trackbacks {
   display: none;
+}
+.table-of-contents,
+.box7,
+.emphasize-link-1,
+.emphasize-link-2,
+.list11,
+.list10,
+.list03,
+.list02,
+.list05,
+.l-fuki,
+.r-fuki,
+.menuCaution,
+.summaryTable {
+  /* max-width: 600px; */
 }
 
 /* 目次 */
@@ -371,25 +386,26 @@
 }
 
 .summaryTable {
-  font-size: 16px;
+  font-size: 15px;
   border-collapse: collapse;
   width: 100%;
 }
 .summaryTable caption {
   font-weight: bold;
-  background-color: cornsilk;
-  color: brown;
+  background-color: #eee;
+  color: black;
   text-align: center;
+  text-shadow: 2px 2px 2px silver;
 }
 .summaryTable th, .summaryTable td {
-  border: 1px ridge brown;
+  border: 1px solid silver;
 }
 .summaryTable th {
   width: 22%;
   text-align: center;
-  color: brown;
-  background-color: cornsilk;
+  color: black;
+  background-color: #eee;
 }
 .summaryTable td {
-  padding: 7px;
+  padding: 6px;
 }
