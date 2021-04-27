@@ -1731,7 +1731,7 @@ body.page-archive-category .pager {
 .menuList,
 .list03 {
   margin: 0;
-  height: 200px;
+  max-height: 200px;
   overflow-y: scroll;
   background-color: #fffbf5;
 }
