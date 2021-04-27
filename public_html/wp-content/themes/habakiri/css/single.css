@@ -409,3 +409,57 @@ h1.entry-title {
 .summaryTable td {
   padding: 6px;
 }
+
+/* リンクカード */
+.blogcard {
+  line-height: 1;
+  border: 1px solid #eeeeee;
+  word-wrap: break-word;
+  margin: 40px;
+  box-shadow: 0 0 3px 2px black;
+}
+.blogcard.ex {
+  height: 200px;
+  background-color: #eee;
+}
+.blogcard a {
+  text-decoration: none;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.blogcard a:hover {
+  opacity: 0.7;
+}
+.blogcard_thumbnail {
+  float: left;
+  padding: 20px;
+}
+.blogcard_thumbnail img {
+  max-height: 160px;
+}
+.blogcard_title {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 17px 20px 10px;
+}
+.blogcard_title:hover {
+  opacity: 0.7;
+}
+.blogcard_excerpt {
+  font-size: 0.85em;
+  line-height: 1.6;
+  padding: 0 17px 15px 20px;
+}
+.blogcard_link {
+  font-size: 0.65em;
+  padding: 0 17px 15px 20px;
+  text-align: left;
+}
+.blogcard_link .favicon {
+  margin-bottom: -4px;
+}
+.blogcard_link .icon-external-link-alt::before {
+  font-size: 0.75em;
+}

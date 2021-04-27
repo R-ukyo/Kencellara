@@ -670,4 +670,57 @@ class Habakiri_Base_Functions {
 		}
 		return $breakpoint;
 	}
+
+	/* 外部リンク対応ブログカードのショートコードを作成 */
+	public static function show_Linkcard($atts) {
+		extract(shortcode_atts(array(
+			'url'=>"",
+			'title'=>"",
+			'excerpt'=>""
+		),$atts));
+
+		//OGP情報を取得
+		require_once 'OpenGraph.php';
+		$graph = OpenGraph::fetch($url);
+
+		//OGPタグからタイトルを取得
+		$Link_title = $graph->title;
+		if(!empty($title)){
+			$Link_title = $title;//title=""の入力がある場合はそちらを優先
+		}
+
+		//OGPタグからdescriptionを取得（抜粋文として利用）
+		$Link_description = wp_trim_words($graph->description, 60, '…' );//文字数は任意で変更
+		if(!empty($excerpt)){
+			$Link_description = $excerpt;//値を取得できない時は手動でexcerpt=""を入力
+		}
+
+		// サムネ
+		$xLink_img = '<img src="'. $graph->image .'" />';
+
+		//ファビコンを取得（GoogleのAPIでスクレイピング）
+		$host = parse_url($url)['host'];
+		$searchFavcon = 'https://www.google.com/s2/favicons?domain='.$host;
+		if($searchFavcon){
+			$favicon = '<img class="favicon" src="'.$searchFavcon.'">';
+		}
+
+		//外部リンク用ブログカードHTML出力
+		$sc_Linkcard .='
+			<div class="blogcard ex">
+			<a href="'. $url .'" target="_blank">
+			 <div class="blogcard_thumbnail">'. $xLink_img .'</div>
+			 <div class="blogcard_content">
+			  <div class="blogcard_title">'. $Link_title .'</div>
+			  <div class="blogcard_excerpt">'. $Link_description .'</div>
+			  <div class="blogcard_link">'. $favicon .' '. $url .' <i class="icon-external-link-alt"></i></div>
+			 </div>
+			 <div class="clear"></div>
+			</a>
+			</div>';
+
+		return $sc_Linkcard;
+	}
 }
+
+add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");
