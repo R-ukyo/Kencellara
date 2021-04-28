@@ -1,11 +1,11 @@
 .page_parent a {
-  color: #333;
+  color: saddlebrown;
 }
 .page_parent a:focus,
 .page_parent a:hover,
 .page_parent a:active {
   outline: none;
-  color: #333;
+  color: brown;
   text-decoration: none;
 }
 ul {

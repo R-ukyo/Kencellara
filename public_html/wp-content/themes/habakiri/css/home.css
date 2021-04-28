@@ -471,9 +471,13 @@ i.izakaya {
   width: 450px;
   padding: 12px 10px;
 }
+.banzukeContainer a {
+  color: black;
+}
 .banzukeContainer a:hover {
   text-shadow: 1px 1px 3px silver;
   opacity: 0.8;
+  color: saddlebrown;
 }
 .banzukeContainer h3 {
   margin: 5px 0;
@@ -538,6 +542,7 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   padding: 10px;
   border: 3px outset silver;
   background-color: white;
+  color: black;
 }
 .kenceWindowModalOpen a:hover {
   opacity: 0.6;
