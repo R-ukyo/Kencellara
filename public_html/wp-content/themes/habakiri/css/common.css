@@ -16,6 +16,18 @@ ul {
   background-color: cornsilk;
   border-color: saddlebrown;
 }
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.btn-default.dropdown-toggle {
+  color: saddlebrown;
+  background-color: cornsilk;
+  border-color: saddlebrown;
+}
+input {
+  color: saddlebrown !important;
+  border-color: saddlebrown !important;
+}
+input::placeholder {
+  color: saddlebrown !important;
+}
 
 /* font-awesome */
 .fa-fire {
