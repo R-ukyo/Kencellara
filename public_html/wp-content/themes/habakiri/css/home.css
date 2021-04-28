@@ -98,8 +98,8 @@ section.typeA input:checked + .tabLabel + .content {
 
 /* スライドショー */
 .slider {
-  background-color: currentColor;
-  padding: 20px 0;
+  background-color: snow;
+  padding: 20px 0 30px;
 }
 .slider img {
   width: 90%;
@@ -126,20 +126,27 @@ section.typeA input:checked + .tabLabel + .content {
 .slick-next {
   right: 75px !important;
 }
-.slick-prev:before {
+.slick-prev::before,
+.slick-next::before {
   position: absolute;
-  left: 30px;
   top: -18px;
   font-size: 60px !important;
+  color: saddlebrown !important;
+  opacity: 1 !important;
+}
+.slick-prev:before {
+  left: 30px;
 }
 .slick-next:before {
-  position: absolute;
-  top: -18px;
-  font-size: 60px !important;
   right: -70px;
 }
 .slick-dots {
   background-color: cornsilk;
+  height: 50px;
+  padding-top: 10px !important;
+}
+.slick-dots li button:before {
+  color: saddlebrown !important;
 }
 
 /* 地域別検索エリア */
