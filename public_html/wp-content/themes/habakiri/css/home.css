@@ -668,6 +668,13 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   box-shadow: 5px 5px 5px 1px black;
 }
 
+/* 支援 */
+.acknowledgement {
+  font-size: 16px;
+}
+.to_kence_work {
+  font-size: 18px;
+}
 .supportNavList li {
   font-size: 17px;
 }

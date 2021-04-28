@@ -438,12 +438,12 @@
     <h3>2021年</h3>
     <ul>
       <li>1月　<strong><span style="color: #ff0000;">月間アクセス数 18757 PV</span></strong></li>
-      <li>1月　<a href="https://miecolle.net/hito/1282">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載</a></li>
+      <li>1月　<a href="https://miecolle.net/hito/1282">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載（リンク）</a></li>
       <li>1月　にっこう亭 取材依頼 受託</li>
-      <li>1月　<a href="https://www.kencellara.com/entry/2021-1-event">江戸橋 富や コラボイベント 開催</a></li>
+      <li>1月　<a href="https://www.kencellara.com/entry/2021-1-event">江戸橋 富や コラボイベント 開催（リンク）</a></li>
       <li>2月　<span style="color: #ff0000;"><strong>月間アクセス数 27704 PV</strong></span></li>
       <li>2月　三重タイムズ「ケンチェ飯」新聞掲載</li>
-      <li>2月　<a href="https://otonamie.jp/?page_id=34706">OTONAMIE 地域のWEBメディアとして「ケンチェ飯」掲載</a></li>
+      <li>2月　<a href="https://otonamie.jp/?page_id=34706">OTONAMIE 地域のWEBメディアとして「ケンチェ飯」掲載（リンク）</a></li>
       <li>2月　CAFE&amp;BAR TRIPLE A 取材依頼 受託</li>
       <li>3月　B&amp;Bフォレスト志摩 取材依頼 受託</li>
       <li>3月　株式会社えんこね 業務提携</li>
@@ -454,26 +454,25 @@
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
     <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェラーラを支援する" data-show-like="0" data-show-powered-by="0" data-support-message="サイトの維持費・広告費・活動費に補填させて頂きます。"></div>
-      <div class="supportNav">
-        <p class="supportNavBody">
-          お気持ありがとうございます。<br>
-          支援金は、当ブログの活動費として大切に使わせていただきます。<br>
-          今後も応援よろしくお願いします。
-        </p>
-        <h3 class="supportNavTitle">支援金の使い道</h3>
-        <ul class="supportNavList">
-          <li>ブログ維持費</li>
-          <li>活動費</li>
-          <li>宣伝費</li>
-        </ul>
-        <h3 class="supportNavTitle">支援額</h3>
-        <ul class="supportNavList">
-          <li>100円～10000円</li>
-        </ul>
-        <h3 class="supportNavTitle">コラボ・お仕事の依頼</h3>
-        <ul class="supportNavList">
-          <li><a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！</li>
-        </ul>
-      </div>
+    <div class="supportNav">
+      <p class="acknowledgement">
+        お気持ありがとうございます。支援金は、ケンチェ飯の活動費用として大切に使わせていただきます。今後とも応援よろしくお願いします。
+      </p>
+      <!-- <h3 class="supportNavTitle">支援金の使い道</h3>
+      <ul class="supportNavList">
+        <li>ブログ維持費</li>
+        <li>活動費</li>
+        <li>宣伝費</li>
+      </ul> -->
+      <!-- <h3 class="supportNavTitle">支援額</h3>
+      <ul class="supportNavList">
+        <li>100円～10000円</li>
+      </ul> -->
+      <!-- <h3 class="supportNavTitle">コラボ・お仕事の依頼</h3>
+      <ul class="supportNavList">
+        <li><a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！</li>
+      </ul> -->
+      <p class="to_kence_work">コラボ・お仕事のご依頼は<a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>> こちら </a>からお願い致します。</p>
     </div>
+  </div>
 </div>
