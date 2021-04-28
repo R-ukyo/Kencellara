@@ -123,6 +123,7 @@ h1.entry-title {
 
 /* 目次 */
 .table-of-contents {
+  color: saddlebrown;
   margin: 0;
   padding: 1.2em;
   font-size: .9em;
