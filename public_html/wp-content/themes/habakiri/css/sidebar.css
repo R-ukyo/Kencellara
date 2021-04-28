@@ -9,7 +9,7 @@
   background-color: cornsilk;
   box-shadow: 0px 0px 0px 5px cornsilk;
   border: 1px dashed #fff;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .sb_header::before,
 .sb_header::after {
