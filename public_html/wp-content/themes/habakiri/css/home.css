@@ -667,6 +667,12 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   color: black;
   box-shadow: 5px 5px 5px 1px black;
 }
+.kencemeshiHistoryContents .month {
+  display: flex;
+}
+.kencemeshiHistoryContents ul {
+  margin-top: 10px;
+}
 
 /* 支援 */
 .acknowledgement {

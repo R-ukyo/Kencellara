@@ -9,6 +9,7 @@
  * License URI: license.txt
  */
 ?>
+<?php $upload_dir = wp_upload_dir(); ?>
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style')));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('to_pagetop-script', get_template_directory_uri() . '/js/to_pagetop.js'));
@@ -19,7 +20,7 @@
 		<div id="footer-menu">
 		  <div id="blog-title-content">
 	      <a href="https://www.kencellara.com/">
-	        <img class="hatena-fotolife" title="ケンチェラーラ." src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210109/20210109122234.jpg" data-src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210109/20210109122234.jpg" alt="ケンチェラーラフッター." style="height: 50px;" loading="lazy" />
+	        <img title="ケンチェ飯" src="<?php echo $upload_dir['baseurl']; ?>/toppage/footer.jpg" alt="ケンチェ飯フッター" style="height: 50px;" loading="lazy" />
 	      </a>
 	    </div>
 	    <nav>
