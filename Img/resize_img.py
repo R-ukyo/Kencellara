@@ -15,7 +15,7 @@ for file in pngFiles:
 
 # downsize jpg in this dir
 jpgFiles = glob.glob("./*.jpg")
-for file in pngFiles:
+for file in jpgFiles:
     saveFile = os.path.basename(file)
     image = Image.open(file)
     if len(sys.argv) == 3:
