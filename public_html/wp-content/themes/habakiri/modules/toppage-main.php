@@ -303,7 +303,7 @@
 <div class="banzukeZone">
   <div class="banzukeContainer">
     <table>
-      <caption class="topPageHeader">ケンチェ番付 <i class="fas fa-trophy"></i></caption>
+      <caption class="banzukeHeader topPageHeader">ケンチェ番付 <i class="fas fa-trophy"></i></caption>
       <tbody>
         <tr>
           <td class="banzukeRank first">1位</td>
