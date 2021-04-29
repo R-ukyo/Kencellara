@@ -131,7 +131,7 @@ section.typeA input:checked + .tabLabel + .content {
   position: absolute;
   top: -18px;
   font-size: 60px !important;
-  color: saddlebrown !important;
+  color: darkgoldenrod !important;
   opacity: 1 !important;
 }
 .slick-prev:before {
@@ -146,7 +146,7 @@ section.typeA input:checked + .tabLabel + .content {
   padding-top: 10px !important;
 }
 .slick-dots li button:before {
-  color: saddlebrown !important;
+  color: darkgoldenrod !important;
 }
 
 /* 地域別検索エリア */
