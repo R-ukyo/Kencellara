@@ -53,8 +53,11 @@
 	<!-- 固定ヘッダー -->
 	<div id="jsFixedSNS" class="miniInfoArea">
 		<div class="snsContainer">
-			<span>
+			<span class="leadToSns">
 				おトク情報GET! <i class="far fa-hand-point-right"></i>
+			</span>
+			<span class="leadToSnsShort">
+				SNS <i class="far fa-hand-point-right"></i>
 			</span>
 			<a href="https://www.instagram.com/kencellara_food" target="_blank" rel="noopener noreferrer">
 				<img class="InstagramIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201213002.jpg" alt="instagram" />
@@ -68,6 +71,9 @@
 			<a class="facebook-button" href="https://www.facebook.com/kencellarafood" target="_blank" rel="noopener noreferrer">
 				<i class="fab fa-facebook-square"></i>
 			</a>
+		</div>
+		<div class="fixedHeaderHomeBtn">
+			<a href=<?php echo home_url() ?>><i class="fas fa-home"></i></a>
 		</div>
 	</div>
 	<div id="contents">

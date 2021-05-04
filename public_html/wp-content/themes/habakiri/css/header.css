@@ -19,6 +19,7 @@
 
 /* 固定ヘッダー */
 .miniInfoArea {
+  display: flex;
   height: 50px;
   padding: 10px 0;
 }
@@ -33,6 +34,9 @@
   margin: auto;
   font-size: 17px;
   font-weight: bold;
+}
+.leadToSnsShort {
+  display: none;
 }
 .snsContainer a {
   margin: 0 auto;
@@ -62,6 +66,17 @@
   font-size: 31px;
   color: #305097;
 }
+.fixedHeaderHomeBtn {
+  display: none;
+  margin-right: 20px;
+  font-size: 20px;
+  color: saddlebrown;
+  background-color: cornsilk;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
 /* 固定時 */
 .miniInfoArea.fixed {
   position: fixed;
@@ -73,4 +88,17 @@
   margin: 0;
   padding: 12px 0;
   height: 50px;
+}
+.miniInfoArea.fixed .snsContainer {
+  width: 240px;
+}
+.miniInfoArea.fixed .fixedHeaderHomeBtn,
+.miniInfoArea.fixed .fixedHeaderHomeBtn a {
+  display: block;
+}
+.miniInfoArea.fixed .leadToSns {
+  display: none;
+}
+.miniInfoArea.fixed .leadToSnsShort {
+  display: inline;
 }
