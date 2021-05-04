@@ -43,11 +43,10 @@ iframe {
   font-size: 25px;
   margin-bottom: 5px;
 }
-.hyokkoriButace img {
+.hyokkoriButace {
   height: 80px;
-  transform: rotate(-45deg);
   position: absolute;
-  right: 0;
+  right: 20px;
 }
 
 .whatKencemeshiDoHeader {

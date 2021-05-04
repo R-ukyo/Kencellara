@@ -86,7 +86,6 @@
 <div class="kenceWorkExplain kenceWorkContents">
   <div class="kenceWorkExplainQ"><span class="question">Q. </span>なぜケンチェ飯を作ったの？</div>
   <div class="kenceWorkExplainA">
-    <div class="hyokkoriButace"><img src="<?php echo $upload_dir['baseurl']; ?>/toppage/butace.png" alt="ひょっこりブタチェ" loading="lazy" /></div>
     <div class="answer">A.</div>
     <p>三重県で生まれ三重県で育った「ケンチェラーラ」。</p>
     <p>インターネットで三重県グルメを検索する際、上位に表示されるのは大手サイトや有名なお店ばかりであることに気づきました。</p>
@@ -97,20 +96,19 @@
     <p>県内で最も詳しく、使いやすいメディアを構築するために、日々奮闘しています。</p>
   </div>
   <div class="kenceWorkExplainQ"><span class="question">Q. </span>ケンチェ飯の特徴は？</div>
-  <div class="hyokkoriButace"><img src="<?php echo $upload_dir['baseurl']; ?>/toppage/butace.png" alt="ひょっこりブタチェ" loading="lazy" /></div>
   <div class="kenceWorkExplainA">
     <div class="answer">A.</div>
     <p>ケンチェ飯では、三重県生まれ三重県育ちの筆者がどのサイトよりも詳しくお店を紹介。</p>
     <p>各飲食店の基本情報、お店の背景、こだわりなどが１ページに綿密にまとめられています。</p>
     <p>各記事は地域別・ジャンル別に検索ができるようにサイト設計を行っています。</p>
     <p>例えば、松阪市でラーメンを食べたい時は「ジャンル：ラーメン」→「地域：松阪」で検索すれば、過去に訪れたラーメン店が全て表示されるようになっています。</p>
+		<img class="hyokkoriButace" src="<?php echo $upload_dir['baseurl']; ?>/toppage/butace.png" alt="ひょっこりブタチェ" loading="lazy" />
     <p>また、大手サイトでは利害関係が絡み、忖度の入った評価が多々見られます。</p>
     <p>ケンチェ飯では少数精鋭のため、本音で飲食店の特徴や食べた感想を紹介しています。</p>
   </div>
 
   <div class="kenceWorkExplainQ"><span class="question">Q. </span>ケンチェ飯の活動指針は？</div>
   <div class="kenceWorkExplainA">
-    <div class="hyokkoriButace"><img src="<?php echo $upload_dir['baseurl']; ?>/toppage/butace.png" alt="ひょっこりブタチェ" loading="lazy" /></div>
     <div class="answer">A.</div>
     <p>少数精鋭で最高の ”<span class="p_crimson">グルメディア</span>” を作っています。</p>
     <p>三重県で生活を営む人々や県外から三重を訪れる方々が、少しでも「三重の食で感動する」お手伝いができればと考えています。</p>
