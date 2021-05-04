@@ -36,6 +36,9 @@ input::placeholder {
 .p_crimson {
   color: crimson;
 }
+.p_kakudai {
+  font-size: 1.05em;
+}
 
 /* font-awesome */
 .fa-fire {
