@@ -91,6 +91,7 @@
   text-align: center;
   font-weight: bold;
   margin-left: auto;
+  border-radius: 5px;
   background: #f1e767;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1e767), to(#feb645));
   background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%);
