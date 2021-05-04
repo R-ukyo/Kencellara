@@ -29,6 +29,14 @@ input::placeholder {
   color: saddlebrown !important;
 }
 
+/* parts */
+.p_bold {
+  font-weight: bold;
+}
+.p_crimson {
+  color: crimson;
+}
+
 /* font-awesome */
 .fa-fire {
   color: firebrick;

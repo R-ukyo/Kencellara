@@ -44,7 +44,7 @@
 						</div>
 						<input id="TAB-A03" type="radio" name="TAB-A">
 						<label class="tabLabel" for="TAB-A03">コラボ・取材</label>
-						<div class="content">
+						<div class="content kence_work">
 							<?php get_template_part( 'modules/kence_work' ); ?>
 						</div>
 					</section>

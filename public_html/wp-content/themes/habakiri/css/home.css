@@ -510,8 +510,9 @@ i.izakaya {
 }
 
 /* ケンチェの窓口モーダル */
-iframe[src^="https://docs.google.com/forms/d/e"] {
+.kenceWindowModal iframe[src^="https://docs.google.com/forms/d/e"] {
   width: 100%;
+  height: 100vh;
 }
 .kenceWindowAnnounce {
   border-top: 3px double saddlebrown;
@@ -582,17 +583,18 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
   position: relative;
   max-height: 95vh;
 }
-.kenceWindowModalClose {
+a.kenceWindowModalClose {
   color: black;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 15;
-  background: ghostwhite;
+  background: #fff;
   padding: 10px;
   border: 2px solid black;
   font-weight: bold;
   border-radius: 10px;
+  margin: 8px;
 }
 .kenceWindowModalOpen:hover,
 .kenceWindowModalClose:hover {
@@ -606,9 +608,6 @@ iframe[src^="https://docs.google.com/forms/d/e"] {
 }
 .kenceWindowModalOpen {
   padding: 15px 0 20px;
-}
-iframe[src^="https://docs.google.com/forms/d/e"] {
-  height: 100vh;
 }
 .kenceWindowModalContentInner {
   max-height: 100vh;

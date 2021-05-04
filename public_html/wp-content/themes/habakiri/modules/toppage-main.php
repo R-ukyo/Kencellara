@@ -494,7 +494,7 @@
   </div>
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
-    <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェラーラを支援する" data-show-like="0" data-show-powered-by="0" data-support-message="サイトの維持費・広告費・活動費に補填させて頂きます。"></div>
+    <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェ飯を支援する" data-show-like="0" data-show-powered-by="0" data-support-message="頂戴しましたご支援は、サイトの運営費に補填させて頂いております。"></div>
     <div class="supportNav">
       <p class="acknowledgement">
         お気持ありがとうございます。支援金は、ケンチェ飯の活動費用として大切に使わせていただきます。今後とも応援よろしくお願いします。

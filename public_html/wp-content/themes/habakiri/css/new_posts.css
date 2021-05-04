@@ -1,6 +1,6 @@
 .newPostsZone {
-  background-color: antiquewhite;
-  border: 3px outset antiquewhite;
+  background-color: cornsilk;
+  border: 3px outset cornsilk;
 }
 .newPostsZone:nth-child(n + 2) {
   margin-top: 20px;
