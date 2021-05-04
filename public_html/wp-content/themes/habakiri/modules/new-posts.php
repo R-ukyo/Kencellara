@@ -1,10 +1,10 @@
 <div class="newPostsZone all">
-  <div class="newPostsHeader topPageHeader">全記事</div>
+  <div class="newPostsHeader topPageHeader">全ての記事</div>
   <div class="newPostsContainer">
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'', 'count'=>6) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a>最新記事をもっと見る >></a>
+    <a>最新記事をもっと見る <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="newPostsZone ramen">
@@ -13,7 +13,7 @@
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'ramen', 'count'=>2) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a href=<?php echo get_category_link(get_category_by_slug('ramen')->cat_ID); ?>>ラーメン一覧へ >></a>
+    <a href=<?php echo get_category_link(get_category_by_slug('ramen')->cat_ID); ?>>ラーメン一覧へ <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="newPostsZone meat">
@@ -22,7 +22,7 @@
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'meat', 'count'=>2) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a href=<?php echo get_category_link(get_category_by_slug('meat')->cat_ID); ?>>お肉一覧へ >></a>
+    <a href=<?php echo get_category_link(get_category_by_slug('meat')->cat_ID); ?>>お肉一覧へ <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="newPostsZone cafe">
@@ -31,7 +31,7 @@
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'cafe', 'count'=>2) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a href=<?php echo get_category_link(get_category_by_slug('cafe')->cat_ID); ?>>カフェ一覧へ >></a>
+    <a href=<?php echo get_category_link(get_category_by_slug('cafe')->cat_ID); ?>>カフェ一覧へ <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="newPostsZone izakaya">
@@ -40,7 +40,7 @@
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'izakaya', 'count'=>2) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a href=<?php echo get_category_link(get_category_by_slug('izakaya')->cat_ID); ?>>居酒屋一覧へ >></a>
+    <a href=<?php echo get_category_link(get_category_by_slug('izakaya')->cat_ID); ?>>居酒屋一覧へ <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="newPostsZone bakery">
@@ -49,7 +49,7 @@
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'bakery', 'count'=>2) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a href=<?php echo get_category_link(get_category_by_slug('bakery')->cat_ID); ?>>パン屋一覧へ >></a>
+    <a href=<?php echo get_category_link(get_category_by_slug('bakery')->cat_ID); ?>>パン屋一覧へ <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="newPostsZone set-meal">
@@ -58,6 +58,6 @@
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'set-meal', 'count'=>2) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a href=<?php echo get_category_link(get_category_by_slug('set-meal')->cat_ID); ?>>定食一覧へ >></a>
+    <a href=<?php echo get_category_link(get_category_by_slug('set-meal')->cat_ID); ?>>定食一覧へ <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
