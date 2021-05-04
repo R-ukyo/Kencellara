@@ -16,12 +16,18 @@
 <?php
 	$upload_dir = wp_upload_dir();
 	$kw_page_id = get_page_by_path('kence_work')->ID;
-	$cg_args = array(
-		'parent' => 0,
+	$genre_cat_ID = get_category_by_slug('genre')->cat_ID;
+	$area_cat_ID = get_category_by_slug('area')->cat_ID;
+	$genre_categories = get_categories(array(
+		'child_of' => $genre_cat_ID,
 		'orderby' => 'term_order',
 		'order' => 'ASC'
-	);
-	$categories = get_categories( $cg_args );
+	));
+	$area_categories = get_categories(array(
+		'child_of' => $area_cat_ID,
+		'orderby' => 'term_order',
+		'order' => 'ASC'
+	));
 ?>
 <aside id="sub">
 	<div class="sidebar">
@@ -108,7 +114,12 @@
 		<div class="sb_categories sb_content">
 			<div class="categoryHeader sb_header">カテゴリー</div>
 			<ul>
-				<?php foreach( $categories as $category ) : ?>
+				<?php foreach( $genre_categories as $category ) : ?>
+					<li>
+						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
+					</li>
+				<?php endforeach; ?>
+				<?php foreach( $area_categories as $category ) : ?>
 					<li>
 						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 					</li>
