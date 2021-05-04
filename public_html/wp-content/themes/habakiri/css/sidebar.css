@@ -24,6 +24,28 @@
   border-width: 0 15px 15px 0;
   border-right-color: darkgoldenrod;
 }
+.sb_subHeader {
+  margin: 20px 2px;
+  font-weight: bold;
+  position: relative;
+  background: cornsilk;
+  box-shadow: 0px 0px 0px 5px cornsilk;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: brown;
+}
+
+.sb_subHeader:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff darkgoldenrod;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
 .sb_content:nth-child(n+2) {
   margin: 30px 0;
 }

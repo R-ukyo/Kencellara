@@ -113,12 +113,16 @@
 		</div>
 		<div class="sb_categories sb_content">
 			<div class="categoryHeader sb_header">カテゴリー</div>
+			<div class="categorySubHeader sb_subHeader">ジャンル</div>
 			<ul>
 				<?php foreach( $genre_categories as $category ) : ?>
 					<li>
 						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 					</li>
 				<?php endforeach; ?>
+			</ul>
+			<div class="categorySubHeader sb_subHeader">エリア</div>
+			<ul>
 				<?php foreach( $area_categories as $category ) : ?>
 					<li>
 						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
