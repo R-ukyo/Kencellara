@@ -1,10 +1,9 @@
 .footer {
   text-align: center;
-  color: cornsilk;
   width: 100%;
   padding: 2em 40px 1em 40px;
   font-size: 80%;
-  background-color: darkgoldenrod;
+  background-color: cornsilk;
 }
 .footer-links {
   padding-top: 10px;
@@ -19,12 +18,13 @@
   font-size: 14.5px;
 }
 .footer-links ul li a {
-  color: cornsilk;
+  color: darkgoldenrod;
+  text-decoration: none;
 }
 .copyright {
   font-size: 10px;
-  background-color: darkgoldenrod;
-  color: cornsilk;
+  background-color: cornsilk;
+  color: darkgoldenrod;
 }
 
 /*ページトップボタン*/
