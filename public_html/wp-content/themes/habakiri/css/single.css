@@ -2,7 +2,7 @@
   padding-top: 20px;
 }
 .entry-content {
-  padding: 20px;
+  padding: 10px 20px;
 }
 .entry-content em {
   font-weight: bold;
@@ -16,13 +16,14 @@
 }
 h1.entry-title {
   font-size: 25px;
-  color: brown;
+  color: saddlebrown;
   box-shadow: 0 7px 10px -5px saddlebrown inset;
   background: cornsilk;
   font-weight: bold;
   padding: 1em;
   border: 3px solid saddlebrown;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+  margin: 0 0 20px;
 }
 .entry-content h2 {
   font-size: 23px;
@@ -71,7 +72,8 @@ h1.entry-title {
   font-size: 16px;
 }
 .entry-content img {
-  max-width: 600px;
+  width: 100%;
+  max-width: 700px;
 }
 .entry-content a:hover {
   opacity: 0.7;
@@ -81,6 +83,54 @@ h1.entry-title {
 }
 .trackbacks {
   display: none;
+}
+
+/*シェアボタン*/
+.snsShareInner {
+  margin: auto;
+  width: 300px;
+  display: flex;
+}
+.snsShareInner span {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px silver;
+  margin: auto;
+}
+.snsShare .facebook-button,
+.snsShare .line-button {
+  font-size: 36px;
+  margin: auto;
+}
+.snsShare .facebook-button,
+.snsShare .facebook-button:hover,
+.snsShare .facebook-button:active,
+.snsShare .facebook-button:focus {
+  color: #3b5998;
+}
+.snsShare .twitter-button {
+  font-size: 35px;
+  vertical-align: bottom;
+  margin: auto;
+  border-radius: 5px;
+  color: #00aced;
+}
+.snsShare .twitter-button:hover,
+.snsShare .twitter-button:active,
+.snsShare .twitter-button:focus {
+  color: #00aced;
+}
+.snsShare .line-button i {
+  color: #00B900;
+}
+.snsShare a:hover {
+  opacity: 0.6;
+}
+.aboveArticle .snsShare {
+  margin-top: 10px;
+}
+.belowArticle .snsShare {
+  margin-bottom: 20px;
 }
 
 /* 関連記事 */
@@ -488,4 +538,8 @@ h1.entry-title {
 }
 .blogcard_link .icon-external-link-alt::before {
   font-size: 0.75em;
+}
+
+.commentarea a {
+  color: #333;
 }

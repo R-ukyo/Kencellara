@@ -12,14 +12,15 @@
 <article <?php post_class( array( 'article', 'article--single' ) ); ?>>
 	<div class="entry">
 		<?php Habakiri::the_title(); ?>
-		<?php get_template_part( 'modules/entry-meta' ); ?>
+		<?php get_template_part( 'modules/above_article' ); ?>
+		<?php #get_template_part( 'modules/entry-meta' ); ?>
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
 		<div class="entry__content entry-content">
 			<?php the_content(); ?>
-		<!-- end .entry__content --></div>
+		</div>
 		<?php do_action( 'habakiri_after_entry_content' ); ?>
-	<!-- end .entry --></div>
-
+	</div>
+	<?php get_template_part( 'modules/below_article' ); ?>
 	<?php get_template_part( 'modules/link-pages' ); ?>
 	<?php get_template_part( 'modules/related-posts' ); ?>
 	<?php
