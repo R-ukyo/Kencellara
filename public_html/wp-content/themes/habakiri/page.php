@@ -9,28 +9,28 @@
  * License URI: license.txt
  */
 ?>
+<?php
+	add_action('wp_enqueue_scripts', wp_enqueue_style('single-style', get_template_directory_uri() . '/css/single.css', array('habakiri', 'common-style')));
+?>
 <?php get_header(); ?>
 
 <?php get_template_part( 'modules/page-header' ); ?>
 <div class="sub-page-contents">
-
 	<div class="container">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-9 fixed_page">
 				<main id="main" role="main">
-
 					<?php #get_template_part( 'modules/breadcrumbs' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'content', 'page' ); ?>
 					<?php endwhile; ?>
-
-				<!-- end #main --></main>
-			<!-- end .col-md-9 --></div>
+				</main>
+			</div>
 			<div class="col-md-3">
 				<?php get_sidebar(); ?>
-			<!-- end .col-md-3 --></div>
-		<!-- end .row --></div>
-	<!-- end .container --></div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<!-- end .sub-page-contents --></div>
 <?php get_footer(); ?>
