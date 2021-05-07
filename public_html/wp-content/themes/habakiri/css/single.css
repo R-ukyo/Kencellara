@@ -540,6 +540,28 @@ h1.entry-title {
   font-size: 0.75em;
 }
 
-.commentarea a {
+/* .commentarea a {
   color: #333;
+} */
+
+.kenceWorkWindowHeader {
+  color: saddlebrown;
+  font-size: 28px;
+  text-align: center;
+  background-color: cornsilk;
+  font-weight: bold;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 10px 5px cornsilk;
+}
+.kencemeshiSupportHeader {
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 1em;
+  width: 90%;
+  color: #555555;
+  background-color: #ffcccc;
+  box-shadow: 0 0 10px 10px #ffcccc;
 }
