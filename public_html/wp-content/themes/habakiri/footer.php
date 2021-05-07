@@ -27,13 +27,13 @@
 	      <div class="footer-links">
 	        <ul>
 	          <li>
-	            <a href="https://www.kencellara.com/kence_work">お仕事のご依頼</a>
+	            <a href="<?php echo esc_url(get_permalink(get_page_by_path('kence_work')->ID)); ?>">お仕事のご依頼</a>
 	          </li>
 	          <li>
-	            <a href="https://www.kencellara.com/kence_work">お問い合わせ</a>
+	            <a href="<?php echo esc_url(get_permalink(get_page_by_path('kence_work')->ID)); ?>">お問い合わせ</a>
 	          </li>
 	          <li>
-	            <a href="https://www.kencellara.com/privacy-policy">プライバシーポリシー</a>
+	            <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy_policy')->ID)); ?>">プライバシーポリシー</a>
 	          </li>
 	        </ul>
 	      </div>
