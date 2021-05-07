@@ -16,7 +16,9 @@ ul {
   background-color: cornsilk;
   border-color: saddlebrown;
 }
-.btn:hover {
+.btn:hover,
+.btn:active,
+.btn:focus {
   color: cornsilk;
   background-color: saddlebrown;
   border-color: cornsilk;
