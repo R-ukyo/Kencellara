@@ -540,9 +540,23 @@ h1.entry-title {
   font-size: 0.75em;
 }
 
-/* .commentarea a {
-  color: #333;
-} */
+.related-posts__title {
+  color: saddlebrown;
+  font-size: 28px;
+  text-align: center;
+  background-color: cornsilk;
+  font-weight: bold;
+  width: 90%;
+  margin: 20px auto 30px;
+  box-shadow: 0 0 10px 5px cornsilk;
+}
+.related-posts .entry__title {
+  font-size: 22px;
+  padding: 18px;
+}
+.related-posts .entry__summary {
+  font-weight: bold;
+}
 
 .kenceWorkWindowHeader {
   color: saddlebrown;
@@ -551,7 +565,7 @@ h1.entry-title {
   background-color: cornsilk;
   font-weight: bold;
   width: 90%;
-  margin: auto;
+  margin: 5px auto 10px;
   box-shadow: 0 0 10px 5px cornsilk;
 }
 .kencemeshiSupportHeader {
