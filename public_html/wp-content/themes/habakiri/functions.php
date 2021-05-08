@@ -92,6 +92,35 @@ class Habakiri_Base_Functions {
 		add_filter( 'comment_form_submit_field'  , array( $this, 'comment_form_submit_field' ) );
 
 		add_filter( 'get_calendar'               , array( $this, 'get_calendar' ) );
+
+		/* 投稿のアーカイブページを設定  */
+		add_filter( 'register_post_type_args'    , array( $this, 'post_has_archive' ), 10, 2 );
+		add_filter( 'post_type_archive_link'     , array( $this, 'post_archive_link' ), 10, 2 );
+	}
+
+	/* 投稿アーカイブページの作成 */
+	public function post_has_archive( $args, $post_type ) {
+	  global $wp_rewrite;
+	  if ( 'post' === $post_type && ! is_null( $wp_rewrite ) ) {
+	    $archive_slug = 'articles';
+	    // Setting 'has_archive' ensures get_post_type_archive_template() returns an archive.php template.
+	    $args['has_archive'] = $archive_slug;
+	    // We have to register rewrite rules, because WordPress won't do it for us unless $args['rewrite'] is true.
+	    $archive_slug = $wp_rewrite->root . $archive_slug;
+	    add_rewrite_rule( "{$archive_slug}/?$", "index.php?post_type=$post_type", 'top' );
+	    $feeds = '(' . trim( implode( '|', $wp_rewrite->feeds ) ) . ')';
+	    add_rewrite_rule( "{$archive_slug}/feed/$feeds/?$", "index.php?post_type=$post_type" . '&feed=$matches[1]', 'top' );
+	    add_rewrite_rule( "{$archive_slug}/$feeds/?$", "index.php?post_type=$post_type" . '&feed=$matches[1]', 'top' );
+	    add_rewrite_rule( "{$archive_slug}/{$wp_rewrite->pagination_base}/([0-9]{1,})/?$", "index.php?post_type=$post_type" . '&paged=$matches[1]', 'top' );
+	  }
+	  return $args;
+	}
+
+	public function post_archive_link( $args, $post_type ) {
+	  if ( 'post' === $post_type ) {
+	    $link = home_url( 'articles/' );
+	  }
+	  return $link;
 	}
 
 	/**

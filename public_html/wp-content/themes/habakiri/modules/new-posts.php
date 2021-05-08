@@ -4,7 +4,7 @@
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'', 'count'=>6) ); ?>
   </div>
   <div class="goToArchivePage">
-    <a>最新記事をもっと見る <i class="fas fa-chevron-right"></i></a>
+    <a href="<?php echo get_post_type_archive_link( 'post' ); ?>">最新記事をもっと見る <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="newPostsZone ramen">
