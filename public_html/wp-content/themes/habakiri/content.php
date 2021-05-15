@@ -15,7 +15,7 @@
 		<?php get_template_part( 'modules/above_article' ); ?>
 		<?php #get_template_part( 'modules/entry-meta' ); ?>
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
-		<div class="entry__content entry-content">
+		<div class="entry__content">
 			<?php the_content(); ?>
 		</div>
 		<?php do_action( 'habakiri_after_entry_content' ); ?>

@@ -1,20 +1,20 @@
 .sub-page-contents {
   padding-top: 20px;
 }
-.entry-content {
+.entry__content {
   padding: 10px 20px;
 }
-.entry-content em {
+.entry__content em {
   font-weight: bold;
   font-style: normal;
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
   background: linear-gradient(to bottom, transparent 60%, #ffd700 60%);
 }
-.entry-content i {
+.entry__content i {
   font-style: oblique;
 }
-h1.entry-title {
+h1.entry__title {
   font-size: 25px;
   color: saddlebrown;
   box-shadow: 0 7px 10px -5px saddlebrown inset;
@@ -25,7 +25,7 @@ h1.entry-title {
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
   margin: 0 0 20px;
 }
-.entry-content h2 {
+.entry__content h2 {
   font-size: 23px;
   padding: 8px;
   border-top: 2px solid saddlebrown;
@@ -34,7 +34,7 @@ h1.entry-title {
   line-height: 1.5;
   background-color: cornsilk;
 }
-.entry-content h3 {
+.entry__content h3 {
   margin: 18px 0;
   font-size: 20px;
   padding: 10px;
@@ -42,7 +42,7 @@ h1.entry-title {
   background: transparent;
   border-left: solid 5px brown;
 }
-.entry-content h4 {
+.entry__content h4 {
   font-size: 15px;
   position: relative;
   padding-bottom: 10px;
@@ -50,7 +50,7 @@ h1.entry-title {
   line-height: 1.5;
   text-align: center;
 }
-.entry-content h4:after {
+.entry__content h4:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -60,22 +60,22 @@ h1.entry-title {
   width: 40px;
   background-color: #333;
 }
-.entry-content h4:first-letter {
+.entry__content h4:first-letter {
   font-size: 1.6em;
   letter-spacing: .04em;
 }
-.entry-content p {
+.entry__content p {
   font-size: 16px;
   margin: 0 0 13px;
 }
-.entry-content ul {
+.entry__content ul {
   font-size: 16px;
 }
-.entry-content img {
+.entry__content img {
   width: 100%;
   max-width: 700px;
 }
-.entry-content a:hover {
+.entry__content a:hover {
   opacity: 0.7;
 }
 .entry-meta {
