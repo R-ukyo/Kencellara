@@ -132,7 +132,6 @@ section.typeA input:checked + .tabLabel + .content {
   top: -18px;
   font-size: 60px !important;
   color: darkgoldenrod !important;
-  opacity: 1 !important;
 }
 .slick-prev:before {
   left: 30px;
