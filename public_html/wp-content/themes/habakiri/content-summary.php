@@ -17,26 +17,32 @@
 			<?php Habakiri::the_title(); ?>
 			<div class="entry__summary">
 				<?php the_excerpt(); ?>
-			<!-- end .entry__summary --></div>
+			</div>
 			<?php get_template_part( 'modules/entry-meta' ); ?>
-		<!-- end .entry --></div>
+		</div>
 
 	<?php else : ?>
 
 		<div class="entry--has_media entry">
 			<div class="entry--has_media__inner">
 				<div class="entry--has_media__media">
-					<?php Habakiri::the_post_thumbnail(); ?>
-				<!-- end .entry--has_media__media --></div>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+				</div>
 				<div class="entry--has_media__body">
 					<?php Habakiri::the_title(); ?>
-					<div class="entry__summary">
-						<?php the_excerpt(); ?>
-					<!-- end .entry__summary --></div>
-					<?php get_template_part( 'modules/entry-meta' ); ?>
-				<!-- end .entry--has_media__body --></div>
-			<!-- end .entry--has_media__inner --></div>
-		<!-- end .entry--has_media --></div>
+					<div class="newPostCategory">
+						<?php $cats = get_the_category(); ?>
+				    <?php foreach ($cats as $cat) { ?>
+				      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
+				    <?php } ?>
+				  </div>
+					<!-- <div class="entry__summary">
+						<?php #the_excerpt(); ?>
+					</div> -->
+					<?php #get_template_part( 'modules/entry-meta' ); ?>
+				</div>
+			</div>
+		</div>
 
 	<?php endif; ?>
 

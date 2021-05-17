@@ -29,10 +29,10 @@
   background-color: #fff4ea;
   border-color: #fff4ea;
 }
-.newPostsZone.chain {
+/* .newPostsZone.chain {
   background-color: #f4eaff;
   border-color: #f4eaff;
-}
+} */
 .newPostsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
