@@ -1,6 +1,7 @@
 <?php
   $ramen_posts_count = get_category_by_slug('ramen')->count;
   $upload_dir = wp_upload_dir();
+  $common_img_dir = $upload_dir['baseurl'] . '/common';
   $ramen_img_dir = $upload_dir['baseurl'] . '/category/ramen';
 ?>
 
@@ -11,9 +12,9 @@
         <div class="categoryRecommendTitle">三重県ラーメン制覇</div>
         <div class="storeCountArea">
           <div class="storeCountContainer">
-            <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
+            <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
             現在<span class="storeCounter"><?php echo $ramen_posts_count; ?></span>店舗制覇
-            <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
+            <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
           </div>
         </div>
         <div class="categoryRecommendExplain">

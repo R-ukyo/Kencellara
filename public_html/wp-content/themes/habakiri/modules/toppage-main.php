@@ -5,12 +5,13 @@
 	$support_page_id = get_page_by_path('support')->ID;
 	$kence_work_page_id = get_page_by_path('kence_work')->ID;
   $upload_dir = wp_upload_dir();
+  $common_img_dir = $upload_dir['baseurl'] . '/common';
 ?>
 <div class="storeCountArea">
   <div class="storeCountContainer">
-    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
+    <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
     現在<span class="storeCounter"><?php echo $gourmet_posts_count; ?></span>店舗制覇
-    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209213841.jpg" alt="王冠" />
+    <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
   </div>
 </div>
 
