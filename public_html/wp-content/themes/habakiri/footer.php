@@ -19,7 +19,7 @@
 	<footer id="footer" class="footer">
 		<div id="footer-menu">
 		  <div id="blog-title-content">
-	      <a href="https://www.kencellara.com/">
+	      <a href=<?php echo home_url() ?>>
 	        <img title="ケンチェ飯" src="<?php echo $upload_dir['baseurl']; ?>/toppage/footer.jpg" alt="ケンチェ飯フッター" style="height: 50px;" loading="lazy" />
 	      </a>
 	    </div>
