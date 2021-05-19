@@ -14,7 +14,7 @@
 .entry__content i {
   font-style: oblique;
 }
-h1.entry__title {
+.entry h1.entry__title {
   font-size: 25px;
   color: saddlebrown;
   box-shadow: 0 7px 10px -5px saddlebrown inset;
@@ -546,16 +546,18 @@ h1.entry__title {
   text-align: center;
   background-color: cornsilk;
   font-weight: bold;
-  width: 90%;
   margin: 20px auto 30px;
   box-shadow: 0 0 10px 5px cornsilk;
 }
-.related-posts .entry__title {
-  font-size: 22px;
-  padding: 18px;
+.related-posts .entry--has_media__media {
+  width: 150px;
 }
-.related-posts .entry__summary {
-  font-weight: bold;
+.related-posts .entry--has_media__body {
+  padding-left: 15px;
+}
+.related-posts .entries article {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .kenceWorkWindowHeader {

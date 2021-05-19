@@ -31,7 +31,7 @@ class Habakiri_Related_Posts {
 				<?php
 				foreach ( $posts as $post ) {
 					setup_postdata( $post );
-					get_template_part( 'content', 'summary' );
+					get_template_part( 'content', 'related' );
 				}
 				wp_reset_postdata();
 				?>
@@ -102,7 +102,7 @@ class Habakiri_Related_Posts {
 		if ( !$post ) {
 			return array();
 		}
-		
+
 		$post_type = get_post_type();
 		$tax_query = $this->get_tax_query( $post_type );
 		if ( !$tax_query ) {
@@ -111,7 +111,7 @@ class Habakiri_Related_Posts {
 
 		$args = array(
 			'post_type'      => get_post_type( $post->ID ),
-			'posts_per_page' => apply_filters( 'habakiri_relates_posts_per_page', 3 ),
+			'posts_per_page' => apply_filters( 'habakiri_relates_posts_per_page', 5 ),
 			'orderby'        => 'rand',
 			'post__not_in'   => array( $post->ID ),
 			'tax_query'      => array_merge(
