@@ -44,9 +44,6 @@
   border-radius: 50px;
   text-align: center;
 }
-.toTop-nav li:first-child {
-  margin-right: 10px;
-}
 .toTop-nav li a {
   display: block;
   width: 60px;

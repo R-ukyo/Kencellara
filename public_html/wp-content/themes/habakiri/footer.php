@@ -12,6 +12,7 @@
 <?php $upload_dir = wp_upload_dir(); ?>
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_footer-style', get_template_directory_uri() . '/css/sp_footer.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('to_pagetop-script', get_template_directory_uri() . '/js/to_pagetop.js'));
 ?>
 		<?php do_action( 'habakiri_after_contents_content' ); ?>

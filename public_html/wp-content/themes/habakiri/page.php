@@ -11,6 +11,7 @@
 ?>
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('single-style', get_template_directory_uri() . '/css/single.css', array('habakiri', 'common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_single-style', get_template_directory_uri() . '/css/sp_single.css'));
 ?>
 <?php get_header(); ?>
 

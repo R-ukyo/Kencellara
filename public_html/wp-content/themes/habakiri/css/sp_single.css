@@ -1,0 +1,46 @@
+@media screen and (max-width: 420px) {
+  .sub-page-contents {
+    padding-top: 10px;
+  }
+  .col-md-9 {
+    padding: 0 10px;
+  }
+  .entry h1.entry__title {
+    font-size: 19px;
+    margin: 0 0 10px;
+  }
+  .entry__content {
+    padding: 10px;
+  }
+  .entry__content p {
+    font-size: 15px;
+  }
+  .entry__content ul {
+    font-size: 15px;
+  }
+  .entry__content h2 {
+    font-size: 18px;
+  }
+  .entry__content h3 {
+    font-size: 18px;
+  }
+  .l-fuki, .r-fuki {
+    padding: 15px;
+  }
+  .summaryTable {
+    width: 100%;
+  }
+  .related-posts {
+    margin-top: 10px;
+    padding-top: 15px;
+  }
+  .related-posts .entry--has_media__media {
+    width: 100%;
+  }
+  .related-posts .entry--has_media__body {
+    padding: 15px 5px 0;
+  }
+  .kencemeshiSupportHeader {
+    font-size: 22px;
+  }
+}
