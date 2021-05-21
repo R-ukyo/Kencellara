@@ -11,6 +11,7 @@
 ?>
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('archive-style', get_template_directory_uri() . '/css/archive.css'));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_archive-style', get_template_directory_uri() . '/css/sp_archive.css'));
 ?>
 <div class="container">
 	<div class="row">
