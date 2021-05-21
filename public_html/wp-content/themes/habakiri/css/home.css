@@ -232,7 +232,6 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .areaSearchHeader {
   height: 35px;
-  font-size: 22px;
 }
 .areaSearchInner {
   height: 800px;
@@ -277,7 +276,6 @@ section.typeA input:checked + .tabLabel + .content {
   padding: 20px 0 0;
 }
 .genreSearchHeader {
-  font-size: 22px;
   text-align: center;
   font-weight: bold;
   margin: 10px auto 20px;
@@ -374,7 +372,6 @@ i.izakaya {
   text-align: center;
   position: relative;
   text-shadow: 1px 1px 1px silver;
-  font-size: 22px;
 }
 .recommendGourmetContainer {
   width: 90%;
@@ -448,7 +445,6 @@ i.izakaya {
   text-align: center;
   margin: 10px auto 20px;
   background-color: white;
-  font-size: 22px;
   font-weight: bold;
 }
 .banzukeContainer table {
@@ -562,7 +558,7 @@ i.izakaya {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 .kenceWindowModalBg {
   background: rgba(0, 0, 0, 0.6);
