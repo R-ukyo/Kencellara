@@ -1,0 +1,9 @@
+@media screen and (max-width: 420px) {
+  .newPostsContainer {
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+  .newPostCard {
+    width: 100%;
+  }
+}

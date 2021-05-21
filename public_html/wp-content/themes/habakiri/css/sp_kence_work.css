@@ -1,0 +1,27 @@
+@media screen and (max-width: 420px) {
+  .kencemeshiHistoryContents.kencemeshiHistoryContents {
+    padding: 5px 15px;
+  }
+  .kenceWorkExplainQ {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  .answer {
+    font-size: 18px;
+  }
+  .kenceWorkExplainA {
+    font-size: 14px;
+  }
+  .hyokkoriButace {
+    display: none;
+  }
+  .whatKencemeshiDoHeader {
+    font-size: 20px;
+  }
+  .whatKencemeshiDoMain {
+    padding: 12px;
+  }
+  .kencemeshiSupportHeader {
+    font-size: 20px;
+  }
+}

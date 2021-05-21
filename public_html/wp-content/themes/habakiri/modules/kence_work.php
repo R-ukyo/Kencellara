@@ -1,5 +1,6 @@
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('kence_work-style', get_template_directory_uri() . '/css/kence_work.css', array('habakiri', 'common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_kence_work-style', get_template_directory_uri() . '/css/sp_kence_work.css'));
   $upload_dir = wp_upload_dir();
 ?>
 <div class="coverageRequest kenceWorkContents">
