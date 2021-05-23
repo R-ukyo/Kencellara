@@ -18,38 +18,33 @@
 <!-- スライドショー -->
 <div class="slider">
   <div>
-    <a href="https://www.kencellara.com/entry/kence-1000">
-      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210217/20210217233602.jpg" alt="ケンチェ飯イベント" />
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('uchida-horumon'); ?>
+    <a href="<?php echo the_permalink($slider_articles_id); ?>">
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
     </a>
   </div>
   <div>
-    <a href="https://www.kencellara.com/entry/goshichiya">
-      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210206/20210206203252.jpg" alt="麵屋 五七屋" />
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tonkatu-mitukura'); ?>
+    <a href="<?php echo the_permalink($slider_articles_id); ?>">
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
     </a>
   </div>
   <div>
-    <a href="https://www.kencellara.com/entry/ise-recommend-ramen">
-      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210127/20210127004833.jpg" alt="伊勢のおすすめラーメン" />
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ise-recommend-ramen'); ?>
+    <a href="<?php echo the_permalink($slider_articles_id); ?>">
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
     </a>
   </div>
   <div>
-    <a href="https://www.kencellara.com/kence_work">
-      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210215/20210215191350.jpg" alt="ケンチェ飯広告" />
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yashiro'); ?>
+    <a href="<?php echo the_permalink($slider_articles_id); ?>">
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
     </a>
   </div>
   <div>
-    <a href="https://www.kencellara.com/profile">
-      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210107/20210107233006.jpg" alt="ケンチェのプロフィール" />
-    </a>
-  </div>
-  <div>
-    <a href="https://www.kencellara.com/entry/yashiro">
-      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210205/20210205173339.jpg" alt="綱元の店 八代" />
-    </a>
-  </div>
-  <div>
-    <a href="https://www.kencellara.com/entry/menya-banbi">
-      <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210204/20210204212507.jpg" alt="麵屋 ばんび" />
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('menya-banbi'); ?>
+    <a href="<?php echo the_permalink($slider_articles_id); ?>">
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
     </a>
   </div>
 </div>

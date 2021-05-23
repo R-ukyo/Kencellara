@@ -750,6 +750,23 @@ class Habakiri_Base_Functions {
 
 		return $sc_Linkcard;
 	}
+
+	//投稿スラッグ（固定ページは除く） から 投稿idを取得。
+	public static function get_post_id_by_slug($post_slug) {
+
+		$args=array(
+		  'name' => $post_slug,
+		  'post_type' => 'post',
+		  'post_status' => 'publish',
+		  'numberposts' => 1
+		);
+		$found_posts = get_posts($args);
+		if( $found_posts ) {
+			return $found_posts[0]->ID;
+		}else{
+			return NULL;
+		}
+	}
 }
 
 add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");
