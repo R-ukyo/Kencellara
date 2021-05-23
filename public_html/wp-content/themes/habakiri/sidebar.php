@@ -61,7 +61,7 @@
 			</script>
 		</div>
 		<div class="sb_popularArticles sb_content">
-			<div class="sb_popularHeader sb_header">人気の記事</div>
+			<div class="sb_popularHeader sb_header">伊勢特集</div>
 			<?php get_template_part( 'modules/popular_articles' ); ?>
 		</div>
 		<div class="sb_insta sb_content">
