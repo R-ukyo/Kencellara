@@ -20,31 +20,31 @@
   <div>
     <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('uchida-horumon'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
     <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tonkatu-mitukura'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
     <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ise-recommend-ramen'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
     <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yashiro'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
     <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('menya-banbi'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'medium'); ?>" />
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
 </div>
@@ -229,66 +229,75 @@
   <div class="recommendGourmetHeader topPageHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
   <div class="recommendGourmetContainer first">
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('bb-forest'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/jamise">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210207/20210207105029.jpg" alt="伊勢市のジャミセ" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="志摩市B&Bフォレスト志摩" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('nikumaru-obata'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/nikumaru-obata">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210124/20210124101015.jpg" alt="肉丸小俣店" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="肉丸小俣店" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('cultivate'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/cultivate">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210110/20210110001930.jpg" alt="カルティベイト" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="カルティベイト" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('killibilli'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/killibilli">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210208/20210208223419.jpg" alt="伊勢市のクレープ屋" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="伊勢市のクレープ屋" loading="lazy" />
         </a>
       </div>
     </div>
   </div>
+
   <div class="recommendGourmetContainer">
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('kotonoha'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/Kona-coffee">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210210/20210210213614.jpg" alt="津市のコナズ珈琲" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="津市ラーメンコトノハ" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tyousan'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/nikkoutei">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210118/20210118222638.jpg" alt="にっこう亭のお店情報まとめ" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="うどん長三" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('cafe-shiroiro'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/cafe-shiroiro">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20201208/20201208160153.jpg" alt="明和のカフェシロイロ" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="明和のカフェシロイロ" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yashiro'); ?>
       <div class="recommendGourmetImg">
-        <a href="https://www.kencellara.com/entry/meiwa-mugi">
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210118/20210118222647.jpg" alt="明和町の麦のお店情報ランチ" loading="lazy" />
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="網元の八代" loading="lazy" />
         </a>
       </div>
     </div>
