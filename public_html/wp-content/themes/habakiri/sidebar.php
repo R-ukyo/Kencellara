@@ -61,15 +61,15 @@
 			</script>
 		</div>
 		<div class="sb_popularArticles sb_content">
-			<div class="sb_popularHeader sb_header">伊勢特集</div>
+			<div class="sb_popularHeader sb_header">『伊勢』特集</div>
 			<?php get_template_part( 'modules/popular_articles' ); ?>
 		</div>
 		<div class="sb_insta sb_content">
-			<div class="instaHeader sb_header">Instagram</div>
+			<div class="instaHeader sb_header">公式Instagram</div>
 			<?php get_template_part( 'modules/embedded_instagram' ); ?>
 		</div>
 		<div class="sb_categoryArticles sb_content">
-			<div class="sb_ramenHeader sb_header">ラーメン</div>
+			<div class="sb_ramenHeader sb_header">『ラーメン』特集</div>
 			<?php get_template_part( 'modules/category_articles' ); ?>
 			<div class="sb_goToArchivePage">
 		    <a href=<?php echo get_category_link(get_category_by_slug('ramen')->cat_ID); ?>>もっと見る <i class="fas fa-chevron-right"></i></a>
@@ -116,7 +116,7 @@
 			</ul>
 		</div>
 		<div class="sb_twitter sb_content">
-			<div class="twitterHeader sb_header">Twitter</div>
+			<div class="twitterHeader sb_header">公式Twitter</div>
 			<a class="twitter-timeline" href="https://twitter.com/kencellara_food?ref_src=twsrc%5Etfw">Tweets by kencellara_food</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
