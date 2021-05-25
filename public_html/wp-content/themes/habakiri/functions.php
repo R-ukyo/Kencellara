@@ -751,6 +751,33 @@ class Habakiri_Base_Functions {
 		return $sc_Linkcard;
 	}
 
+	// 内部用（保留）
+	// public static function show_innerLinkCard($atts) {
+	// 	extract(shortcode_atts(array(
+	// 		'slug'=>"",
+	// 	),$atts));
+	//
+	// 	$post_id = get_post_id_by_slug($slug);
+	// 	$post = get_post($post_id);
+	// 	setup_postdata($post);
+	//
+	// 	//内部リンク用ブログカードHTML出力
+	// 	$sc_innerLinkCard .='
+	// 		<div class="blogcard ex">
+	// 		<a href="'. the_permalink() .'" target="_blank">
+	// 		 <div class="blogcard_thumbnail">'. the_post_thumbnail() .'</div>
+	// 		 <div class="blogcard_content">
+	// 		  <div class="blogcard_title">'. the_title() .'</div>
+	// 		  <div class="blogcard_excerpt">'. the_excerpt() .'</div>
+	// 		  <div class="blogcard_link"><img src="https://kencellara.com/wp-content/uploads/2021/05/図2.png" />'. the_permalink() .' <i class="icon-external-link-alt"></i></div>
+	// 		 </div>
+	// 		 <div class="clear"></div>
+	// 		</a>
+	// 		</div>';
+	//
+	// 	return $sc_innerLinkCard;
+	// }
+
 	//投稿スラッグ（固定ページは除く） から 投稿idを取得。
 	public static function get_post_id_by_slug($post_slug) {
 

@@ -493,14 +493,14 @@
 /* リンクカード */
 .blogcard {
   line-height: 1;
-  border: 1px solid #eeeeee;
+  border: 1px solid saddlebrown;
   word-wrap: break-word;
   margin: 20px;
-  box-shadow: 0 0 3px 2px black;
+  box-shadow: 0 0 3px 2px saddlebrown;
 }
 .blogcard.ex {
   height: 200px;
-  background-color: #eee;
+  background-color: cornsilk;
 }
 .blogcard a {
   text-decoration: none;
@@ -516,6 +516,7 @@
 }
 .blogcard_thumbnail img {
   max-height: 160px;
+  width: inherit;
 }
 .blogcard_title {
   color: black;
