@@ -1,6 +1,9 @@
 @media screen and (max-width: 420px) {
+  .kence_work {
+    padding: 15px 5px;
+  }
   .kencemeshiHistoryContents.kencemeshiHistoryContents {
-    padding: 5px 15px;
+    padding: 5px;
   }
   .kenceWorkExplainQ {
     font-size: 18px;

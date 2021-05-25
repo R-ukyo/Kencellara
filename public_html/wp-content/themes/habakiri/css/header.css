@@ -2,6 +2,9 @@
   border: 5px ridge cornsilk;
   background: content-box radial-gradient(white, cornsilk);
 }
+.header .container {
+  padding: 0;
+}
 .headerImgContainer {
   width: 100%;
 }
