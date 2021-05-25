@@ -48,7 +48,7 @@
 				どのサイトよりも詳しく三重県のグルメ情報を発信.<br>
 				三重で本当に美味い食べ物を探すならココ！<br>
 				取材依頼・食事のお誘いお待ちしております.<br>
-				スポンサー・取材依頼は <a class="p_kakudai" href=<?php echo get_permalink( $kw_page_id ); ?>>こちら</a>
+				<!-- スポンサー・取材依頼は <a class="p_kakudai" href=<?php echo get_permalink( $kw_page_id ); ?>>こちら</a> -->
 			</div>
 			</div>
 		</div>

@@ -427,7 +427,7 @@
     <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
     <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
     <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-    <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href=<?php echo get_permalink( $support_page_id ); ?>>こちら>></a></strong></p>
+    <!-- <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href=<?php echo get_permalink( $support_page_id ); ?>>こちら>></a></strong></p> -->
   </div>
 </div>
 
