@@ -16,16 +16,21 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class( array( 'article' ) ); ?>>
 				<div class="entry">
+					<div class="entry--has_media__media">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+					</div>
 					<?php Habakiri::the_title(); ?>
-					<div class="entry__summary">
-						<?php the_excerpt(); ?>
-					<!-- end .entry__summary --></div>
-				<!-- end .entry --></div>
+					<div class="newPostCategory">
+						<?php $cats = get_the_category(); ?>
+				    <?php foreach ($cats as $cat) { ?>
+				      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
+				    <?php } ?>
+				  </div>
+				</div>
 			</article>
 			<?php endwhile; ?>
-		<!-- end .entries --></div>
+			<?php get_template_part( 'modules/pagination' ); ?>
+		</div>
 		<?php do_action( 'habakiri_after_entries' ); ?>
-		
-		<?php get_template_part( 'modules/pagination' ); ?>
-	<!-- end .entry --></div>
+	</div>
 </article>
