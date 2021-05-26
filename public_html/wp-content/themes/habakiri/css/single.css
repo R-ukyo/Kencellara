@@ -137,10 +137,10 @@
 .emphasize-link {
   position: relative;
   margin: 36px 0 16px;
-  padding: 18px 10px 16px;
+  padding: 16px 8px 14px;
   border-top: 3px ridge black;
   border-bottom: 3px ridge black;
-  background-color: snow;
+  background-color: #fff;
 }
 .emphasize-link::before {
   position: absolute;
@@ -480,7 +480,7 @@
   box-shadow: 0 0 3px 2px black;
 }
 .blogcard.ex {
-  background-color: #eee;
+  background-color: #snow;
 }
 .blogcard a {
   text-decoration: none;

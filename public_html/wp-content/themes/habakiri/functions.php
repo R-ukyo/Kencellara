@@ -736,15 +736,17 @@ class Habakiri_Base_Functions {
 
 		//外部リンク用ブログカードHTML出力
 		$sc_Linkcard .='
-			<div class="blogcard ex">
-			<a href="'. $url .'" target="_blank">
-			 <div class="blogcard_thumbnail">'. $xLink_img .'</div>
-			 <div class="blogcard_content">
-			  <div class="blogcard_title">'. $Link_title .'</div>
-			  <div class="blogcard_excerpt">'. $Link_description .'</div>
-			 </div>
-			 <div class="clear"></div>
-			</a>
+			<div class="emphasize-link">
+				<div class="blogcard ex">
+					<a href="'. $url .'" target="_blank">
+					 <div class="blogcard_thumbnail">'. $xLink_img .'</div>
+					 <div class="blogcard_content">
+					  <div class="blogcard_title">'. $Link_title .'</div>
+					  <div class="blogcard_excerpt">'. $Link_description .'</div>
+					 </div>
+					 <div class="clear"></div>
+					</a>
+				</div>
 			</div>';
 
 		return $sc_Linkcard;
