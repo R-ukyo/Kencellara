@@ -179,36 +179,17 @@
   color: saddlebrown;
   margin: auto !important;
   width: 90% !important;
-  padding: 1.2em;
-  font-size: .9em;
-  border: 3px solid saddlebrown;
-  background: floralwhite;
   border-radius: 15px;
 }
-/* .table-of-contents::before {
-  margin: 0 0 .8rem;
-  padding: 0 0 .4rem;
-  display: block;
-  content: "目次";
-  font-size: 18px;
-  color: saddlebrown;
-  font-weight: bold;
-  text-align: center;
-  border-bottom: 2px dashed saddlebrown;
+#toc_container > ul {
+  list-style: circle !important;
+  margin-left: 12px !important;
 }
-.table-of-contents li {
-  margin: 5px 0 0 22px;
-  list-style-type: disc;
-  font-weight: bold;
+#toc_container > ul > li > ul {
+  list-style: circle !important;
+  margin-left: 25px !important;
+  margin-bottom: 5px !important;
 }
-.table-of-contents li ul li {
-  list-style-type: circle;
-  font-weight: normal;
-}
-.table-of-contents li ul li ul li {
-  list-style-type: square;
-  font-weight: normal;
-} */
 /* 記事内強調するための囲い枠*/
 .box7 {
   padding: 5px 10px;
