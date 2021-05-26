@@ -394,7 +394,7 @@
 </div>
 
 <!-- modal open -->
-<div class="kenceWindowModalOpen">
+<div id='kenceWindowModalOpen' class="kenceWindowModalOpen">
   <a class="js-modal-open" href="" data-target="modal01">ケンチェの窓口</a>
 </div>
 <!-- ./modal open -->
@@ -518,7 +518,7 @@
       <ul class="supportNavList">
         <li><a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！</li>
       </ul> -->
-      <p class="to_kence_work">コラボ・お仕事のご依頼は<a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>> こちら </a>からお願い致します。</p>
+      <p class="to_kence_work">コラボ・お仕事のご依頼は上記『ケンチェの窓口』からお願い致します。</p>
     </div>
   </div>
 </div>
