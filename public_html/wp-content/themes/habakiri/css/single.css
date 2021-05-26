@@ -365,7 +365,7 @@
   border-radius: 5px;
 }
 .list03 {
-  height: 320px;
+  max-height: 300px;
   overflow-y: scroll;
   border-radius: 8px;
 }
