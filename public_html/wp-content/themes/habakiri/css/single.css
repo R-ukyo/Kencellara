@@ -480,7 +480,6 @@
   box-shadow: 0 0 3px 2px black;
 }
 .blogcard.ex {
-  height: 200px;
   background-color: #eee;
 }
 .blogcard a {
@@ -493,10 +492,10 @@
 }
 .blogcard_thumbnail {
   float: left;
-  padding: 20px;
+  padding: 15px;
 }
 .blogcard_thumbnail img {
-  max-height: 160px;
+  max-height: 130px;
   width: inherit;
 }
 .blogcard_title {

@@ -742,7 +742,6 @@ class Habakiri_Base_Functions {
 			 <div class="blogcard_content">
 			  <div class="blogcard_title">'. $Link_title .'</div>
 			  <div class="blogcard_excerpt">'. $Link_description .'</div>
-			  <div class="blogcard_link">'. $favicon .' '. $url .' <i class="icon-external-link-alt"></i></div>
 			 </div>
 			 <div class="clear"></div>
 			</a>

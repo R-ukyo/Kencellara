@@ -48,11 +48,13 @@
   }
   .blogcard.ex {
     height: inherit;
+    padding: 10px;
   }
   .blogcard_thumbnail {
     padding: 10px;
   }
   .blogcard_thumbnail img {
+    max-height: 160px;
     width: 100%;
   }
   .blogcard_title {
@@ -60,6 +62,7 @@
     padding: 10px;
   }
   .blogcard_excerpt {
+    display: none;
     padding: 0 10px;
   }
   .blogcard_link {
