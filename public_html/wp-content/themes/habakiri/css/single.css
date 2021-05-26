@@ -178,17 +178,26 @@
 #toc_container {
   color: saddlebrown;
   margin: auto !important;
-  width: 90% !important;
+  max-width: 700px;
   border-radius: 15px;
+  padding: 18px 20px 10px !important;
+}
+#toc_container.no_bullets li,
+#toc_container.no_bullets ul,
+#toc_container.no_bullets ul li,
+.toc_widget_list.no_bullets,
+.toc_widget_list.no_bullets li {
+  list-style: circle !important;
 }
 #toc_container > ul {
-  list-style: circle !important;
   margin-left: 12px !important;
 }
 #toc_container > ul > li > ul {
-  list-style: circle !important;
   margin-left: 25px !important;
   margin-bottom: 5px !important;
+}
+#toc_container a {
+  font-weight: bold;
 }
 /* 記事内強調するための囲い枠*/
 .box7 {
