@@ -565,6 +565,12 @@
   margin: 5px auto 10px;
   box-shadow: 0 0 10px 5px cornsilk;
 }
+.kenceWorkWindow {
+  margin: 20px 0 50px;
+}
+.kenceWorkWindow iframe {
+  max-height: 400px;
+}
 .kencemeshiSupportHeader {
   font-weight: bold;
   font-size: 23px;
