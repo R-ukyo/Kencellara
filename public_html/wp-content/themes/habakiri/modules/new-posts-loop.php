@@ -10,7 +10,7 @@
 ?>
 <div class="newPostCard">
   <div class="newPostThumbnail">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($post->ID, 'thumbnail',array('loading'=>'lazy')); ?></a>
   </div>
   <div class="newPostTitle">
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

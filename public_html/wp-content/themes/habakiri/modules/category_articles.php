@@ -10,7 +10,7 @@
 ?>
 <div class="sb_categoryArticle sb_article">
   <div class="sb_categoryArticlesThumbnail sb_articleThumbnail">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($post->ID, 'thumbnail', array('loading'=>'lazy')); ?></a>
   </div>
   <div class="sb_categoryArticlesTitle sb_articleTitle">
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
