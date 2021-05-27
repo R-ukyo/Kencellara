@@ -207,11 +207,11 @@
         </div>
         <i class="fas fa-bookmark cafe"></i>
         <div class="genreSearchCard">
-          <a href=<?php echo get_category_link(get_category_by_slug('chain')->cat_ID); ?>>
-            チェーン
+          <a href=<?php echo get_category_link(get_category_by_slug('chuka')->cat_ID); ?>>
+            中華
           </a>
         </div>
-        <i class="fas fa-bookmark chain"></i>
+        <i class="fas fa-bookmark chuka"></i>
       </div>
       <div class="genreSearchColumn">
         <div class="genreSearchCard">
