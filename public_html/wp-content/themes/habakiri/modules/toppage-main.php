@@ -75,7 +75,7 @@
             <a href=<?php echo get_category_link(get_category_by_slug('yokkaichi')->cat_ID); ?>>四日市</a>
           </li>
           <li class="komono">
-            <a href="">菰野</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('komono')->cat_ID); ?>>菰野</a>
           </li>
           <li class="kameyama">
             <a href=<?php echo get_category_link(get_category_by_slug('kameyama')->cat_ID); ?>>亀山</a>
