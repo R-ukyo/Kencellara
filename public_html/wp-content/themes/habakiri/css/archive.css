@@ -175,15 +175,15 @@
 .pagination>li>span,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-  background-color: saddlebrown;
-  border-color: saddlebrown;
+  background-color: saddlebrown !important;
+  border-color: saddlebrown !important;
   color: cornsilk;
 }
 .pagination>li>a {
-  color: saddlebrown;
+  color: saddlebrown !important;
 }
 .pagination>li>a:hover,
 .pagination>li>a:focus {
-  background-color: saddlebrown;
-  color: cornsilk;
+  background-color: saddlebrown !important;
+  color: cornsilk !important;
 }
