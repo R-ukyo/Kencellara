@@ -555,6 +555,9 @@
   padding-bottom: 15px;
 }
 
+.kenceWorkWindowZone {
+  margin: 40px 0;
+}
 .kenceWorkWindowHeader {
   color: saddlebrown;
   font-size: 28px;
@@ -565,11 +568,18 @@
   margin: 5px auto 10px;
   box-shadow: 0 0 10px 5px cornsilk;
 }
+.kenceWorkWindowExplain {
+  margin: 20px 40px;
+  font-weight: bold;
+}
 .kenceWorkWindow {
   margin: 20px 0 50px;
 }
 .kenceWorkWindow iframe {
   max-height: 400px;
+}
+.kencemeshiSupportZone {
+  margin: 60px 0;
 }
 .kencemeshiSupportHeader {
   font-weight: bold;
