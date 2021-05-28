@@ -60,6 +60,9 @@
   .genreSearchCard:hover + i {
     transform: rotateZ(10deg) translateX(10px);
   }
+  .recommendGourmetZone {
+    padding: 10px 5px;
+  }
   .recommendGourmetBox {
     margin: 6px;
   }

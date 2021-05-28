@@ -89,5 +89,8 @@ iframe.instagram-media {
   padding: 8px 10px;
   border: 3px solid #ccc;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
-  margin-bottom: 8px;
+  margin: 8px 3px;
+}
+.sb_articleTitle a {
+  color: #333;
 }
