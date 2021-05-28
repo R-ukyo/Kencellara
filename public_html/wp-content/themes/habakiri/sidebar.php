@@ -9,10 +9,6 @@
  * License URI: license.txt
  */
 ?>
-<?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css', array('common-style')));
-	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_sidebar-style', get_template_directory_uri() . '/css/sp_sidebar.css'));
-?>
 <!-- 変数定義 -->
 <?php
 	$upload_dir = wp_upload_dir();
