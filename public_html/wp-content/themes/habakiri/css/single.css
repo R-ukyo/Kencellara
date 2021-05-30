@@ -572,6 +572,13 @@
   margin: 20px 40px;
   font-weight: bold;
 }
+.kenceWorkWindowExplain ul {
+  list-style-type: bengali;
+}
+.kenceWorkWindowExplain p {
+  text-align: center;
+  font-size: 1.1em;
+}
 .kenceWorkWindow {
   margin: 20px 0 50px;
 }

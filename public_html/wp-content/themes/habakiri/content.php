@@ -31,7 +31,14 @@
 	<div class="kenceWorkWindowZone">
 		<div class="kenceWorkWindowHeader belowArticleHeader">お問い合わせフォーム</div>
 		<div class="kenceWorkWindowExplain">
-			<p>取材依頼・ケンチェ飯に行って欲しいお店・一緒にご飯を食べたい！などのお誘いを常時受け付けております。お気軽にご連絡下さい。</p>
+			<ul>
+				<li>お店の取材依頼</li>
+				<li>コラボ依頼</li>
+				<li>スポンサー・広告依頼</li>
+				<li>読者がケンチェ飯に行って欲しいお店</li>
+				<li>ケンチェ飯とご飯を一緒にが食べてみたい　</li>
+			</ul>
+			<p>内容問わず、お気軽に下記フォームよりご連絡下さい！</p>
 		</div>
 		<div class="kenceWorkWindow">
 		  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
