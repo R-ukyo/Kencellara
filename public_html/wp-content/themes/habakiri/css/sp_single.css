@@ -71,4 +71,7 @@
   .blogcard_link .favicon {
     float: left;
   }
+  .kenceWorkWindowExplain {
+    margin: 15px 10px 8px;
+  }
 }
