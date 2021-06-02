@@ -99,7 +99,7 @@ section.typeA input:checked + .tabLabel + .content {
 /* スライドショー */
 .slider {
   background-color: snow;
-  padding: 20px 0 30px;
+  padding: 0 0 20px;
 }
 .slider img {
   width: 90%;
