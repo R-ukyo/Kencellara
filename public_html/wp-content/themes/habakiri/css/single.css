@@ -575,6 +575,11 @@
 .kenceWorkWindowExplain ul {
   list-style-type: bengali;
 }
+@media screen and (min-width: 1200px) {
+  .kenceWorkWindowExplain ul {
+    margin: 0 170px 10px;
+  }
+}
 .kenceWorkWindowExplain p {
   text-align: center;
   font-size: 1.1em;
