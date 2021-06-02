@@ -1,3 +1,7 @@
+<?php
+	add_action('wp_enqueue_scripts', wp_enqueue_script('sp_ad_article-script', get_template_directory_uri() . '/js/sp_ad_article.js'));
+?>
+
 <div class="newPostsZone all">
   <div class="newPostsHeader topPageHeader">全ての記事</div>
   <div class="newPostsContainer">
