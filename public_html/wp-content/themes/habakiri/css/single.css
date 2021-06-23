@@ -136,7 +136,7 @@
 /* 関連記事 */
 .emphasize-link {
   position: relative;
-  margin: 36px 0 16px;
+  margin: 36px 0 0;
   padding: 16px 8px 14px;
   border-top: 3px ridge black;
   border-bottom: 3px ridge black;
@@ -215,6 +215,7 @@
 .box7 ul {
   margin: 0;
   padding: 0 0 0 1.5em;
+  list-style: disc;
 }
 
 /* 記事内「ケンチェの一言」「この記事の内容」*/

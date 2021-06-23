@@ -700,49 +700,20 @@ class Habakiri_Base_Functions {
 		return $breakpoint;
 	}
 
-	/* 外部リンク対応ブログカードのショートコードを作成 */
+	/* 内部リンク用カード */
 	public static function show_Linkcard($atts) {
-		extract(shortcode_atts(array(
-			'url'=>"",
-			'title'=>"",
-			'excerpt'=>""
-		),$atts));
+		extract(shortcode_atts(array('slug'=>''),$atts));
+		$id = Habakiri_Base_Functions::get_post_id_by_slug($slug);
+		$post = get_post($id);
 
-		//OGP情報を取得
-		require_once 'OpenGraph.php';
-		$graph = OpenGraph::fetch($url);
-
-		//OGPタグからタイトルを取得
-		$Link_title = $graph->title;
-		if(!empty($title)){
-			$Link_title = $title;//title=""の入力がある場合はそちらを優先
-		}
-
-		//OGPタグからdescriptionを取得（抜粋文として利用）
-		$Link_description = wp_trim_words($graph->description, 60, '…' );//文字数は任意で変更
-		if(!empty($excerpt)){
-			$Link_description = $excerpt;//値を取得できない時は手動でexcerpt=""を入力
-		}
-
-		// サムネ
-		$xLink_img = '<img src="'. $graph->image .'" />';
-
-		//ファビコンを取得（GoogleのAPIでスクレイピング）
-		$host = parse_url($url)['host'];
-		$searchFavcon = 'https://www.google.com/s2/favicons?domain='.$host;
-		if($searchFavcon){
-			$favicon = '<img class="favicon" src="'.$searchFavcon.'">';
-		}
-
-		//外部リンク用ブログカードHTML出力
 		$sc_Linkcard .='
 			<div class="emphasize-link">
 				<div class="blogcard ex">
-					<a href="'. $url .'" target="_blank">
-					 <div class="blogcard_thumbnail">'. $xLink_img .'</div>
+					<a href="'. $post->guid .'" target="_blank">
+					 <div class="blogcard_thumbnail"><img src='. get_the_post_thumbnail_url($id, 'full') .' loading="lazy" /></div>
 					 <div class="blogcard_content">
-					  <div class="blogcard_title">'. $Link_title .'</div>
-					  <div class="blogcard_excerpt">'. $Link_description .'</div>
+					  <div class="blogcard_title">'. $post->post_title .'</div>
+					  <div class="blogcard_excerpt">'. $post->post_excerpt .'</div>
 					 </div>
 					 <div class="clear"></div>
 					</a>
@@ -752,36 +723,8 @@ class Habakiri_Base_Functions {
 		return $sc_Linkcard;
 	}
 
-	// 内部用（保留）
-	// public static function show_innerLinkCard($atts) {
-	// 	extract(shortcode_atts(array(
-	// 		'slug'=>"",
-	// 	),$atts));
-	//
-	// 	$post_id = get_post_id_by_slug($slug);
-	// 	$post = get_post($post_id);
-	// 	setup_postdata($post);
-	//
-	// 	//内部リンク用ブログカードHTML出力
-	// 	$sc_innerLinkCard .='
-	// 		<div class="blogcard ex">
-	// 		<a href="'. the_permalink() .'" target="_blank">
-	// 		 <div class="blogcard_thumbnail">'. the_post_thumbnail() .'</div>
-	// 		 <div class="blogcard_content">
-	// 		  <div class="blogcard_title">'. the_title() .'</div>
-	// 		  <div class="blogcard_excerpt">'. the_excerpt() .'</div>
-	// 		  <div class="blogcard_link"><img src="https://kencellara.com/wp-content/uploads/2021/05/図2.png" />'. the_permalink() .' <i class="icon-external-link-alt"></i></div>
-	// 		 </div>
-	// 		 <div class="clear"></div>
-	// 		</a>
-	// 		</div>';
-	//
-	// 	return $sc_innerLinkCard;
-	// }
-
 	//投稿スラッグ（固定ページは除く） から 投稿idを取得。
 	public static function get_post_id_by_slug($post_slug) {
-
 		$args=array(
 		  'name' => $post_slug,
 		  'post_type' => 'post',

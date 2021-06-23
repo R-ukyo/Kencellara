@@ -11,6 +11,7 @@
 /Img/
 /Document/
 /public_html/wp-content/uploads/
+/public_html/wp-admin/
 /Style/
 /Export/
 /Assets/
@@ -19,3 +20,6 @@
 /Scrape/
 /Source/
 /StaticPage/
+/www/
+/access-logs/
+/public_html/*
