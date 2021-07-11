@@ -1,3 +1,3 @@
-# 覚書
-public_html内がwordpress移行後のコード.
-近々Organizationのリポジトリに移行予定.
+# このリポジトリについて
+ケンチェ飯で、はてなブログ～Wordpress初期に使用したリポジトリ。
+Kenchellara Organizationを作ったためこのリポジトリは廃止（2021/07）。
